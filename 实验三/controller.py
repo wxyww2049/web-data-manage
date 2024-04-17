@@ -57,10 +57,9 @@ def interviews():
 @app.route('/summary_interview', methods=['GET'])
 def summary_interview():
     id = request.args.get('id')
-    tmp = get_interview_by_id(id)
+    tmp = get_interview_by_id(id)[0]
     
-    tmp['summary'] = query_gpt("帮我写出下面这篇面经的总结，直接写总结，不要说好的\n" + json.dumps(tmp))
-    return jsonify(tmp)
+    return jsonify(query_gpt("帮我写出下面这篇面经的总结，直接写总结，不要说好的\n" + json.dumps(tmp)))
 
 @app.route('/word_cloud', methods=['GET'])
 def word_cloud():

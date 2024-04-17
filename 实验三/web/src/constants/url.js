@@ -7,3 +7,6 @@ export const COUNT_STACKS = `${baseurl}/count_stack`;
 export const STACKS_POSTION = `${baseurl}/stacks_position`;
 export const TYPES_POSITION = `${baseurl}/types_position`;
 export const TYPES_COMPANY = `${baseurl}/types_company`;
+export const WORD_CLOUD = `${baseurl}/word_cloud`;
+export const INTEVIEWS = `${baseurl}/interviews`;
+export const AI_SUMMARY = `${baseurl}/summary_interview`;

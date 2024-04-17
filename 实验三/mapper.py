@@ -95,7 +95,7 @@ def query_stacks_position(position):
 def query_interviews(handle):
   db = get_connection()
   cursor = db.cursor()
-  sql = "SELECT title,url from nowcoder_interview WHERE title like (%s) or content like (%s)"
+  sql = "SELECT id,title,url from nowcoder_interview WHERE title like (%s) or content like (%s)"
   cursor.execute(sql,('%' + handle + '%','%' + handle + '%'))
   tmp = cursor.fetchall()
   cursor.close()
