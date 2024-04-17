@@ -1,0 +1,502 @@
+[
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/0bb35e2aa7704c4a8471fa3c9ba4ade5?sourceSSR=users",
+        "title": "招银二面(线下深圳)_牛客网",
+        "content": "1.MybatisPlus和Mybatis相比有什么优势，有哪些局限性，它们能一次配置支持多个数据库吗？  \n2.​说说JDBC的执行流程  \n​3.Spring项目中事物怎么实现？  \n​4.@Transactional注解底层怎么实现？如果要你自己定义一个类似的注解，你该怎么做？说一下步骤  \n​5.SpringBoot怎么实现定时任务？  \n​6.多个数据包传到Controller层之前怎么进行检验拦截，除了拦截器外，还有哪些实现方式？  \n​7.用户登录完成之后，服务器还需要写什么来知道他已经登录完成了，就是已经识别出用户的状态为成功登录，可以执行后续的一些下单操作  \n​8.假设有多台服务器，用户同时登陆过去，这些服务器怎么才能知道用户是同一个用户？负载均衡怎么实现​？  \n9.Spring循环依赖是怎么发生的？  \n​10.实习项目为什么要用Sharing Sphere进行分库分表，还有其他的分库分表方式吗？  \n​11.海量数据分库分表以后使用线程池优化查询时怎么进行并发控制?CountDownLatch怎么设计？代码结构是什么  \n12.SQL编程题（用笔在白纸上写)：  \n​假设有一个user表，写一条语句把其中年龄第三大并且性别为女的用户记录查询出来  \n​  \n招银网络最后一轮面试(hr终面)  \n​1.做个简单自我介绍  \n​2.谈谈本科学习情况，学习成绩排名，比赛经历  \n​3.谈谈研究生的科研项目，论文发表情况  \n​4.谈谈暑期实习项目情况，主要负责的模块以及金融业务流程  \n​5.谈谈自己的期望薪资多少  \n​6.谈谈自己的工作抗压能力如何，对于加班怎么看  \n​  \n​面完了进池子开泡\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/33d7654bf38748198ede20957867a5e7?sourceSSR=users",
+        "title": "9.19 苏小研 java 一面_牛客网",
+        "content": "1\\. 自我介绍  \n2\\. 介绍项目  \n然后被两个面试官轮流问项目场景题，没问八股，脑子有点糊涂，被烤打烂了，时长总共大概 25+吧。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/cc8a54ae7a0940b9a825f6c45d4bf1c3?sourceSSR=users",
+        "title": "联洲一面_牛客网",
+        "content": "二十分钟，项目+八股，没有手撕。  \n1\\. 实习干了什么, 解决了什么问题，blablabla  \n2\\. linux 0.1实验干了什么，blablabla  \n3\\. 字符设备驱动跟块设备驱动有什么区别(以字符设备进行读写，以块为单位读写，块设备可以寻址、分区，需要先挂载再读写，blablabla)  \n4\\. 编写一个字符设备驱动要干哪些事情 (入口函数，出口函数，设备节点文件，文件操作结构体，最后调用modprobe或者insmod加载?)  \n5\\. 用户态跟内核态有什么区别  \n6\\. 什么时候加载驱动(???读写之前吗)  \n7\\. malloc跟vmslloc跟kmalloc有什么区别  \n8\\. 什么时候使用线程  \n9\\. 什么时候单线程效率更高(计算密集型任务?)  \n10\\. 怎么进入内核态  \n11\\. 中断的上半部和下半部干什么，为什么要分上半部和下半部(答错了)  \n[#TP-LINK#](/enterprise/1132/discussion)  \n  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/a61c1f4531994ff399b8a79ae9a03ce8?sourceSSR=users",
+        "title": "得物一面9.9_牛客网",
+        "content": "说一下项目中一些表  \n项目Mqsql主从同步  \n项目中Redis怎么用的  \n事务隔离级别  \nJVM组成  \nMQ用过吗  \nTCP和UDP区别  \nSpring特性  \nAOP和IOC  \nSpringMVC执行流程  \n可重复读实现原理  \n算法：两个字符串A,B，判断B是否在A中\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/a91b1682c51643c0bde4f276c40c6e5d?sourceSSR=users",
+        "title": "杭银 一二面_牛客网",
+        "content": "线下被暴虐  \n[#在找工作求抱抱#](/creation/subject/80e01338914f41f9adc922483ab916e8)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/e6984bc5fa56439abe8f4e3debf44e49?sourceSSR=users",
+        "title": "杭州银行一面_牛客网",
+        "content": "1、简单自我介绍  \n2、项目中的配置文件写了哪些  \n3、Mybatis plus配置文件里写了什么  \n4、项目中是怎么处理异常的  \n5、ControllerAdvice特点是什么  \n6、两个进程间同步怎么实现  \n7、12306网站怎么在高并发的情况下保证不超卖  \n8、高并发请求下怎么保证服务器不宕机  \n9、为什么要使用Mysql读写分离结构，怎么实现  \n10、怎么实现主从同步  \n11、当你从浏览器输入网址后，发生了什么  \n12、读研期间压力最大的事情是什么，怎么解决  \n  \nHR说预计10月份发笔试\n过了初试才能收到笔试![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553985374/A57D46B1E321B8DD98A1B5ED5639082A)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/b0f6ec5edf6f4fc9ace9e813d6d985c6?sourceSSR=users",
+        "title": "快手9.8_牛客网",
+        "content": "[#面试#](/creation/subject/61bc672e891646c6b5758d3ecc014387)  \nJVM组成部分  \nGC垃圾回收算法几种  \n线程池  \n索引组成特点，底层实现  \n聚集索引，非聚集索引  \nsynchronized底层  \nreentrantlock  \nHashmap  \nConcurrenyHamap  \n定位慢查询以及如何优化  \nSleep和wait区别  \n  \n手撕代码:  \n1.LRU  \n2.给一个字符串求字符串中出现最多且第一次出现的字符。  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/50e15656c4974fdf9d0e385b1271735f?sourceSSR=users",
+        "title": "鼎桥通信一面电话面_牛客网",
+        "content": "简要介绍项目，项目背景，目的  \n  \n跟同学相处怎么样  \n有什么打击比较大的事情有什么有成就感的事情  \n也没有过学生工作经历  \n能不能接受工作地点  \n家庭情况家庭成员  \n对鼎桥通信有什么了解  \n  \n反问：  \n一轮资格面，一轮技术面，一轮综合面，一轮hr面（电话面就是资格面）  \n工作内容  \n  \n大概半个小时，会问一些项目，学生经历，还有确定想来公司的意向  \n  \n突然一个电话过来问有没有时间还挺突然的，有的回答语言组织的不太好\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/a6cbe19c11374d69a5dda4c84632e75d?sourceSSR=users",
+        "title": "【一面挂】钉钉客户端凉经_牛客网",
+        "content": "[#钉钉#](/creation/subject/c5d08ce46d2a45dd96643819f1240c93)  \n钉钉会议面试，晚上7点半到八点半  \n=============================  \n开场互相自我介绍  \n  \n项目介绍、项目难点介绍、为什么使用protobuf  \n  \n八股  \nJava相关：访问修饰符、父类的static方法是否能被overwrite、Java是否存在多继承、HashMap是否线程安全、Java中线程安全的实现、Java内存模型  \nAndroid相关：进程间通讯，Binder机制、View绘制流程、Android主线程、Handler机制、Android OOM机制及处理  \n  \n手撕：  \n将N个人随机均匀地分配到M个组中，输入所有人的工号和需要分配的组数，输出分配后每组的工号列表  \n要求使用Java写，结果最近Python写太多脑子抽了写不了Java  \n  \n反问：  \n钉钉Android客户端团队的技术栈、对应届生的技术要求  \n============================  \n面试官人不错，可惜我答得不好，面完十分钟就挂了  \n  \n============================  \n复盘反思：  \nJava基础不牢，很多次一面挂大抵都是因为这个问题  \nAndroid客户端团队最看重的还是Java语言的掌握上，至于Android框架就显得不是那么重要\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/819be6e969dc41fa83a606ced55bdb79?sourceSSR=users",
+        "title": "长鑫初面8.10_牛客网",
+        "content": "[#面试#](/creation/subject/61bc672e891646c6b5758d3ecc014387)  \n为什么用Springboot好处？  \nSpringBoot注解？  \n线程池有哪些方法？  \nMySQL索引几种？  \n脏读和幻读？  \n怎么解决脏读？事务隔离级别？  \n事务及其特性？  \n写sql语句？  \n几个常用注解区别？  \n多线程？  \n分布式锁与悲观锁区别？  \nHashmap底层结构？  \nbootstrap.yml配置与application.yml配置区别  \n  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/ee62010a7d32420fa56ac5faf6633542?sourceSSR=users",
+        "title": "深信服笔试_牛客网",
+        "content": "今天刚发的，填空题有点恶心，全是大量计算，编程题还有四个，感觉题量有点大  \n第一个编程题比较简单，不过题目真的很长，其实就是计算字母的不连续出现次数；AC了  \n第二个是计算数字的循环右移下的最大数，不知道为啥只能过75  \n第三个滑动窗口，计算元组的最大值，A了66 可能是数字大小的问题  \n第四个是leetcode原题，但是我没时间写了*****只骗了33  \n总之大寄特寄，有的越界问题还是处理的不行\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/25e87637d8aa4bca9bfa148220d8677f?sourceSSR=users",
+        "title": "海康一面 AI算法工程师_牛客网",
+        "content": "[#我的失利项目复盘#](/creation/subject/41b34c64d79043a9b5019781af864b26)  \n一面面试官上来给我发了两道题  \n一道困难看都没看  \n一道中等，是图论，就是给一个board，给一个单词，判断能不能从board中找出单词。  \n我一道题都没ac。第二题我的思路是： 遍历board搜寻单词中的字符，当遍历到了之后开始深搜DFS。  \n第一次面试太紧张了所以没做出来Orz  \n做了半小时之后开始面试，面试主要问了一些项目上的细节，但是针对的点跟我想的不太一样，主要是问了项目里的检测跟踪耦合逻辑。然后就是问检测算法的域泛化问题。个人感觉准备不是很充分，指标性的东西拿不出来。下次还是应该多准备准备。  \n最后第一个项目都没讲完，然后就到八股问题了。  \n八股问了BNINLN，还问了过拟合问题 以及自己看到的最新的目标检测领域的文章。  \n第三个问题我回答的不好，说自己看了，又没吧看的东西说出来，感觉像吹牛。反思一下自己，应该把Transformer的原理什么的讲讲清楚。  \n  \n反问环节也有改进的地方。我问了部门的业务等等，然后问了问面试官的方向。就没了。其实应该问一问第二道编程题他的看法。以及他问我那么多泛化的问题，是不是他也是做这一方面的，他遇到了哪些问题，用哪些方法解决的。  \n  \n总之，第一次面试，紧张且激动。尽管没开摄像头，但是总体还是要给面试官好评。  \n一面加上做题一共进行了一个半小时。  \n希望不是KPI，许愿offer。  \n  \n更新，又想起来两个问题  \n1.一堆数据只有少量数据有标签，应该怎么训练？  \n2.数据的长尾分布应该怎么解决  \n答的不好，感觉有些是错的  \n然后面试官问泛化是因为我说到项目里面的泛化了。  \n  \n09.26更新:  \n没挂，但是也没有二面消息。希望不要再拖一周反手给我挂了，心态真的会爆炸的！  \n10.12更新  \n问了问hr 被挂了😭\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/a559451ab1254e6f9aa7d8ef1647ec4e?sourceSSR=users",
+        "title": "掌阅科技笔试_牛客网",
+        "content": "1.给定数组，求子串之和大于等于target的最短长度：滑动窗口  \n2.01背包：n2的dp，数据很弱都没到1w  \n3.迷宫步数：bfs\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/4bf9ea60d1e244a4b4da6900d2389c2e?sourceSSR=users",
+        "title": "腾讯一面_牛客网",
+        "content": "面试官很好很温柔，是我太菜。  \n面试官是c++的，我是java的，面了一小时二十分钟，这很难顶。  \n  \n先是三道算法题，磕磕巴巴地写。  \n问实习  \n问项目  \n问论文创新点  \narraylist和linkedlist  \narraylist怎么扩容  \n虚拟机栈，怎么压栈  \n栈的大小是多少  \n栈会不会溢出，什么情况下会溢出  \n协程了解吗  \n问计网：time-wait状态，什么是MSL\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/fc5f5c4ad36343e8a268f2c9e2b3c12d?sourceSSR=users",
+        "title": "9.18 阿里国际笔试_牛客网",
+        "content": "60 93 0  \n一，分类讨论，但是时间不够了  \n二，一眼线段树，然后我努力的写了大半个小时，最后没写出来，被迫暴力，发现过了93，想死  \n三，经典图论之读不懂题  \n考完看到面试官微信问我，怎么还没做笔试，更是当场去世\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/a2d42698b4ad4503b3b7b36cb1e8e646?sourceSSR=users",
+        "title": "海康软开一面_牛客网",
+        "content": "1、 自我介绍  \n2、项目拷打  \n3、项目中用redis做了什么？  \n4、redis做分布式锁有什么问题？  \n5、mysql提升性能的方式  \n6、读写分离的落地实现？  \n7、读写分离的主从延迟如何解决？  \n8、mysql索引？  \n9、如何查看是否使用了索引？  \n10、springboot 的启动流程  \n11、springboot 的热部署方式  \n12、springboot 怎么应用的 IOC  \n13、JVM 参数调优  \n14、 垃圾回收器（CMS的具体流程）  \n15、线程池的参数  \n16、线程池的执行过程  \n17、线程池的抛弃策略  \n18、反问\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/3345fcc5e5ab4e229f3dcfe0e97bccde?sourceSSR=users",
+        "title": "废物更新一下snk面经_牛客网",
+        "content": "哀莫大过心死  \n9/4投的snk，9/7笔试，9/18一面  \n45min  \n自我介绍  \n项目  \n八股：  \n虚函数实现机制  \nstl，deque，stack，vector底层实现，队列实现栈，栈实现队列  \nunreal：里面的常用的类有哪些，gas插件介绍  \n图形学：A*算法，只答出是迪杰斯特拉算法实现的，其他不知道  \n抗锯齿方法：超分辨率重采样，时域重采样  \n延迟渲染，延迟渲染和前向渲染的区别  \n  \n没抱啥希望。为啥自己要选游戏呢，工资不会太高不说，岗位少，方向窄，学的东西又多，自己不是大佬凭啥去和别人卷呢。  \n另外，tplink一面后一个工作日官网状态没变化是不是就寄了，如果寄了我应该是牛客上第一个牛客一面寄的吧，😀\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/67e568c0888c462f9a2a0cf0624851f4?sourceSSR=users",
+        "title": "信飞科技 2024届JAVA开发岗笔试_牛客网",
+        "content": "有没有佬知道信飞科技是干啥的.....不会又是外包吧  \n30道选择题共120分，3道算法题共75分。这分值怪怪的  \n选择题有很多让你判断程序执行结果，其中光是父类子类中静态方法、构造方法的执行顺序就考了三遍....还有一些像是智力题一样的，比如 3个人中只有一个说得对\n让你选答案....有的选择题不会比如存储过程的优点、垃圾回收机制等。笔试题感觉啥都沾一点。做完后发现很多题都是牛客的试题广场中的原题。  \n编程题不提也罢，跟神州信息有的一拼，最简单的算法题。  \n第一题是牛牛要喝够10L水，杯子高h半径r，求要喝几杯。  \n第二题是给球的半径，求体积，保留两位小数。  \n第三题是牛牛y年m月d日才开始学习，再给个y1 m1 d1，求牛牛是否开始学习了.....  \n难绷啊真的。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/0392819dcf5341d0938de7747ca438e9?sourceSSR=users",
+        "title": "9-18 字节后端面试_牛客网",
+        "content": "项目：  \n1、你的表包含哪些  \n2、bitmap如何进行余票分配的  \n3、如何使用令牌桶  \n4、如何将redis的中数据同步到数据库中  \n5、如何防止缓存击穿。  \n  \n八股：  \n1、java中基本数据类型包含哪些  \n2、list有有哪些实现类  \n3、map有哪些实现类  \n4、concurrentHashmap的了解  \nJVM  \n1、JVM调优怎么做的  \n线程  \n1、如何创建线程  \n2、有使用过自定义线程吗？为什么需要实现自定义线程  \n  \nmysql  \n1、Mysql的数据库隔离级别  \n2、分别解决了什么问题  \n3、MVCC如何实现  \n4、可以解决哪些问题  \n  \n限流、熔断、降级是什么含义  \n限流和降级有什么区别  \n手撕代码：  \n最大股票收益\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/8e2bf51360044313a63250a4c38dd3c3?sourceSSR=users",
+        "title": "厦门海晟融创java实习一面_牛客网",
+        "content": "自我介绍  \n看到你以前是前端实习生，前端你会哪些技术  \n考你一些基础，HashMap底层原理说一下  \n写一个HashMap的元素遍历  \n哈希冲突怎么解决呢 -不会捏  \n现在让你存储图片从c盘到d盘，你怎么写  \n线程有哪几种创建方式  \nrunnable和callable有什么区别  \n线程池你用过吗，手写一个线程池的使用 -这不会，就说了下6大参数是什么  \n反转字符串，你能用多少种方式 -只会数组、链表两种方法  \n手写sql，给了个联表题 -哇很久没有手写sql了，在提示下写出来了呜呜  \n  \n为什么投厦门不投广州深圳呢  \n我们公司工作日要加班到8-9点能接受吗  \n（全程30分钟）  \n  \n1.手写sql要练习了  \n2.算法题还是多刷基础吧\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/4f21d3ce901b48e38cf5f6456074a22b?sourceSSR=users",
+        "title": "苏小研秋招Java岗oc体检_牛客网",
+        "content": "9月18一面25分钟，两个面试官，先自我介绍  \n1、用过什么容器，hashmap底层原理、优化  \n2、线程安全了解吗，线程安全的容器原理，创建线程的方式  \n3、多线程，线程池参数以及作用  \n4、synchronized底层原理、和lock的区别  \n5、了解IO模型吗，BIO和NIO的区别  \n6、用过什么微服务组件  \n7、AOP，在哪里用到了，有什么注解  \n8、springboot有什么注解  \n9、nacos作为配置中心的作用  \n10、openfeign和feign的区别  \n11、nacos作为注册中心如何判断服务存活  \n12、用过哪些中间件  \n13、redis基本数据结构、底层数据结构  \n14、说一个项目印象最深的模块  \n15、职业规划  \n  \n反问：公司技术栈，流程几面。  \n面试官说9月底前结束三面。  \n  \n希望能过![](https://uploadfiles.nowcoder.com/images/20230224/318889480_1677206698920/580834F53E3AE4778611CBB910DDB25C)  \n  \n9月22二面hr面10分钟  \n1、自我介绍  \n2、为什么要应聘我司  \n3、还有投递别的公司吗  \n4、看你有实习，介绍一下实习的工作  \n  \n反问：有几面，月底能结束吗  \n回复接下来有笔试和终面，安排来得及的话下周能三面。  \n  \n许愿![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553985867/F28237AD3E28DDE02CA64E90E8A38E5E)  \n  \n9月26三面20分钟  \n看前面还有俩人排队结果一下子到我了，提前半小时开始  \n1、自我介绍。  \n2、介绍一个项目的难点的解决方法。  \n3、给了个我不太理解题意的算法题：原始单词是CAT，字典排序是ACT。如果给你排序字符串ACT如何获取原始单词，只知道暴力回溯比较，问有没有优化方法我不会；又问回溯怎么优化我说剪枝。  \n4、目前学校里的研究方向的难点。  \n5、为什么选择本公司。  \n6、了解云计算吗。  \n  \n反问：部门和业务，什么时候有结果。回复说十月中旬会出结果。  \n整体感觉答的不是很好，首先算法就很迷，后边说云计算时候直接说用过一些组件然后准备讲自己的理解时就打断然后反问了。球球了给过吧。![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)  \n  \n11月14日收到体检电话，具体说恭喜通过询问体检意愿，体检后发offer。  \n11月27发起签约，5天时间。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/13b88d0cdd8847af857fbbdf163509b8?sourceSSR=users",
+        "title": "多益技术面_牛客网",
+        "content": "先做了个回溯  \n说出Java两点缺点  \n创建一个对象有哪几种方式  \nobject有哪些方法  \nsleep(0)  \n有哪些线程控制方法  \nsleep和wait使用了会进行什么状态转化  \nredis怎么解决竞争问题的  \n讲一讲多路复用  \nmysql limit会造成什么问题  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/5ee495f168f04c02981e5297ae780e34?sourceSSR=users",
+        "title": "迈瑞_牛客网",
+        "content": "一面  \n  \n设计模式  \n除了工厂单例  \n消费者生产者  \n发布订阅  \n手撕？我一面手撕？  \n大数计算写出来了  \n给输入给错了所以答案不对解释好久  \n已经做出来了且做对了  \n但是bug真难过  \n感觉g 海面  \n  \n当天收到二面 第二天二面\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/153db44063504305b1db88744584f8d7?sourceSSR=users",
+        "title": "苏小妍_牛客网",
+        "content": "自我介绍  \n线程进程  \npython使用进程线程这些  \npython和cpp的区别  \n简单手撕  \nwrite的底层实现如何到网卡，需要几次copy  \n用过谷歌那个malloc的轮子吗  \n  \n反问\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/fc6203c359fd497ca950dcbb92253200?sourceSSR=users",
+        "title": "万得一面_牛客网",
+        "content": "9.18 BASE 南京 用的是万得会议  \n  \nfloat类型怎么比较  \n用==比较是相同的吗  \n小数怎么转换为二进制的  \n问了下项目有哪些内容  \nhash存放的是什么结构  \nRedis有哪些数据类型  \nRocketMQ的流程、ack机制  \n最后讨论了十分钟论文  \n  \n总体还是挺简单的，部门是数据流通方面的，跟我的研究方向比较契合。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/9c5d620b592245869e0cff38b9a202f3?sourceSSR=users",
+        "title": "得物app 供应链交易履约产品实习生面经_牛客网",
+        "content": "1\\. 自我介绍+之前的实习内容？  \n2\\. 有没有做过类似供应链的实习？你怎么设计指标？  \n3\\. 有没有用过SQL做过数据分析？  \n4\\. 之前的实习你学到了什么？对你的今后的实习或工作安排有没有用？有没有自我成长？不要说对公司的贡献。  \n  \n大概率挂了\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/72d11bd786f841a491ae7413fa06d75c?sourceSSR=users",
+        "title": "苏小研python开发工程师(一面)_牛客网",
+        "content": "1、自我介绍  \n2、详细说明自己的项目中用到python的部分  \n3、创建等值递增的数组用到的函数，numpy和range  \n4、python的深拷贝和浅拷贝  \n5、实例化是用到的重要的魔法方法 __init__ __new__  \n6、python中的可变数据类型和不可变的数据类型  \n7、了解装饰器嘛，详细介绍一下装饰器  \n8、了解Linux嘛，详细说一下自己常用的的指令  \n9、*args **kwargs  \n10、反问，后续多久会收到通知\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/49fcbf99a79e42df961be40f13ab6c8e?sourceSSR=users",
+        "title": "深信服技服岗 一面凉经_牛客网",
+        "content": "深信服技术服务岗位要求上没写要懂相关的技术，所以我就冲了，面试官说对技术还是有要求的，直接寄。  \n  \n问题：  \n1\\. 自我介绍  \n2\\. 说说介绍一下你做的项目  \n3\\. 在项目中你遇到了什么困难，是怎么解决的  \n4\\. 说说你对这个岗位的理解  \n5\\. 介绍一下你的研究课题  \n6\\. 能接受我们公司的强度吗？  \n7\\. 学过云计算相关的知识吗？  \n  \n前6个回答的都还不错，最后一个不会，直接寄![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763490/62AF11E48344D159DA608796DA7D39E5)，大家投递岗位要慎重啊，别KPI面了![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553875326/1B9318D87F0923FE2784CD692DED06AE)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/cfa65838d326490bb711307f055a5dc7?sourceSSR=users",
+        "title": "微众银行线下面（广州场）_牛客网",
+        "content": "更新：次日中午约当天二面了，当天没收到卡的uu也不用气馁  \n  \n14:30 面的，Java开发  \n[#微众银行#](/enterprise/929/discussion)\n[#微众银行24届秋招启动#](/creation/subject/9cd0cd2a31dd465789198fb0508981a1)\n[#微众银行信息集散地#](/creation/subject/a268d5052a04492e8a601a02b1df8bf7)\n[#微众#](/creation/subject/9c8bf1b2cb91406397d9fdd30336e99e)  \n  \n40min，整体氛围轻松，问题开放  \n1\\. 自我介绍  \n2\\. 实习和读研如何平衡  \n3\\. 用了CAT，了解吗？还有哪些同类  \n4\\. 保研为啥不选计算机  \n5\\. 为啥选银行  \n6\\. 哪里人  \n7\\. 实习转正了吗，考虑去吗  \n8\\. ES vs CK  \n9\\. 限流技术选型要考虑哪些因素  \n10\\. 论文情况？（我简历都没写，这还问）  \n11\\. 研究生成绩咋样  \n12\\. 目前offer情况（我把阿里快手全说了，是不是太老实了。。。）  \n13\\. 依次比较各个offer以及微众的优缺点  \n14\\. 科研生活怎么样  \n15\\. 如何看待加班  \n16\\. 科研遇到的难题  \n17\\. 比赛有吗  \n18\\. 反问  \na. 部门情况：技术好，不亚于互联网，9:30-20:00，一年一两个月的周六要加班  \nb. 福利：带薪假很多，但用不完，不能折现，会过期，有人才房很便宜  \nc. 流动性：有人去大厂、考公、回老家，极少数末位淘汰  \nd. 校招比例：没社招多  \n期待和什么人共事：学习能力、沟通能力\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/f9b204af04d8485ca96b26b8dd0d85b5?sourceSSR=users",
+        "title": "招银深圳线下二面+HR面(已offer)_牛客网",
+        "content": "update: 10.11 offer  \nupdate: 9.20 已收到资料审核，开泡  \n二面半小时场景题，无手撕不问项目实习，每次我一要背八股就被打断问我具体怎么实现代码怎么写，压迫感很强  \nHR面体验感拉满，全程笑着聊天，至少面着很舒服  \n许愿许愿  \nps 岗位是java后端开发，有阿里的java实习但面试官完全不care的感觉，也不知道面得咋样，问题就算答出来面试官也是很严肃一点正面反馈都不会给\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/0c422af962a942dda2f51550b0c27a2c?sourceSSR=users",
+        "title": "滴滴 接入层研发_牛客网",
+        "content": "kpi面了 上来就是一道题 输入数组转红黑树 转有序输出  \n然后接着问一些vector map 的问题  \n项目一点没问  \n面试完秒发邮件没过\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/642ce5c80848483fbd83d76e64f87c32?sourceSSR=users",
+        "title": "创维cpp面经_牛客网",
+        "content": "依旧是烂大街webServer  \n1.线程池线程数怎么确定  \n2.超过100个用户持续访问，服务器会怎么样。持续访问服务器是不能轮询的  \n3.DHCP协议了解吗  \n4.dns协议  \n5.笔试 二叉树迭代遍历了解吗  \n6.项目抽几个问基础  \n7.static c语言有什么用  \n8.c++11新特性  \n9.内存泄漏  \n10.表写Webserver了 看不下去了😂\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/2a3a8fd3a75e40b59c308601fadc4d53?sourceSSR=users",
+        "title": "金证一面_牛客网",
+        "content": "常规八股  \n  \nredis基本数据类型  \n淘汰策略 缓存穿透血崩  \nmysql事务隔离级别  \n可重复读怎么实现  \n索引设计原则，索引分类  \n垃圾回收算法  \n内存划分  \n怎么判断一个对象是否是垃圾  \nmybatis#$  \n讲一讲缓存怎么实现的不了解  \nspring中有哪些注解  \naop以及场景  \njwt怎么用的 讲讲全局过滤器  \n  \n面试官迟到了3分钟  \n面了接近三十分钟  \n直接不给我反问说他还有一场面试要迟到了就跑路了  \n哎感觉像kpi面 也没开摄像头  \n怎么感觉每次遇到的中年男人都是这样\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/b708b25cdcdf4940949b8086ee231e55?sourceSSR=users",
+        "title": "SNK中国java一面_牛客网",
+        "content": "帮助大家补充面经，只设计到技术部分，其他的就不提了。  \n1\\. java基本数据类型以及char和double占几个字节  \n2.volatile关键字的底层原理  \n3.主内存指的是JVM哪块区域，什么情况下线程会去读取主内存中的数据  \n4.hashmap底层原理，hashmap和list增删改查的区别  \n5.哈希冲突怎么解决，只重写hashcode（）方法不重写equals（）会怎样。map中的数组存的是什么  \n6.怎么预防和检测内存泄露  \n7.mysql的读已提交是什么样子的，什么情况下适用这种隔离级别  \n8.快排简述  \n9.链表反转简述\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/26ad5c2f28734e4ebd6b032ad17d409c?sourceSSR=users",
+        "title": "满帮三面_牛客网",
+        "content": "Java开发  \n自我介绍  \n聊项目  \n问为什么开发这个业务，业务具体处理了什么问题  \n你自己聊一下技术随便都行  \n再聊了一下某个业务做什么  \n你自己再聊聊技术随便都行  \n线程池你自己聊聊  \n你的优势是什么  \n反问环节  \n  \n谢谢你的时间  \n大概30分钟吧  \n  \n技术栈单薄面试官会主聊业务，问业务背景，  \n然后自己挑会的技术讲，送到嘴边的offer没了![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553875000/EC354B0EC861D82E051FCCDF41808E4E)  \n回答得不好，g了![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)  \n自己讲乱了![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763673/6409638369766F7FC4FBE09BD8BF58AB)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/c52f0381ee50462fb72d819f9816d5a2?sourceSSR=users",
+        "title": "面试_牛客网",
+        "content": "9.18 [#面经#](/creation/subject/928d551be73f40db82c0ed83286c8783)  \n1reentrantlock实现原理  \n2 讲讲synchronized原理 项目里用到了synchronized和reentrantlock么  \n3 concurrenthashmap和hashmap的区别  \n4 hashmap结构 concurrenthashmap 区别  \n5 怎么排查程序运行慢的问题  \n6 jvm调优过么 用过哪些工具 那数据库呢  \n7 explain  \n8 cas说说，还有其他什么地方用到了cas  \n9 看过哪些框架源码  \n10 说说springmvc  \n11 知道哪些设计模式  \n12 单例模式有哪些写法 都说一说  \n13 责任链模式怎么用的  \n14 rabbitmq怎么用的  \n15 linux命令 docker等  \n16 mvcc怎么实现的  \n17 undo log redo log日志说说 更新语句执行流程  \n菜就一个字\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/83ef16369fbe4b5aa069a4cb9c050c14?sourceSSR=users",
+        "title": "美团基础研发平台一（3）面_牛客网",
+        "content": "之前cpp分到java，干不过java的，二面挂了  \n现在捞到大数据了，也是java，鉴定为kpi  \n  \n先做两道题 一个easy一个hard  \n链表找环 二叉树的最大路径和 都是熟面孔  \n进程线程区别  \nACID  \n为什么B+树而不用红黑树B树  \n索引失效  \nTCP UDP区别  \n三次握手四次挥手  \n聊会儿项目  \n反问部门业务  \n  \n更新：回到人才库\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/2549aa2c537244589e374652990c475f?sourceSSR=users",
+        "title": "荣耀通软面经_牛客网",
+        "content": "介绍项目  \n密码算法和应用场景  \n二叉树遍历  \n手撕lc112  \n反问  \n[#荣耀求职进展汇总#](/creation/subject/baa9a377966f4086b96bfcc140a4cf10)  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/7fdb52fb8de74d51961bc122095b8644?sourceSSR=users",
+        "title": "秋招惨淡面试记录_牛客网",
+        "content": "好久没有更新了，记录一下自己的惨淡秋招面经，至今没有进二面面的，如果不是蚂蚁成功转正了，现在真的会崩溃掉😭😭😭  \n  \n快手 一面挂  \n介绍一下分布式锁  \nsychronized锁住的对象和锁住的类会冲突吗  \nredis底层的数据结构是什么？  \nredis有什么常用的命令行  \nredis定期删除策略每次会选择那些判断是否过期  \nredis的内存空间满了如何处理  \n算法: int[] 重排，奇数前偶数后，不变顺序  \n2个List求交集  \nsql，总成绩排名  \n  \n京东零售 一面挂  \n数据库分库分表如何设计  \n描述一下G1垃圾回收的基本原理和优势  \nredis为什么要选择单线程  \nFlink聚合维度通常会使用哪些算子？  \n  \n淘天淘宝 一面挂  \nJVM 如何处理大对象  \nList 内的 hascode 和 equals 什么时候需要重写  \nThreadLocal 在事务中如何使用  \n如何创建一个 OOM 异常  \nSpring 的具体工作流程是什么  \nredis如何实现分布式锁  \n如何做索引优化  \n  \n腾讯光子工作室 一面挂  \n常见的 IO 机制，介绍一下阻塞 IO 和非阻塞 IO  \n介绍一下 TCP 协议的 time_wait  \nlinux 操作系统对于 CPU, 内存, 大文件, 端口常用的命令行有哪些  \n输出日志时需要注意什么  \n介绍一下 select, poll, epoll  \n算法: ACM下的LRU  \n数组中第 n 大的元素\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/ac77351049ef4f8e8605f6915ffbeab7?sourceSSR=users",
+        "title": "中兴面经_牛客网",
+        "content": "9.7 笔试  \n9.17 一面 （20min）  \n  \n分配到Java部门现场叫了一位c++过来：  \n1.MySQL调优  \n2.C语言修饰符及应用场景（const static va……）  \n3.vector list map set unordermap  \n4.static三种场景 const函数 迭代器失效  \n5.程序崩溃调试工具  \n6.智能指针都说说 快排和反转链表（思路）  \n7.聊项目  \n8.愿不愿意转Java  \n9.意愿城市（西安 南京 武汉 深圳好像都可以选）  \n10.反问  \n  \n9.19 二综面 （27min）  \n实验室做什么  \n遇到过最困难的事情  \n怎么去协调工作项目  \n学生干部经历  \n获奖详情 有没有国奖  \n了解中兴吗 简单说说  \n有没有准备今天的面试  \n转行软开准备了一些什么  \n有没有兄弟姐妹 意向城市 意向薪资  \n反问\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/41e210def40d4d3aac484a4d77ca16e0?sourceSSR=users",
+        "title": "得物二面_牛客网",
+        "content": "聊项目  \nRedis热点数据导致什么后果  \nredis数据类型如何实现的  \nredis删除策略 定时定期如何实现的  \nmysql sort有什么类型  \nwhere a order by b什么情况下走a什么情况下走b  \nMySQL存储格式b+树  \n  \n过了两天了忘了具体细节了和其他问题了 感觉答的不是很好…\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/83239c7302fb493e9d6a8f9c3451efad?sourceSSR=users",
+        "title": "已挂。益网络技术面 面经_牛客网",
+        "content": "多益网络技术面  \n自我介绍  \n哪个项目印象深刻，有难度的点是什么  \n代码题，旋转数组  \n最近看的技术书籍，挑一个讲讲  \n未来五年职业规划  \n全局变量使用时具有的潜在问题  \nhttp状态码  \n虚拟地址切换时耗时的原因  \nredis如何解决并发竞争问题  \n  \n感觉整体表现还可以，最后一个问题没回答出来，代码题去面试官发的平台写，思路很简单，但是运行时报错，面试官和我都没找出来问题，聊了下思路就过去了。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/5fe7b8abff614014a59cc4f1d34be65d?sourceSSR=users",
+        "title": "阿里云智集团9.17笔试_牛客网",
+        "content": "一道题不会，回家种田吧。  \n1\\. 只包含a和b的字符串，ab可以直接删除，ba可以交换，交换次数为k，求删除后最小字符串长度。  \n2\\. 1-n中有多少个数字，仅包含小于等于2的罗马数字，如101，110，而123不是，因为包含了3个罗马数字。  \n3\\. 树的最大价值，思路是有的，但是提交只有15%  \n寄，我太菜了。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/a7e362100fae46b293e37ede23c126bb?sourceSSR=users",
+        "title": "讯飞前端实习面经_牛客网",
+        "content": "问的八股文，比较细，也问了一些新技术，没咋记住\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/ece3160f607a469aafe3b2370d7f326e?sourceSSR=users",
+        "title": "9.17创维凉经_牛客网",
+        "content": "自我介绍  \n线程进程的区别  \n计算机上除了ip还有什么参数(mac 子网掩码 网关)  \n局域网中，如果不设置网关会怎样(好像是这样😭)  \n打开一个网页要用到什么协议，有什么作用  \n你的webserver有什么安全性问题  \nwebserver部署到云端需要注意什么问题  \nwebserver接下来有什么改进或者添加的吗(添个下载）  \n那下载功能怎么实现  \n感觉我啥也不会就不问了，整个面试估计就20分钟\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/669db93724524deaa33c702c5e364386?sourceSSR=users",
+        "title": "滴滴前端日常实习一、二面（已淘汰）_牛客网",
+        "content": "一面：  \n1.实现垂直居中和水平居中  \n2.flex布局  \n3.js有哪些数据类型  \n4.引用数据类型和基本数据类型有什么区别  \n5.如果去拷贝一个基本数据类型和拷贝一个引用数据类型，有什么区别？  \n6.如果我这把一个对象a的值赋给对象b的值，然后去改变 b里面的一个属性，那么a的属性会发生变化吗？  \n7.怎么去判断数组类型？  \n8.instance of 和 type of区别  \n9.Vue生命周期，生命周期函数，请求数据与操作数据的时机  \n10.Vue2和Vue3的区别  \n11.跨域的含义及解决方案  \n12.父子通信，vuex  \n13.项目技术选型、一些细节、实现目的、是否上线  \n14.为什么选择前端、学习前端多久了，能实习多久？  \n15.手写题：手写深拷贝通过样例、实现Vue双向绑定小案例（点击按钮输入框中的数字也发生变化）  \n二面：  \n深挖简历和项目  \n手写前序遍历  \n[#我的实习求职记录#](/creation/subject/5e8d2f3639204d0d87734df48cb3fb49)\n[#找实习多的是你不知道的事#](/creation/subject/3764493f4c804400a881199c5415da2b)\n[#实习，投递多份简历没人回复怎么办#](/creation/subject/939aa8a0a4704a3a92bf682709cb9bbc)\n[#简历被挂麻了，求建议#](/creation/subject/3c79972262a542f3a28fe5280fdae18f)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/9f4c192aa7e3439db67b31591b9d54e6?sourceSSR=users",
+        "title": "长安汽车视觉深度学习算法开发线下综合面_牛客网",
+        "content": "1.自我介绍  \n2.说一下的你的缺点  \n3.加入长安你给长安带来什么？  \n4.你对加班怎么看  \n5.反问  \n多半无了，下午三点群面三个人一起，一起的都答的很好，二面技术应该没有了\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/16b275483bc54ad48bfa1fc00036842b?sourceSSR=users",
+        "title": "美团23届java面经，本科幸运上岸_牛客网",
+        "content": "我参加了今年23届的春招，顺利拿到了java后端开发的offer，今年美团春招结束的比较晚，在各个大厂春招不怎么开的情况下，五六月都还在招人。我本人大学的时候是做c++和python的，搞了很久cv，比赛经历有一些，但是acm奖就比较少，面试官在面试的时候比较少问我一些java的语言知识。  \n  \n【一面】技术面  \n  \n面试官人很好，跟我介绍了面试流程。  \n  \n首先问了一些基础知识，基础知识问的很深入，感觉美团对基础还是很看重的。主要涉及到计网、操作系统、多线程、Mysql。redis没有涉及，可能是时间不太够了。  \n  \n其次问了一个计网场景题：为什么火车上网速那么慢。这个问题我回答的不好，感觉面试官对回答不是很满意，一直追问引导我深入思考，可惜最后还是没有让面试官很满意。  \n  \n接着做了一道中等难度的题，一面就结束了  \n  \n【二面】技术面  \n  \n二面的面试官是我入职后的leader，主要跟我聊了大学期间的项目和比赛，让我介绍了一下论文，讲了讲对目前比较火的大模型有什么了解，应该是在考察对新技术的兴趣。  \n  \n接着做了一道dp的题，可惜没想出来动态转移方程，最后用暴力解法做出来了，过了几个节点就超时了。  \n  \n【三面】hr面  \n  \nhr面基本上就没什么特殊的了，主要是问一些个人情况，工作地点意向，以前收到过哪些offer，秋招有不错的offer了为什么春招还在找。其实就是评估对美团的意向，面试结束了能来的可能性。hr说会与前两轮的面试官一起审核一下，一两周内给出结果。  \n  \n24届的学弟学妹们秋招加油，我进来才发现组里有不少非科班的本科，美团没那么看重学历，能力够就行\n[#美团#](/enterprise/179/discussion)\n[#美团2024届秋招#](/creation/subject/e2cbc013fed04fd19b9805a4c6e75a2c)\n[#校招#](/creation/subject/d09b966a380b45ddaba9dc5a6bd5ee19)\n[#秋招#](/creation/subject/002d6ce4eab1487f9cae3241b5322732)\n[#24届软开秋招面试经验大赏#](/creation/subject/8fdf95370bdd436e9f5ee7189060e3d5)\n[#你的秋招进行到哪一步了#](/creation/subject/228cbaa375a14fcaa29bb5b357a9f75f)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/824e14b8954944858ed0806ae25425c7?sourceSSR=users",
+        "title": "联影 产品经理二面_牛客网",
+        "content": "专业面，提前一个星期通知要准备ppt 内容要包括包括自我介绍，项目经历，个人未来发展，面试提问  \n4面1，其中一个是联影研发部副总裁  \n讲完ppt后问了每个面试官我问了我两三个问题  \n发了几篇文章？  \n课题是自己做的还是跟别人合作的？具体心得体会？  \n你所做的课题，你的这个发现市场有多大？  \n明年有没有毕不了业的风险？  \n然后面试官回答了我问题说公司是mentor制，导师一对一带新人，然后他们目前跟GPS的差距在于医院里的医生不愿意换仪器，而不是他们技术落后，最后点评我的汇报还是在书本上的那一套，缺乏对市场的洞察，没有实打实的数据，如果把自己的科研课题用汇报一个项目的形式展现出来就会有趣很多  \n挂在了二面，但是我是生物学的，面试的体验就是那个副总裁蛮冷漠的，说话的语气让人不是很舒服，就我开了摄像头，他们4个都没开，哈哈哈哈当然这些都是次要的，我总结一下，我这次主要是没有紧扣产品经理这一主题，思维没有转换过来，搞成科研进展汇报了，后面的同学们面试的同学可以避坑，重点要突出团队合作能力，与人沟通的能力，以及把自己目前所做的课题搞成小小的项目去展示。  \n  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/dd2404f8ebd54701b601cc2b2fa350dd?sourceSSR=users",
+        "title": "用友一面凉经_牛客网",
+        "content": "35分钟（不分先后）  \n1.自我介绍  \n2.围绕项目，说说微服务常用组件！  \n3.sentinel熔断降级思想？自己有没有私下试过？  \n4.项目的难点是哪些？（讲了mq解耦业务以及活动扣减库存锁的优化）  \n5.为什么从数据库行级锁直接优化到redis滑块锁的？数据库行级锁会出现什么问题？  \n6.如何保证消息的可靠性？你项目中是怎么做的？  \n7.Java内存模型？虚拟机栈和本地方法栈区别？  \n8.虚拟机栈里的方法入参是基本数据类型和对象类型的时候有什么区别？  \n9.了解常见的jvm调优指令吗？  \n10.mysql索引相关，讲讲底层数据结构？B树和B+树的区别，为什么选择B+树？  \n11.索引分类？什么是全文索引？  \n12.数据库调优相关了解吗？涉及哪些命令？explain命令怎么看？  \n13.反问：哪些地方表现不好，需要后期学习？公司业务？  \n总结：  \n1.学习知识要有针对性，要深入研究，包括其中的原理以及机制，最好啃具体的书籍  \n2.也要有广度，校招生常用的技术栈一定要搞清楚，搞明白！\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/696fa8ebdfea4bf295ffebd00c4428f2?sourceSSR=users",
+        "title": "度小满二面凉经_牛客网",
+        "content": "9.16 40min  \n  \n自我介绍  \nk8s部署istio后有什么区别  \ndevops项目  \ndocker特性  \n与虚拟机区别  \ndocker核心部分  \ndocker容器如何隔离  \n不同主机网络中的容器网络通信  \n搭建es集群要注意什么  \nkafka如何实现削峰  \n  \n手撕:  \n删除有序链表重复项  \n  \n一半一些回答应该都不是面试官想要的  \n大概率凉凉![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/1f4d8d515d704ca79481fb83c76e8488?sourceSSR=users",
+        "title": "联影 产品经理一面_牛客网",
+        "content": "突然打电话过来问可以不可以面试，没有提前通知  \n自我介绍  \n课题介绍  \n经历过什么困难，如何解决的？  \n了解医疗行业的动态么，映像最深的是什么？了解DRG/DIP医保计价方式么？  \n为什么要转专业  \n怎么理解产品经理这一职位  \n这是我求职第一次面试，也是没有准备的一场面试，全说了大实话，可能比较对HR胃口\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/fd957afb05c846afa32100b5acb2c7ab?sourceSSR=users",
+        "title": "汇川 二面 HR面_牛客网",
+        "content": "·自我介绍  \n·实习项目  \n·压力最大的一件事情  \n·英语交流能力怎么样  \n·期望薪资  \n·优点和缺点  \n·走管理岗还是技术岗  \n  \n反问  \n·岗位方向\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/4ce305d421094ad99b3a2d3958854d2e?sourceSSR=users",
+        "title": "汇川 一面 30min_牛客网",
+        "content": "·自我介绍  \n·项目  \n·技术定位  \n·数据库  \n·QT  \n·华为实习  \n·RAII  \n·智能指针的优点  \n·智能指针和裸指针的区别  \n·gTest  \n·代码规范的作用  \n·IO多路复用  \n·同一个连接非常活跃，IO多路复用怎么处理  \n·TCP拥塞控制  \n·设计模式：单例模式，实例化对象什么时候析构？  \n·git:删除分支 rm  \n·软挑赛项目  \n·团队过程中，有个人不想干这个活了，怎么处理这个工作。  \n反问：  \n·岗位介绍  \n·岗位选择\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/6086ce89b97a4074a28220bc69feab58?sourceSSR=users",
+        "title": "深信服笔试_牛客网",
+        "content": "第1题，数种类，输出组合；  \n第2题，收金币，dfs；  \n第3题，最长连续递减子数组；  \n第4题，字符串，滑动窗口。  \n  \n一次遇到填空的考试，而且填空还比编程难。另外，输入不是很友好，处理有点恶心。  \n补：Java岗  \n[#深信服笔试#](/creation/subject/b8eca21ac7fb408a9440be14550b9908)\n[#深信服#](/enterprise/711/discussion)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/0a6a5fe2206344abb308dc16802b4f39?sourceSSR=users",
+        "title": "思必驰 C++ 一面_牛客网",
+        "content": "面试时长：30min  \n  \n面试内容：  \n* 自我介绍  \n* 硕士研究方向介绍  \n* transformer讲一下  \n* lstm和transformer区别  \n* 无监督算法了解吗  \n* Ascend处理器架构怎么样的  \n* GPU架构怎么样的  \n* cuda性能分析怎么做  \n* grid和block怎么设置  \n* NPU了解吗  \n  \n反问：  \n两到三面  \n做啥的忘了……\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/9ddbc75a8bb449f6a0f912c27fe78d42?sourceSSR=users",
+        "title": "淘天中小企业发展体验设计面试_牛客网",
+        "content": "一面  \n1\\. 自我介绍  \n2\\. 介绍项目内容  \n3\\. 平时喜好  \n整个速度极快，大概15分钟吧速通。然后玩了一会儿就收到约二面通知了  \n————————————  \n二面  \n1\\. 自我介绍，会问实习经验跨度比较大是为什么，对什么感兴趣之类的问题  \n2\\. 项目介绍，反而想听一些游戏方向的内容，问得很细很细，会着重问关于方案有什么新的想法吗，要立刻回答出来  \n  \n整体面试2小时，但是后面面试官总结很好就也给了很多关于设计上的建议，虽然讲的口干舌燥但是很充实\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/8cbd73a6b10048aab4653d20c7fc086e?sourceSSR=users",
+        "title": "美团一面凉经_牛客网",
+        "content": "50多分钟![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763673/6409638369766F7FC4FBE09BD8BF58AB)（不分先后）  \n1.自我介绍  \n2.硕士是什么方向？实验室做的什么项目？围绕项目具体展开！疯狂问上线运行部署配置等问题（实验室项目是c#+vue2，不是java，而且也没有写在简历上，有点懵![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)，我找理由往java扯，跟我说不管什么语言都是一个套路）  \n3.浏览器输入一个链接，点击会发生什么事？  \n4.端口映射解决的是什么问题？  \n5.子网掩码的作用？  \n6.java默认垃圾回收器是哪个？G1的垃圾回收过程？  \n7.volatile关键字是干嘛的？  \n8.一个对象如何知道什么时候该被回收？(可达性分析法)  \n9.stringbuilder和stringbuffer区别？stringbuffer同步的原理？其中锁的粒度？  \n10.说说泛型？是干嘛的？  \n11.了解双亲委派机制吗？  \n12.线程的创建方式？Callable和Runnable接口区别？如何获取Callable的返回值？get获取返回值是阻塞的吗？  \n13.线程还有哪些被阻塞情况？（同步阻塞）synchronized和reentranlock区别？  \n14.介绍你最熟悉的项目！讲讲项目中遇到的难点？（讲了消息队列解耦，但是自己说着说着就偏离了，往整个项目去介绍了![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763890/5072FC474BC4CF9234FABC22E54A999A)）  \n15.场景题：如果我拿恶意脚本多次点击按钮会出现问题码？（应该是幂等性相关，这块之前看过，都想不起来了![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763490/62AF11E48344D159DA608796DA7D39E5)）  \n16.手撕二分查找，递增序列，存在返回索引，不存在返回-1（前面答得像坨屎，手撕自己慌了，最简单的还犹豫好长时间）  \n16.反问：这次面试，我哪些地方答得不好，需要在哪些地方做出改进？咱们部门的技术栈，需要学习哪些技术？  \n  \n总结：  \n1.八股文一问三不知，完全不熟，看了就觉得自己会，还要定时回顾，将各个知识串联起来！  \n2.项目一定要深入思考，在哪些地方可能会出现问题，可以参考相关项目的面经  \n3.一定要定期及时总结，当下要完成的事情要尽快完成，千万不要拖，专注当前最重要的事情！\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/5af18dc1519c48f1b5093fb1078e77cb?sourceSSR=users",
+        "title": "腾讯笔试9.15_牛客网",
+        "content": "1.取出所有节点值，排序，重建链表。  \n2.每次操作最小值，优先队列。  \n3.建图，每相邻两个点跑一次dfs。  \n4.排序后统计。  \n5.按右端点排序然后dp。可以离散化处理，也可以双指针。  \n用时不到1h，总体难度不高，不超过力扣中等的困难题难度。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/9940442929844118b3a10e1201391c8e?sourceSSR=users",
+        "title": "用友一面 java kpi_牛客网",
+        "content": "面试官拿着个手机在面试我，非常随便，整个过程没有任何反馈和追问，经常发呆和冷场，问的问题都极其敷衍。到最后还要恶心我一句，技术是一方面，与人的沟通能力也很重要，当时我心里就是\nwtf，能不能 414 啊？  \n  \n\\- 为什么转行？  \n\\- 平时怎么学习 java  \n\\- 私信表怎么建的？  \n\\- mysql 有那些引擎？分别详细说说  \n\\- 事务四大特性  \n\\- 事务的隔离级别  \n\\- 讲讲 MVCC  \n\\- java 的 并发怎么控制的？  \n\\- JVM 内存划分？  \n\\- synchronized 和 volatile 有什么差别  \n\\- 算法：以 n-1 次交换排序数组  \n\\- 反问：  \n\\- 业务  \n\\- 对应届生期待\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/a5aba5732f9b44679f4bca7481b397ca?sourceSSR=users",
+        "title": "腾讯 企业微信部门 一面 9.15_牛客网",
+        "content": "时长1h30m  \n秋招第二次面试，面试官人很好，非常和善。没要求我开视频，他也没开视频![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553875294/B99B0A872F1A2370A5C5BD2E48AA6A54)  \n话说是不是kpi面啊\n是的话为啥面这么久啊...![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553764153/6078915537BAB7E95CE12422FD944756)  \n  \n1.自我介绍  \n2.项目选一个拷打  \n3.算法题：  \n1.求二叉树的宽度  \n2.给定一个数组，求数组任意数之和能被三整除的最大是多少（没考虑负数提示了之后才写的![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)）  \n3.开放性试题：怎么把一个长字符串映射成一个短字符串，同时实现把短字符串映射回来（其实没太理解题意\n面试官说可以直接考虑map![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763956/B6DB4A0E1EB2E2F93BD4559921241034)）  \n4.mysql索引  \n5.redis做缓存怎么和mysql的数据同步  \n6.redis分布式锁如何实现  \n7.mysql，redis多机部署  \n8.缓存雪崩，如何解决  \n9.缓存穿透，如何解决  \n10.键入网址 发生了什么  \n11.linux常用命令  \n12.如何查询文件中出现的关键字  \n13.开放式题目：两个巨大文件如何求两个文件的交集（说了下分块哈希没答全）  \n14.反问 评价 工程上的开放性的问题需要多多了解  \n  \n感觉是寄了 双非鼠鼠能有大厂面试机会很开心  \n===================================================================  \n更新 ： 已经寄了\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/ac58acf0aced49098e4337f77dfb1b60?sourceSSR=users",
+        "title": "滴滴笔试_牛客网",
+        "content": "第一题，二分路灯最小间隔  \n第二题，dijkstra ，不过要用堆优化的，否则无法通过全部测例。建图的原则很简单，从第i 点到相邻的第j 点的权值是第j 点对应的格子的数字\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/522c631c99c54ba19872f33b4ff223ea?sourceSSR=users",
+        "title": "腾讯 CDG-广告后台 一面_牛客网",
+        "content": "1\\. 做题：归并排序  \n  \n2\\. 简答：MySQL 事务隔离级别，默认的可重复度隔离级别，那其他的有还有用吗，有哪些应用场景  \n  \n> 未提交读也是有应用场景，那些需要快速读取最新数据的业务，数据读取之后交给业务自己处理是否丢弃  \n  \n3\\. 悲观锁和乐观锁的使用场景  \n  \n4\\. MySQL 一张表最多能插入多少行数据  \n  \n> 数据表以页的形式存储，页的空间是 16K，页不是连续的，并不是所有的空间都是用来存放数据的，会有一些固定的信息，如，页头，页尾，页码，校验码等等。  \n> 一般最多是 2000w 条数据（推荐值），因为如果随着数据的增多，B+ 树层高增加，查询效率会受到影响  \n  \n5\\. 10亿条句子（每个句子不超过 1M），给定10个关键词，打印包含1个及以上关键词的所有句子  \n  \n> 我说的是先分文件，然后再读取每个文件（开始一提到 10 亿条数据就想到海量数据处理）  \n  \n> 面试官说倒排就行... 有点迷惑，不需要分文件吗？  \n  \n>\n> 后来想了想，好像不太需要分文件，可以一条一条的读取，然后按照关键字倒排实现![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)  \n  \nchatgpt：  \n  \n\\- 建立倒排索引：遍历所有句子，并为每个关键字维护一个包含该关键字的句子列表。  \n  \n\\- 查询：当需要查找包含特定关键字的句子时，只需查询倒排索引，而不必遍历整个数据集。  \n  \n> 有点迷，完全没怎么问八股，问项目，就简单聊天... 甚至还问题毕设题目是啥...\n> 面完即挂![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553875000/EC354B0EC861D82E051FCCDF41808E4E)  \n  \n[#24届软开秋招面试经验大赏#](/creation/subject/8fdf95370bdd436e9f5ee7189060e3d5)[#腾讯#](/enterprise/138/discussion)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/ec8e299094f7400bab2a3259abf15c4b?sourceSSR=users",
+        "title": "美团到店平台技术Java一面_牛客网",
+        "content": "复活赛，已经麻木没感觉了。  \n  \n1\\. 先问了项目里面哪里使用了Redis  \n2\\. 其中一个功能的逻辑  \n3\\. 你觉得你的项目里面哪里会出现缓存雪崩，有什么解决方式  \n4\\. 缓存击穿了解吗  \n5\\. 幻读是什么，怎么解决——MVCC多版本并发控制  \n6\\. 啥是快照读，啥是当前读，在更新之前需要查询是当前读还是快照读  \n7\\. 手撕单例模式的两种形式  \n8\\. 在手撕的过程中，非static变量在static方法中使用后报错知道什么原因吗  \n9\\. 为什么懒汉式单例要用volatile 修饰，修饰之后为什么又要用synchronized再判断一遍  \n10\\. 手撕一道hard题，修改字符串最短距离问题（出hard 是不是不想要我），对我的代码中的一段逻辑提出了疑问。  \n  \n好歹让兄弟见识见识二面长什么样吧，哭泣  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/4b99fc4222ea4d55b05e8cbc77babc8f?sourceSSR=users",
+        "title": "天合光能-前端一面_牛客网",
+        "content": "1.闭包解释？  \n2.二叉树有哪些？区别？  \n3.如何把大文件分块传向后端服务器？  \n4.如让用户的页面响应更快？有那些方式  \n5.前端工程化怎么理解？  \n6.对用户输入不规则的文件命名，如何修改，并且把修改后和用户命名的名字携带到后端？  \n  \n聊了25min，好久没看前端了，回答的磕磕巴巴，已挂![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/8ff91373ed0c4e419c7cddbb375d0a80?sourceSSR=users",
+        "title": "超星Java开发一面凉经_牛客网",
+        "content": "不要不能实习的就直说...纯纯浪费时间  \n  \n9.15一面  \n1 java：用三种修饰符修饰list，list中的值还能修改或删除吗  \n2 cookie和session的区别  \n3 服务是多次部署的，如何共享session  \n4 什么情况下会产生死锁，如何避免？  \n5 订单过期了怎么办  \n6 springboot 如何实现服务注册和发现  \n7 秒杀 服务熔断和降级  \n8 了解mongodb和Elasticsearch框架吗  \n  \n一面前不说，一面中不问，都约二面了来问能不能提前实习，冷冰冰的话语就像今天下的暴雨。![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553877149/A06BE39BE3905BBC75BFCB5B4FA29649)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/bb5e69e1c38a4090a7a13be836c26a14?sourceSSR=users",
+        "title": "长安一面_牛客网",
+        "content": "今天晚上刚刚面完的，新鲜的刚出炉  \n1.自我介绍  \n2.龟兔赛跑时，兔子不睡觉，乌龟怎么样才能赢😅😅😅  \n3.在工作中，你和老板起了强烈的冲突了，你怎么办，请举出与你相关的亲身实例  \n4.如果让你来设计，你会给汽车增加什么内容  \n5.近半年内，你有过给别人培训或者指导的经历和活动嘛？  \n6.近一年内，你对自我提升付出过多少时间和金钱？你为什么要这么做（就是说为啥不躺平享受呢？）  \n7.反问环节（我问了啥时候出结果，她说差不多一周以内吧）  \n真的好难啊，第一次接触这种面试问题😭😭😭，面试官长的也挺凶的  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/2de83e7351b54483b2023870b5173311?sourceSSR=users",
+        "title": "funplus9.15笔试_牛客网",
+        "content": "cv岗笔试，双机位，单项选择题25道50分，编程题两道50分。  \n选择题主要有四类①逻辑思维+数学题②代码阅读题③深度学习概念题④数据结构与算法  \n编程题过于简单，因为对于其他语言的时间限制居然是十秒![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763490/62AF11E48344D159DA608796DA7D39E5)，第一道去除输入中的重复数字，第二道从字符串中计算满足要求的字符串数量，两道我试了暴力都可以出答案，然后花了一点时间又优化了一下。  \n总的来说偏向于比较简单，等待期后续流程。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/7a9bf98ca57746dd87920e42330383b1?sourceSSR=users",
+        "title": "华橙网络嵌入式应用方向一面凉经_牛客网",
+        "content": "总共半小时差不多  \n1、select跟epoll区别  \n2、TCP跟UDP区别  \n3、TCP为什么可靠  \n4、熟悉的数据结构是什么：树结构  \n5、红黑树讲解  \n6、strcpy跟strncpy的区别  \n7、strcpy会复制字符串的'\\0'吗  \n8、项目问题  \n9、bind函数讲解  \n10、socket函数有用过吗，讲解一下  \n11、gdb用过吗怎么打断点和查看线程栈  \n12、ps和top指令是干嘛的  \n13、二分查找和红黑树插入的时间复杂度  \n14、哈希表插入的时间复杂度  \n15、两个线程对i++操作需要加互斥锁吗，详细讲解一下  \n16、pro啥文件下有哪些文件\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/046bee701d60466081af59ba49488323?sourceSSR=users",
+        "title": "新国都笔试_牛客网",
+        "content": "两道题比较简单  \n代码十分钟输入输出调二十分钟![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553875209/BB341316D10390A7CC461F33E27B652F)  \n给个solution类，注释也在提示说是核心代码模式，提交了发现是acm模式。还是得自己加个Main类上去  \n这就算了，输入数组是“[1，1，1]”的形式，main里面split代码比solution都长![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553875209/BB341316D10390A7CC461F33E27B652F)输出也得是带括号带逗号的形式。  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/6aacc38a02014a508a877665536d47c6?sourceSSR=users",
+        "title": "外企面试问答 If you experienced conflict with_牛客网",
+        "content": "外企面试问答  \n  \nIf you experienced conflict with a co-worker, what would you do?  \n如果你和同事发生冲突，你会怎么做？  \n  \nI would certainly try and sort it out as soon as possible because any conflict\nhas the potential to drag on and hinder the team from moving forward. It can\nalso cause other people in the team to be uncomfortable around the people\nexperiencing the conflict.  \n  \nI would speak to the person in private to see if we could find a way to reach\na comprise，and I would assess my own actions and words to see if I were\ncontributing to the conflict. Hopefully, we could find a way forward, but if\nthat wasn't possible, I would suggest we speak to our manager or supervisor to\nsee what could be done to facilitate a successful resolution.  \n  \n我当然会尝试尽快解决这个问题，因为任何冲突都有可能拖下去，阻碍团队前进。它还可能导致团队中的其他人在经历冲突的人身边感到不自在。  \n  \n我会与对方私下交谈，看看我们是否能找到达成协议的方法，我会评估自己的言行，看看我是否促成了冲突。希望我们能达成一致，但如果这不可能，我会建议与我们的经理或主管交谈，看看能做些什么来促进成功的解决。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/cb55c10ba12341b0af426e021a788c95?sourceSSR=users",
+        "title": "大疆控制算法工程师 10个选择，4个填空，2个问答 考的内容比较广泛，设计经典控_牛客网",
+        "content": "大疆控制算法工程师  \n10个选择，4个填空，2个问答  \n考的内容比较广泛，设计经典控制，现代控制，还有一定信号与分析  \n计算题占一半，连续信号采样，系统稳定性分析，控制框图，系统建模，控制系统设计等  \n问答题有一个磁盘读取控制系统设计与分析，备考的可以去看一下相关资料  \n总的来说还是有一定难度，祝大家成功![](https://uploadfiles.nowcoder.com/images/20191018/63_1571399099182_C00B57557743E709B8B96933432E0DFA)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/1adb2348a1e1455aae8ff936e24bf1e7?sourceSSR=users",
+        "title": "#南京银行提前批# 20220808南京银行总行金融科技提前批面经——相当于简_牛客网",
+        "content": "[#南京银行提前批#](/creation/subject/dae44c6dabcd431a8ade27d397b9be7d)  \n20220808南京银行总行金融科技提前批面经——相当于简单的技术交流，后续流程会再通知  \n  \n1.介绍自己做的项目(自己还需要多多丰富项目背景和意义)。我都是python写的项目，所以问我有没有了解Java这种...问的比较简单  \n2.MySQL优化方法  \n3.笔试内容：http404,500是什么错误\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/e170aa53f8c4485ea9db56b35e375fc6?sourceSSR=users",
+        "title": "外企面试问答（职场新人） What are your short-term a_牛客网",
+        "content": "外企面试问答（职场新人）  \n  \nWhat are your short-term and long-term goals?  \n你的短期和长期目标是什么？  \n  \nMy short-term goals are to get hired in this position and to learn the role as\nquickly as possible，so I can continually achieve great things with my co-\nworkers. I believe the way to self-improvement and development is through\ncollaborative working, so I aim to become a competent team worker as soon as\npossible. My long-term goals are to work for your company in a more senior\nposition and become a qualified personnel in a specific field.  \n  \n我的短期目标是被录用担任这个职位，并尽快进入角色，这样我就与同事一起不断取得更大的成绩。我相信自我提升和发展的途径是通过合作，所以旨在尽快成为一名称职的团队合作者。我的长期目标是更高级的职位上为贵公司效力，并成为特定行业的专业人才。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/4a70e22da9ee44f8babe7a800ed060da?sourceSSR=users",
+        "title": "普华永道信息技术 面经 助理软件工程师 一开始先等序号，有好多人，每个人面15分_牛客网",
+        "content": "普华永道信息技术 面经 助理软件工程师  \n一开始先等序号，有好多人，每个人面15分钟，我抽到的是第二个，所有人面完估计要到晚上饭点了吧  \nWebex 视频面试，好多面试官，有9个左右，他们没开摄像头，我开了，他们一个个问，不是每个人都问问题了。  \nJava 抽象类和接口的区别  \nspringBoot的框架 数据库操作你用的什么  \n我说我用JPA  \n数据库操作要怎么写  \n我说findBy什么的  \n自定义语句写sql  \n我说用的nativeQuery  \n虚拟机的内存回收有了解吗  \n  \n一共就一面，过了3、4天就有电话问我接不接offer了\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/04051526947449f89e1619892505a250?sourceSSR=users",
+        "title": "海康智先锋ai面经_牛客网",
+        "content": "[#面经#](/creation/subject/928d551be73f40db82c0ed83286c8783)  \n1.你遇到的一次时间紧任务重的情况是什么样的，怎么安排怎么解决的  \n2.分享你用到的一次奇思妙想来解决问题的情况，为什么会做出这样的方式？  \n3.你遇到的一次进退两难的处境是在什么时候，怎么决策的？ 参考了哪些信息\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/822c08e873a545fe8d0a40f869365952?sourceSSR=users",
+        "title": "#科大讯飞笔试# 8/6 AI研发java卷 第一题：十进制时间段转为八进制，看_牛客网",
+        "content": "[#科大讯飞笔试#](/creation/subject/cf0834b50edc462db79e121a8bdb6600) 8/6 AI研发java卷  \n第一题：十进制时间段转为八进制，看字符串中含有目标字符的个数（只能过66，没分析出啥问题）  \n第二题：实现一个bitmap，就是求两个集合交集（最简单一题）  \n第三题：求电台覆盖所有省市花费最少（用的dfs，超时了）  \n太菜了，继续努力\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/1e547b39cb5b41cda35691fdf254427c?sourceSSR=users",
+        "title": "蔚来数字系统车联网侧开二面8.3 本来以为会凉，没想到进了二面 面试40min_牛客网",
+        "content": "蔚来数字系统车联网侧开二面8.3  \n本来以为会凉，没想到进了二面  \n面试40min  \n自我介绍完问了C++八股文  \n问我会不会pyhton，  \n然后闲聊  \n中间穿插着问项目， 问对蔚来和新能源汽车的认识，等情况  \n问对测试的认识  \n没有手撕代码  \n希望能有好消息吧\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/6e8830090967468a86969d9243c79147?sourceSSR=users",
+        "title": "#秋招##java##蔚来# Java-蔚来-8-6-一面 1. 说一下_牛客网",
+        "content": "  \n[#秋招#](/creation/subject/002d6ce4eab1487f9cae3241b5322732)[#java#](/creation/subject/1bbeacfa36f542f5a7a733297c2cf460)[#蔚来#](/creation/subject/e938a07ddcb5471aa50dda2970b6808e)  \nJava-蔚来-8-6-一面  \n  \n1\\. 说一下实习项目？  \n2\\. 手写lru？  \n3\\. 手写单例模式？  \n4\\. 说一下Java中的异常？  \n5\\. 说一下有哪些具体的受检查异常和非受检查异常？  \n6\\. 说一下error异常具体有哪些？  \n7\\. OOM怎么预防？OOM发生后怎么恢复？OOM发送后怎么排查？  \n8\\. 说一下线程池执行原理？  \n9\\. 说一下线程池七大参数？  \n10\\. 说一下你对happens-before 的了解？\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/4e6eed3bd7f745c5a8ae3921ee9c74e7?sourceSSR=users",
+        "title": "求期望_牛客网",
+        "content": "[#校招#](/creation/subject/d09b966a380b45ddaba9dc5a6bd5ee19)\n[#面经#](/creation/subject/928d551be73f40db82c0ed83286c8783)\n[#面试常考概率题#](/creation/subject/da21f01f2ac1448b8197154c3dd442ce)\n有这样一个游戏，一开始给玩家玩3次的机会，在每次游戏中玩家都有概率p的机会获得额外的4\n次玩的机会，额外获得的游戏同样有机会获得更多的游戏次数。问，平均一个玩家能有几次玩的机会？\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/d3930d94d77b4d5b8c885015ea5d5c2e?sourceSSR=users",
+        "title": "#产品# 产品实习面经 背景：研一，一段金融产品实习，其他实习与产品无关~~_牛客网",
+        "content": "[#产品#](/creation/subject/416b772329974f23929c8600e3d53ccd)  \n产品实习面经  \n背景：研一，一段金融产品实习，其他实习与产品无关~~  \n6月底修改完简历就开始投递，期间总共经理了5场面试，拿到2个offer，分别是物联网产品和SAAS产品。最后选择了SAAS产品的offer~  \n  \n😁1、物联网产品（toc）CEO面  \n自我介绍  \nQ1：有没有了解过我们的公司？  \nQ2：有没有了解我们产品？  \nQ3：谈谈对产品的理解？我们公司产品的用户对象是谁？  \nQ4：说说对产品经理的理解？产品经理应该做什么事情？  \nQ5：衡量产品经理的成功标准有哪些？  \nQ6：产品的用户规模怎么来呢？  \nQ7：种子用户怎么来？  \nQ8：你觉得我们产品现在有多少用户？  \nQ9：你看我们产品是c端用户多还是b端用户多？  \nQ10：怎么获取用户？（如何让路人甲变成产品用户？）  \nQ11：成功的产品经理有哪些？  \nQ12：你认为成功的产品经理需要具备什么能力？  \nQ13：如果该产品交给你来做，你会怎么去做？  \nQ14：产品经理日常要做哪些事情？  \nQ15：腾讯电商为什么做不好？电商产品的本质是什么？  \nQ16：互联网的本质是什么？  \nQ17：变现的手段有几种？  \n反问：我有哪些地方需要提升？  \n  \n😁2、SAAS产品（tob）CEO面  \n自我介绍  \nQ1：深挖项目  \nQ2：产品成功的标准有哪些？  \nQ3：为什么转专业？  \nQ4：你的自驱力怎么样？  \nQ5：有没有尝试长时间琢磨一件事？  \nQ6：你有没有从工作中产品的方法论？  \nQ7：介绍一下竞赛项目？  \nQ8：同学/同事怎么评价你？  \nQ9：情绪激动吗？  \nQ10：实习时长、课程怎么安排？  \nQ11：薪资期望？  \nQ12：界面、美感怎么样？页面效果把握程度？  \n反问：  \n1：工作内容是什么？  \n2：介绍产品背景？  \n3：为什么该岗位会考虑招实习生？  \n4：你怎么看物联网行业?  \n5：针对产品经理岗位，我接下来该怎么提升自己？  \n6：面试待提升的地方？  \n  \n欢迎同岗位同学多多交流呀~\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/e3970b06d27c4ff9bf38259fb0348eec?sourceSSR=users",
+        "title": "回馈一下牛客……虽然是凉经😭😭 8.5 三面 凉经 40min 1、自我介_牛客网",
+        "content": "回馈一下牛客……虽然是凉经😭😭  \n  \n8.5 三面 凉经 40min  \n1、自我介绍  \n2、项目细讲（深度学习的项目，当时就觉得不对劲）  \n3、讲讲 rnn原理（？人傻了）  \n4、讲讲 TensorFlow的优点（？继续人傻）  \n5、会多线程编程吗？（说了做的少，主要害怕编程。。）  \n6、线程和进程的区别  \n7、为什么想来北京  \n8、对深度学习项目的测试  \n9、学了哪些有关测试的  \n10、性能测试的一些指标  \n.....大概，有些我忘了，没录用  \n11、反问，部门做什么（我实在太好奇了，为什么问我算法！！）  \n做AI，CV，NLP等等，我们对算法的要求比较高，不要看是测开岗。（了解，我凉了）。吃完饭回来查状态（共享！）  \n非常无奈......学的java，明明投的测开，给我分到算法测开？😤😤😭😭  \n一点不开心☹️\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/6c12ef0116d84b879073cdc3d98d4c56?sourceSSR=users",
+        "title": "吉利汽车面试（仿真类） 个人的第二个面试，大概二十多分钟 1、介绍个人学习、_牛客网",
+        "content": "吉利汽车面试（仿真类）  \n个人的第二个面试，大概二十多分钟  \n1、介绍个人学习、实习，科研项目相关的基本情况  \n2、仿真和你的科研兴趣是否一致  \n3、项目的具体实现步骤以及是否与实际做验证对比  \n4、汽车行业的能源动力的趋势（我不是这个专业的所以回答的就很简单😂）  \n5、为什么选择杭州湾  \n6、从学生工作中收获到了什么？  \n7、是否投递了其他的同类型的企业  \n反问环节：新人的培养机制，后续面试的安排。  \n感觉自己的回答都不是特别好，可能要凉。  \n下次加油吧，发帖攒人品。  \n![](https://uploadfiles.nowcoder.com/images/20191018/63_1571399911125_75C168B671D4CE827FCA23907D85F114)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/8f421a519a81415db1a2cd0406e1561e?sourceSSR=users",
+        "title": "销售岗位10大面试难题解析及中英文范例回答_牛客网",
+        "content": "销售岗位10大面试难题解析及中英文范例回答\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/da6b6407d61b49eea7833dda6e923906?sourceSSR=users",
+        "title": "#秋招 #百度面试# 1. 自我介绍 2. 项目 1. 你的项目用的架构，_牛客网",
+        "content": "[#秋招 #](/creation/subject/002d6ce4eab1487f9cae3241b5322732)百度面试#  \n1\\. 自我介绍  \n2\\. 项目  \n1\\. 你的项目用的架构，代码的分层，有亮点的技术点？  \n3\\. SpringBoot中的Bean是线程安全的，还是线程非安全的？  \n4\\. 对于无状态的bean，要存储用户信息，如何保证其线程安全。  \n5\\. ThreadLocal的原理，内存泄漏。  \n6\\. Java内存模型，Java的gc的过程。  \n7\\. 新生代的伊甸园区与幸存者区的比例是多少？  \n8\\. 怎么标记哪一些对象是可以被回收的？  \n9\\. 什么情况下会触发full gc？  \n10\\. 简单讲一下volatile关键字？讲一下JMM。单例模式的double check中的volatile的作用。  \n11\\. TCP的流量控制和拥塞控制？  \n12\\. hashmap的结构及put的原理。加红黑树的原因是什么？  \n13\\. hashmap是否是线程安全的？如何解决线程安全问题？HashTable与concurrenthashmap有了解吗？  \n14\\. MySQL的引擎、事务、索引。底层存储的数据结构，为什么用B+树？  \n15\\. Java线程池的运行过程？  \n16\\. 算法题：两数之和（有序数组），要求：时间复杂度O(n), 空间复杂度O(1)。  \n17\\. 反问。  \n  \n面试官人很好，不会的给做引导，但是第一次面很紧张，答得一般。供大家参考一下吧！\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/5363d0b8413448fdb1a2e0c48379aee8?sourceSSR=users",
+        "title": "#奥可纳Akuna# akuna一面 直接做题 没有自我介绍 第一题_牛客网",
+        "content": "[#奥可纳Akuna#](/enterprise/8193/discussion)  \nakuna一面  \n  \n直接做题 没有自我介绍  \n第一题 求一个数的奇偶校验位  \n第二题 求二叉树节点最大值  \n第三题 给一个函数，要求修改成线程安全的  \n第四题 手写priority_queue（构造，析构，push,top,pop）  \n  \n做完题反问  \n结果第二天就出（回来补）\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/1c4a5409b73e46f3b902c28ebd811d9a?sourceSSR=users",
+        "title": "线上面试的注意细节（都是小事，但忽视可能会影响到面试的最终结果）： 一、 设备_牛客网",
+        "content": "线上面试的注意细节（都是小事，但忽视可能会影响到面试的最终结果）：  \n  \n一、设备测试：面试前与家人或朋友测试网络聊天的速度；同时确保电脑状态良好（起码不会出现突然掉线或黑屏）。  \n二、设备放置：确保视线能够平视摄像头，如果电脑屏幕位置过低，可以在显示屏下面垫两本书。  \n三、仪表穿着：像参加现场面试一样注重自己的服装和形象。不要以为面试官看不到你的穿着，就十分随意。  \n四、背景布置：线上面试的地点很可能就在你家里。将背景清理干净，最好是以白墙，或整洁的书柜或窗帘作为背景。不要让乱糟糟堆放的杂物出现在镜头中。  \n五、保持专注力：由于不是在现场，也许会在面试过程中临时查询一些信息或资料；这可能会造成交流的一些中断。最好是保持专注的沟通。  \n六、避免干扰:\n如果是与家人或朋友同住，记得在面试前告知他们不要打扰；锁上房门，不要让任何其他人出现在镜头中，当然，也包括你的宠物（如果有的化）。同时，屏蔽手机铃声和其它信息提示。  \n  \n祝你面试成功！😁\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/dcc94982169044ffb83eac13f51b64cf?sourceSSR=users",
+        "title": "锐捷提前批C/C++软件开发面经_牛客网",
+        "content": "前期做了测评，然后是笔试50道选择题。过了很久，都以为凉了，然后7月18号一面，全程一个半小时  \n1.自我介绍  \n2.直接问项目里用到C++知识  \n3.数据结构问了哈希表和红黑树什么区别，链表怎么删除节点，有几种方法，环形链表怎么检测，set和map区别  \n4.操作系统，从进程和线程开始问，什么是进程什么是线程，区别和联系，然后进程三个状态，进程间通信方式，为什么有了进程还要有线程，并发和并行有什么区别，单cpu可以多线程吗为什么，已经麻了  \n5.计网，TCP UDP，然后我这里不太会，哄弄过去了  \n6问项目用了QT. qt信号槽机制，我扯了一下  \n7然后我去给他展示了项目做的界面，他就问了项目难点，和我做的哪一块内容  \n8讲完项目开始说做到简单题吧，题目是母牛每四年生小牛，然后输入年份一共多少只牛，用递归写，还行很简单  \n9\\. 最后说来道算法题，这个还比较简单，是64匹马，8个赛道，选最快的4匹马，要跑多少次，答出来了至少10次，最多11次  \n10反问然后结束等消息  \n  \n过了快两周给发的二面消息  \n二面，8.3下午  \n面试官一听就知道是老乡，咱福建人讲话就是温柔  \n1.自我介绍  \n2.开始问项目，怼着一个问了15分钟，课题组项目虽然比较熟悉，但有点紧张，然后问了第二个项目10分钟，最后又问了几题小八股，操作系统进程线程老套路，算法问了快速排序的思路，时间复杂度，然后反问，问了公司培养机制和新人任务干啥，就这些  \n  \n不知道还有没有三面😂  \n[#秋招#](/creation/subject/002d6ce4eab1487f9cae3241b5322732)  \n[#面经#](/creation/subject/928d551be73f40db82c0ed83286c8783)\n[#校招#](/creation/subject/d09b966a380b45ddaba9dc5a6bd5ee19)\n[#提前批#](/creation/subject/60e0088aa7964253b37cd6a57a5ea2cd)  \n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/441634e84c1d4b67974262a2f3092393?sourceSSR=users",
+        "title": "#格力#格力提前批#应用软件开发#一面# 1、自我介绍 2、你如何理解软件开发_牛客网",
+        "content": "[#格力#](/enterprise/1138/discussion)格力提前批[#应用软件开发#](/creation/subject/525694af36704106ac52aefa6beea852)一面#  \n1、自我介绍  \n2、你如何理解软件开发  \n3、研究课题  \n4、简历里的项目 遇到什么难点  \n5、如何理解并发  \n6、平时用什么数据库  \n7、TCP/IP 怎么通信  \n8、你有啥想问的\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/b7ca2d42b1e94639846a3589ed749b99?sourceSSR=users",
+        "title": "一面经，自我感觉凉了，全程陪跑，嘿嘿嘿 笔试，2小时，行测、企业文化＋性格职业能_牛客网",
+        "content": "一面经，自我感觉凉了，全程陪跑，嘿嘿嘿  \n笔试，2小时，行测、企业文化＋性格职业能力测试。 [#中国移动#](/enterprise/924/discussion)  \n一组3-4个人，面试官两个，一个自我介绍2分钟，然后面试官结合简历问一下比较简单的问题。  \n第一个同学结合岗位JD自我介绍，第二个同学主要说明自己的兴趣爱好和家地点，我结合岗位JD进行自我介绍，问了第一个同学籍贯，问的第二个同学问题比较多，家庭，项目经历，有没有其他offfer，进来主要想做什么工作，我的问题你是管理学专业，有没有学习统计学方面的知识，然后就结束面试了。我有点紧张了，看到这个场面，表现的不太松弛，可能我对群面比较，以后应该表现得松弛一点，从容一点。  \n[#广东移动#](/enterprise/7734/discussion)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/f63aade52df04962af26c8a2c292db97?sourceSSR=users",
+        "title": "2023.9.13美的流体力学仿真一面_牛客网",
+        "content": "感觉应该是技术面，但可能不是面试岗位相关的面试官  \n面试时间安排的话为30min，我记了一下时大概面试了23min左右  \n  \n面试官开场先背了几句免责声明，然后开始面试  \n1\\. 请先做一下自我介绍  \n2\\. 你的毕业课题是什么，主要做什么内容，有什么创新  \n3\\. 介绍一下你的项目内容  \n4\\. 看你投的是***事业部，你为什么选择这个事业部呢，CFD可以完成那些工作呢  \n5\\. 你觉得你所学的专业对你的生活有什么影响  \n  \n反问环节：  \n1\\. 工作中需要具备哪些技能，会使用到哪些仿真软件（Hr说有专门的工作站，他也不知道具体会使用哪些软件）  \n2\\. 贵公司对于刚入职的应届毕业生大概的会有什么样的培养方案呢  \n3.面试结果什么时候会有通知呢（HR讲大概会在1-2天内通知结果，我在网上查了一下有人说通过的会有通知，没通过不会通知）\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/55439de444244536b744a301fd2d8418?sourceSSR=users",
+        "title": "虹软二面_牛客网",
+        "content": "自动驾驶感知  \n学SLAM的，一面的面试官说这个岗位的业务主要是坐ADAS，貌似对视觉SLAM算法了解不深，所以发挥的比较自由。  \n相比之下，二面的面试官对SLAM更加了解，基本上是按照简历上写的内容一条一条问的，项目、学术研究、竞赛都问了，然后又问了很多主流的开源框架的一些细节，单目初始化、预积分、优化方法等都问了，不过没有八股和手撕（这些一面有）  \n最后是反问，怎么说呢，感觉我的研究方向不太适合这个岗😢  \n  \n果然。。。挂了\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/06fe1c1bdc584bfe8174d47edcfabcea?sourceSSR=users",
+        "title": "隆基一面0915_牛客网",
+        "content": "我天原本是java开发母鸡咋投到.net上面去了  \n总结：面试的话就是常规八股  \n  \nTCP UDP  \nUDP为何凝包  \nCOOKIE SESSION  \nCookie为何有大小限制  \n为啥需要索引  \nB+树可以继续拓展吗（稀里糊涂答了三层应该就是百万量级了，看具体业务需求再拓展）  \n数据库索引  \n索引为什么不是红黑树  \n联合查询和聚合查询  \n  \n然后就是常规的问题巴拉巴拉巴拉。。。。。为何从java转.net什么的  \n唉，期待二面吧![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/d0a8fc70956840a4870615fc2bea906f?sourceSSR=users",
+        "title": "合肥芯碁微装嵌入式开发一面_牛客网",
+        "content": "9.15，技术+HR一起，HR本来周一联系的说约周四，结果她给弄忘了，后面打电话重新约的周五。技术老师估计是做硬件的，问的很多硬件基础的问题，问数电模电，电路设计，电容电感电阻三极管这些，只能尴尬表示不会。感觉芯碁招的是嵌入式软硬件结合，而且硬件要会更多一些。半小时结束，感觉要凉。  \n9.18更新 已挂\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/335ccde957d941238946a93a814b1c30?sourceSSR=users",
+        "title": "长安汽车 线下二面 综合面_牛客网",
+        "content": "昨天晚上开的宣讲会，第二天就面试。面试通知是半夜12点多发的，要求八点多就到。得亏睡的晚，看到了，要不按照平时的起床时间，肯定得迟到了。  \n  \n三人一组一起进去，hr提问，三人轮流回答。先自我介绍，再就是你加入长安的优势是什么，分别用三个词说一下自己的优缺点。基本上都是人事常规问题，无技术问题，最后问了问为什么来重庆。反问环节是一人提一个问题。  \n  \n和我一起面的两位都是大佬，人家回答的都很流畅，轮到我就卡壳了😭😭  \n  \n另外，如果过了的话，周日签三方，长安那边知道学校已经发了三方了。![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553875960/F41D4BD5A3C395878CB4CD5675C09584)  \n  \n更新，周末并没有直接签三方，说是过几天发offer，然后也给你时间考虑。有点怕长安养鱼，还是得继续投，继续找工作![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763490/62AF11E48344D159DA608796DA7D39E5)\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/312464dfac7c422d97962d40f0185114?sourceSSR=users",
+        "title": "杭州银行 一面_牛客网",
+        "content": "全程20分钟左右  \n1、自我介绍  \n2、介绍项目（简单介绍用到什么技术）  \n3、JVM内存结构、线程私有的结构、垃圾回收、多线程  \n4、Spring两大特性、Springboot和SpringMVC的区别、自动装配的原理  \n5、Bean生命周期  \n6、动态代理的实现方式  \n7、快排思路\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/c45b6cb729194cd488e3beeaae5c3245?sourceSSR=users",
+        "title": "9.14-美团-一面_牛客网",
+        "content": "记录一下答的不好的：  \nmysql慢查询问题  \n如何平滑分库分表**指服务器不停机  \n跳表怎么插入？具体步骤？  \nhashmap为什么要红黑树  \njava集合类java数据类型 为什么string不是  \nfinal的类可以继承吗  \nkafka结构  \n一道mysql\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/9b007f3379524d16a4ba120c64aa1378?sourceSSR=users",
+        "title": "青岛鼎信 C++ 一面_牛客网",
+        "content": "面试时长：15min  \n  \n面试内容：  \n* 自我介绍  \n* 为什么实习没有太长的  \n* 知道公司业务吗  \n* 为什么想来青岛  \n* 项目回答  \n* 家庭情况  \n  \n反问：  \n* 通信硬件开发\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/66b9f6b3bfd846d0b84d8ef701b04b78?sourceSSR=users",
+        "title": "小米一面_牛客网",
+        "content": "1、recyclerview的局部刷新是怎么实现的  \n在Android的RecyclerView中，当你需要局部刷新数据时，你应该在数据发生改变的地方调用notifyItemChanged(int\nposition)方法。  \n// 在数据发生改变后，通知RecyclerView刷新数据  \nrecyclerViewAdapter.notifyItemChanged(index);  \n2、recyclerview第二级缓存和第四级缓存重走onBindViewHolder()方法吗  \n第一级、第二级缓存、，不需要重新bindViewHolder  \n第四级缓存RecycledViewPool缓存的ViewHolder是全新的，所以取出来的时候需要走onBindViewHolder()方法。  \n3、OkHttp的拦截器讲一下  \n4、singleTop(栈顶复用)启动模式，打开相同的activity会走哪些生命周期  \nonPause  \nonNewIntent  \nonResume  \n5、measureSpec是如何获取的  \nMeasureSpec是View的内部类，其封装了一个View的规格尺寸，包括View的宽和高的信息  \n系统会将View的LayoutParams根据父容器所施加的规则转换成对应的MeasureSpec  \n6、线程间通信方式  \n共享内存 + 消息队列  \n7、sevice与线程的区别  \n生命周期不同：Service有自己的生命周期，可以在后台长时间运行。线程的生命周期与应用程序的生命周期相同  \n1.Thread是程序执行的最小单元，可以执行异步操作。Service是运行在主线程中，不独立，依附于主线程。  \n2.Thread可以执行耗时操作，但是Service不可以，因为Service运行在主线程上。  \n3.Service中需要开启子线程才能执行耗时操作，在Service开启线程好处是如果Activity被销毁，但是Service仍然运行，不会影响后台任务的运行。如果在Activity中创建子线程当Activity被销毁之后，无法获取到之前创建的子线程实例。\n\n"
+    },
+    {
+        "url": "https://www.nowcoder.com/feed/main/detail/2eff529a63344cd1b77385e4dd0b713f?sourceSSR=users",
+        "title": "小米一面凉经_牛客网",
+        "content": "[#面经#](/creation/subject/928d551be73f40db82c0ed83286c8783)身为一个米粉，一面挂了，有点难受，还穿了小米10周年纪念T恤，成小丑了🤡  \n  \n1\\. 上来先手撕一道简单题，一开始3分钟没思路，面试官让我再想想，然后就做出来了  \n2\\. Bean的生命周期  \n3\\. 讲一下IOC和AOP  \n4\\. MySQL和Redis怎么用的  \n5\\. 一个行数超过亿级的表，该如何存储来保证检索速度  \n6\\. 项目深挖  \n  \n20分钟左右官网就可以看到结果了，感觉答得还行，应该是答得不够全![](https://uploadfiles.nowcoder.com/images/20220815/318889480_1660553763930/8B36D115CE5468E380708713273FEF43)\n\n"
+    }
+]

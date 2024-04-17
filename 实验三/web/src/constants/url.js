@@ -1,0 +1,9 @@
+const baseurl = "http://localhost:5000";
+export const COUNT_COMPANY = `${baseurl}/count_company`;
+export const COUNT_POSITION = `${baseurl}/count_position`;
+export const COUNT_PROCESS = `${baseurl}/count_type`;
+export const COUNT_BIGSTACK = `${baseurl}/type`;
+export const COUNT_STACKS = `${baseurl}/count_stack`;
+export const STACKS_POSTION = `${baseurl}/stacks_position`;
+export const TYPES_POSITION = `${baseurl}/types_position`;
+export const TYPES_COMPANY = `${baseurl}/types_company`;

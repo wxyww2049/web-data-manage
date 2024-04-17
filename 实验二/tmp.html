@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html lang="en"><script type="text/javascript" src="/C2WF946J0/probev3.js" r='m'></script>
+      <head>
+        <link rel="stylesheet" type="text/css" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/static/DdlQrcode.2633c674.css">
+        <link rel="stylesheet" type="text/css" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/static/qd-icon.887e5157.css">
+        <link rel="stylesheet" type="text/css" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/static/index.page.a9e75012.css">
+        <link rel="stylesheet" type="text/css" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/static/default.page.client.ffaa7f24.css">
+        <script>
+          (function(){
+            try {
+              var name = "x-waf-captcha-referer";
+              var reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+              var wafReferer = document.cookie.match(reg);
+              if (wafReferer && wafReferer[2]) {
+                Object.defineProperty(document, "referrer", {
+                  value: decodeURIComponent(wafReferer[2])
+                });
+                document.cookie = name + '=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT';
+              }
+            } catch (error) {
+              console.log(error);
+            }
+          })()
+        </script>
+        <script>
+          (function() {
+              if (typeof globalThis === 'object') return;
+              Object.defineProperty(Object.prototype, '__magic__', {
+                  get: function() {
+                      return this;
+                  },
+                  configurable: true
+              });
+              __magic__.globalThis = __magic__;
+              delete Object.prototype.__magic__;
+          }());
+        </script>
+        <script>
+        (function(){
+          var name = "seo-jump-referrer";
+          try {
+            var reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            var seoReferer = document.cookie.match(reg);
+            if (seoReferer && seoReferer[2]) {
+              Object.defineProperty(document, "referrer", {
+                value: decodeURIComponent(seoReferer[2])
+              });
+              document.cookie = name+'=;domain=.qidian.com;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT';
+            }
+          } catch (error) {
+            console.log(error);
+          }
+          if (window.outerWidth <= 1024 && navigator.userAgent.match(/(Android|iPhone|SymbianOS|Windows Phone|iPad|iPod|HarmonyOS)/i) && !navigator.userAgent.match(/spider/i)) {
+            var url = 'https://m.qidian.com/chapter/1039378361/788648004/'
+            if (url) {
+              if (location.search) {
+                if (/source=m_jump/.test(location.search)) {
+                    url += location.search.replace("source=m_jump", "source=pc_jump")
+                } else if (/source=pc_jump/.test(location.search)) {
+                    url += location.search
+                } else {
+                    url += (location.search + "&source=pc_jump")
+                }
+              } else {
+                  url += "?source=pc_jump"
+              }
+
+              setCookie(name, document.referrer, '.qidian.com', '/', 60000)
+              
+              window.location.href = url;
+            }
+          }
+          function setCookie(name, value, domain, path, expires) {
+            if (expires) {
+                expires = new Date(+new Date() + expires);
+            }
+    
+            var tempcookie = name + '=' + escape(value) +
+                ((expires) ? '; expires=' + expires.toGMTString() : '') +
+                ((path) ? '; path=' + path : '') +
+                ((domain) ? '; domain=' + domain : '');
+    
+            if (tempcookie.length < 4096) {
+                document.cookie = tempcookie;
+            }
+    
+            return this;
+          }
+        })()
+       </script>
+       <script>
+          //获取cookie
+          function getCookie(name) {
+              var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+      
+              if (arr = document.cookie.match(reg))
+      
+                  return (arr[2]);
+              else
+                  return null;
+          }
+   
+          (function(){
+            // M站设置了一年，这里fixed
+            if (getCookie('tf') == 1) {
+                setCookie('tf', 1, hostIsMM ? 'qdmm.com' : 'qidian.com', '/', 0);
+            }
+            var ga = document.createElement("script");
+            ga.src = "//www.googletagmanager.com/gtag/js?id=UA-199934072-2";
+            ga.async = 1;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(ga, s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-199934072-2');
+            gtag('config', 'G-PFYW0QLV3P');
+          })()
+       </script>
+       <!-- 百度统计 S -->
+       <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          var domain = window.location.hostname;
+          hm.src = "https://hm.baidu.com/hm.js?f00f67093ce2f38f215010b699629083";
+          if (domain && /qdmm.com/.test(domain)) {
+            hm.src = "https://hm.baidu.com/hm.js?4f0fc27f96a813e3e4896e5d4dbb6d5a";
+          }
+          hm.async = 1;
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+       </script>
+       <script>
+          (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+          })();
+        </script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="baidu-site-verification" content="code-Bp5BfOEl7N" />
+        <meta name="360-site-verification" content="421bca256cdffc438a63a3fc3fae254e" />
+        <meta name="bytedance-verification-code" content="mE+mXZBcBZvjyf19Yv/u" />
+        <meta name="sogou_site_verification" content="dTxMsPKW5q" />
+        <meta name="shenma-site-verification" content="2f639619b997dc2a2fed1b77af5b05b0_1668670423">
+        <meta name="google-site-verification" content="4WUQBP3WqlqRWn_rMNToIo82vfeQsHrWQIbs99aqzcU" />
+        <meta name="updatetime" content="2024-04-11 22:03:51">
+        
+  <script rel="preload" as="script" type="text/javascript" src="https://imgservices-1252317822.image.myqcloud.com/coco/s07272023/8bb63763.lxfrc0.js"></script>
+  
+  
+        <title>第六十五章 纸人抬棺 _《神佛竟是我自己》小说在线阅读 - 起点中文网</title>
+          <meta name="keywords" content="第六十五章 纸人抬棺,神佛竟是我自己最新章节,神佛竟是我自己免费阅读">
+          <meta name="description" content="第六十五章 纸人抬棺的内容摘要:这一幕实在是太诡异了，即便是常年和邪祟打交道的岳翎等人都不禁眸光一凝，从未遇见如此情况。“看这样子，他们好像是在重复死亡当天的场景。”张九阳看着这对爷孙又一次被红线切割成碎肉，而后又再次出现，心中突然冒出了这么一个想法。这种感觉，就好像他前世打过的某些游戏，爷孙俩是npc，而红线便是一个bug，遇到...">
+          <meta http-equiv="mobile-agent" content="format=wml; url=http://m.qidian.com/chapter/788648004/">
+          <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.qidian.com/chapter/1039378361/788648004/">
+          <meta http-equiv="mobile-agent" content="format=html5; url=http://m.qidian.com/chapter/1039378361/788648004/">
+       <!-- WAF S -->
+       <script data-ignore="true" src="https://turing.captcha.qcloud.com/TCaptcha.js"></script>
+       <!-- WAF E -->
+       <meta name="robots" content="all">
+       <meta name="googlebot" content="all">
+       <meta name="baiduspider" content="all">
+       <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+       <meta name="renderer" content="webkit" />
+
+       <link rel="icon" type="image/x-icon" href="https://imgservices-1252317822.image.myqcloud.com/coco/s02282023/aedb85ae.2iv90x.ico">
+       <link rel="shortcut icon" type="image/x-icon" href="https://imgservices-1252317822.image.myqcloud.com/coco/s02282023/aedb85ae.2iv90x.ico">
+       <link rel="Bookmark" type="image/x-icon" href="https://imgservices-1252317822.image.myqcloud.com/coco/s02282023/aedb85ae.2iv90x.ico">
+       <script rel="preload" as="script" type="text/javascript" src="https://imgservices-1252317822.image.myqcloud.com/coco/s08182023/384069db.tg4r2k.js"></script>
+       <script type="module" crossorigin src="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/polyfills.f18fa55f.js"></script>
+       <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+       <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+      </head>
+      <body data-theme=beige>
+        <div id="app" data-pid=qd_P_read><!--[--><!--[--><div id="reader" class="reader relative min-h-full noise-bg" data-width="resp" style="--width:800px;--side-width:0px;" data-v-6c740737><!----><div id="reader-content" class="bg-b-gray-50 relative pb-$sai-bottom w-$width noise-bg z-1 mx-auto left-0 transition-transform duration-300"><div class="relative h-64px w-inherit noise-bg"><nav id="navbar" class="h-inherit w-inherit fixed left-1/2 top-0 z-2"><!--[--><!----><div class="flex pl-32px justify-between text-s-gray-700 items-center h-64px bg-b-gray-50 border-b border-outline-black-8 noise-bg" data-v-e5c87ecd><a id="r-logo" class="logo block bg-s-gray-700 hover:bg-s-gray-900" href="//www.qidian.com/" style="-webkit-mask-image:url(//bossaudioandcomic-1252317822.file.myqcloud.com/yux-reader/4e88200231b843958767d6b95e8ab494.svg);" data-v-e5c87ecd><img class="h-44px opacity-0" src="//bossaudioandcomic-1252317822.file.myqcloud.com/yux-reader/4e88200231b843958767d6b95e8ab494.svg" data-v-e5c87ecd></a><!--[--><!--]--><div class="ml-auto text-s-gray-900 text-bo2 relative group" data-v-e5c87ecd><button class="hover:text-primary-red-500 text-bo2 py-8px px-32px" data-v-e5c87ecd>登录</button></div></div><!--]--></nav></div><div class="min-h-100vh relative z-1 bg-inherit"><section id="r-breadcrumbs" class="py-21px px-32px border-b border-outline-black-8 text-bo4 text-s-gray-500 flex items-center"><a href="//www.qidian.com/" rel="nofollow" class="hover:text-s-gray-900">首页</a><!--[--><!--[--><span class="icon-arrow-right text-12px mx-4px"></span><a href="//www.qidian.com/xianxia/" class="hover:text-s-gray-900">仙侠</a><!--]--><!--[--><span class="icon-arrow-right text-12px mx-4px"></span><a href="//www.qidian.com/all/chanId22-subCateId20101/" class="hover:text-s-gray-900">古典仙侠</a><!--]--><!--]--><!--[--><span class="icon-arrow-right text-12px mx-4px"></span><a href="//www.qidian.com/book/1039378361/" class="text-s-gray-900">神佛竟是我自己</a><!--]--></section><!----><!----><!----><!--[--><div class="chapter-wrapper relative border-outline-black-8 border-t first-of-type:border-none pb-1px"><div class="absolute top-70vh"><!--[--><!--]--></div><!--[--><!--[--><div class="relative"><!----><!--[--><div class="print &lt;sm:pt-56px &lt;sm:mb-48px &lt;sm:px-20px pt-64px px-64px mb-64px enable-review" data-id="788648004" style="font-size:18px" data-v-7415a5f2 data-v-6c740737><h1 class="title text-1.3em text-s-gray-900 leading-[1.35] font-medium break-all wrap-word inline-block r-font-black-medium" data-v-7415a5f2>第六十五章 纸人抬棺</h1><div class="text-s-gray-500 mt-4px text-bo4 flex items-center flex-wrap" data-v-3cbf52b3 data-v-7415a5f2><a class="group inline-flex items-center mr-16px" rel="nofollow" href="//www.qidian.com/book/1039378361/" data-v-3cbf52b3><span class="icon-book text-16px mr-4px" data-v-3cbf52b3></span><span class="group-hover:text-s-gray-700" data-v-3cbf52b3>神佛竟是我自己</span></a><a rel="nofollow" href="//my.qidian.com/author/430984054/" class="group inline-flex items-center mr-16px" data-v-3cbf52b3><span class="icon-pen text-16px mr-4px" data-v-3cbf52b3></span><span class="group-hover:text-s-gray-700" data-v-3cbf52b3>独孤欢</span></a><span class="group inline-flex items-center mr-16px" data-v-3cbf52b3><span class="relative mr-4px h-16px" data-v-3cbf52b3><span class="icon-number text-16px" data-v-3cbf52b3></span><span class="num-word-cut" data-v-3cbf52b3><span class="num num1" data-v-3cbf52b3>1</span><span class="num num2" data-v-3cbf52b3>2</span><span class="num num3" data-v-3cbf52b3>3</span></span></span> 2282字</span><span class="group inline-flex items-center" data-v-3cbf52b3><span class="icon-clock text-16px mr-4px" data-v-3cbf52b3></span><span class="chapter-date" data-v-3cbf52b3>2024年04月11日 12:00</span></span></div><main id="c-788648004" data-type="cjk" class="content mt-1.5em text-s-gray-900 leading-[1.8] relative z-0 r-font-black" data-v-7415a5f2><p>　　这一幕实在是太诡异了，即便是常年和邪祟打交道的岳翎等人都不禁眸光一凝，从未遇见如此情况。</p><p>　　“看这样子，他们好像是在重复死亡当天的场景。”</p><p>　　张九阳看着这对爷孙又一次被红线切割成碎肉，而后又再次出现，心中突然冒出了这么一个想法。</p><p>　　这种感觉，就好像他前世打过的某些游戏，爷孙俩是npc，而红线便是一个bug，遇到这个bug无法过去，便只能不断重启。</p><p>　　岳翎反应很快，手中刀光一闪，龙雀刀已如雷霆般出鞘，斩断了那些红线。</p><p>　　张九阳甚至都没有看清刀身，她便已收刀入鞘。</p><p>　　这一次，没有红线的阻拦，爷孙两人成功走进房中，笑道：“等下多吃一点，你们来我们这里收购药材，给的价格公道，大家都很感激呢。”</p><p>　　说罢他去厨房端来了一些饭菜。</p><p>　　当看清饭菜的样子，张九阳顿时生出一股反胃的感觉。</p><p>　　只见老人端上来的，竟然是一盘盘早已腐烂腥臭的饭菜，特别是一些肉菜，上面爬满了蠕动的蛆虫。</p><p>　　“你们快吃呀。”</p><p>　　老人十分热情。</p><p>　　岳翎摇头道：“多谢好意，我们不饿，请问你有没有在村子里见到一個人，是个瞎子，拄着一根竹杖，喜欢吹口哨。”</p><p>　　老人愣了一下，而后答道：“你们说的是林瞎子吧，他前几天出去了，听说要明早才回来。”</p><p>　　“这林瞎子可是个有本事的人，前些天山神老爷发怒，好多人都梦到了，还是林瞎子帮忙解决得呢。”</p><p>　　林瞎子！</p><p>　　张九阳等人对视一眼，神情有些变化。</p><p>　　如果他们是在重复自己死亡当天的场景，那就意味着，陈家村的人认识林瞎子，甚至林瞎子还在这里住过一段时间！</p><p>　　听这语气，似乎对林瞎子很感激。</p><p>　　殊不知，所谓的山神托梦，可能不是发怒，而是求救或者预警……</p><p>　　但遗憾的是，陈家村的村民们就这样错过了最后的生机。</p><p>　　“你们要见林瞎子的话，就只能等明天了，现在天色不早了，我给你们收拾下屋子，就先住我这里吧。”</p><p>　　老人很朴实热情，他望着张九阳等人，道：“不过现在只剩下一间屋子了……要不伱们分出两人在柴房凑合一晚？”</p><p>　　“我们四人住一起就好了。”</p><p>　　岳翎直接否决了他的建议，斩钉截铁道。</p><p>　　在这个诡异的村子中，分开无疑是最愚蠢的选择。</p><p>　　“那好吧。”</p><p>　　顿了顿，老人似是想到了什么，好心提醒道：“你们晚上关好门，千万别出去，最近村子里有人横死了，按规矩，是要巡棺夜游的，若是撞到了，总不吉利。”</p><p>　　……</p><p>　　入夜。</p><p>　　四人挤在一间屋子中，凝神戒备。</p><p>　　外面的风很大，吹得窗户簌簌作响，隐约可见灯笼的红光，将夜色映衬得更加诡异和神秘。</p><p>　　按理来说，他们下午才刚刚睡过，而且身处险境，绝不会瞌睡才对，但不知怎的，睡意竟再次如潮水般袭来。</p><p>　　罗平和老高的眼皮已经开始打架，张九阳也在不断打哈欠，唯有岳翎依旧精神。</p><p>　　“都别睡，打起精神！”</p><p>　　她试图唤醒几人，但张九阳还是在朦朦胧胧中睡了过去，失去意识前，他仿佛听到了长刀出鞘的声音。</p><p>　　……</p><p>　　当张九阳再次醒来时，发现房间中竟然空无一人，岳翎、老高和罗平他们都消失不见了。</p><p>　　好在阴偶中的阿梨还在。</p><p>　　“九哥，我看到他们身上亮起红光，然后就消失不见了……”</p><p>　　张九阳顿时意识到，林瞎子是想将他们各个击破，之所以让他留在这里，怕是有什么目的。</p><p>　　必须要赶紧找到大家！</p><p>　　他当即便背起箱子，提剑出门，那对爷孙还在酣睡，张九阳没有打扰，而是来到了街上。</p><p>　　夜色深沉，不见明月。</p><p>　　“阿梨，能占卜到岳翎他们在哪吗？”</p><p>　　阿梨提着的双刀，在加入百年槐木心后，这两口粉色的菜刀便成为了通灵的器物，可以辅助她增强占卜预测的能力。</p><p>　　“有啦，在东边，不过前面好像有厉鬼拦路……”</p><p>　　张九阳没有畏惧，仗剑东行，穿过一条街道后，果然看到前方有几道身影，似是在抬着什么东西。</p><p>　　走近一看，他们抬的竟然是一口棺材！</p><p>　　棺材诡异，但抬棺的人更加诡异，当张九阳看清他们的脸时，即便已经看多了鬼物，却仍旧忍不住涌上寒意，头皮发麻。</p><p>　　只见那些抬棺的人皮肤白到渗人，五官有些粗糙，甚至可以说十分不协调，就好像画上去的一样。</p><p>　　不，就是画上去的！</p><p>　　“九哥，是纸人……纸人在抬棺材……”</p><p>　　阿梨小声道，但声音还是引起了那些纸人的注意，他们齐刷刷地转过脸，那双用朱砂点就的眼睛静静地望着张九阳。</p><p>　　月黑风高夜，纸人抬阴棺。</p><p>　　这诡异的一幕任谁看了都要脊背发凉，特别是点了眼睛的纸人，非常犯忌讳。</p><p>　　纸人画眼不点睛，你若不记阎王请。</p><p>　　这是扎纸匠一行流传千年的规矩，据说是因为纸人点睛后就会留恋阳间，而且会吸引孤魂野鬼附身，产生种种诡异。</p><p>　　因此不管你出多少钱，一般扎纸匠都不会，也不敢为纸人点睛。</p><p>　　但现在这些纸人却都被点上了眼睛，而且还仿佛有生命般在抬着一口棺材。</p><p>　　“回去。”</p><p>　　“回去。”</p><p>　　从纸人的口中，竟发出了一种幽冷的声音，如寒夜中的冷风，直往人骨头缝里钻。</p><p>　　他们在阻拦张九阳继续向东。</p><p>　　敌人不让做的事情，恰恰就是最应该做的！</p><p>　　张九阳眼中凶光一闪，道：“几个破纸人，装你妈呢！”</p><p>　　随着这声破口大骂，他心中的恐惧也如潮水般散去，主动提剑上前，眸光锐利，呼吸若百川归海，龙潜于渊，右手按在了剑柄上。</p><p>　　拔剑术，青龙出海！</p><p>　　沧啷一声剑鸣，只见暗夜中赤芒如电光瞬闪，斩鬼剑好似一条腾空而起的赤龙，出沧海，入青冥，飞云探爪，直冲霄汉！</p><p>　　四颗纸人的头颅飞起，而后燃烧起青色的火焰，发出阵阵哀嚎，最后变为了一地灰烬。</p><p>　　斩鬼剑，专破邪祟，对这种阴物鬼物有极大的克制。</p><p>　　收剑入鞘，张九阳看向那口落在地上的棺材。</p><p>　　似是感觉到了他的目光，棺材突然晃动了两下，里面隐隐发出某种野兽般的嘶吼声。</p><p>　　咚咚！咚咚！</p><p>　　棺材板上的钉子不断颤动，越来越松，到最后竟被弹飞出去。</p><p>　　一双血肉模糊的手突然从中探出，手臂自动伸长，抓住了张九阳的手腕，将其一把抓进了棺材中。</p><p>　　棺材板自动合上，仿佛在捕捉猎物。</p><p>　　但事实证明，狩猎要量力而为。</p><p>　　“天圆地方，人遁九章。青龙相助，白虎相帮。先杀恶鬼，再除凶秧，何魔不伏，何邪敢当，急急如律令！”</p><p>　　随着咒声响起，棺材顿时剧烈颤抖起来，里面隐隐响起厉鬼般的哀嚎。</p><p>　　……</main><div class="tooltip-wrapper relative flex hover-mode !absolute top-0 right-64px z-1" data-v-6cdbc58a data-v-7415a5f2><!--[--><button class="bookmark w-26px h-36px hover-10 active-10 bg-s-gray-100" data-v-7415a5f2></button><!--]--><div class="tooltip absolute rounded-8px bg-gray-800 text-on-image-bw-white text-bo4 px-12px py-7px whitespace-nowrap transform filter shadow-sd8 whitespace-pre top bottom-full left-1/2 mb-16px -translate-x-1/2 after:top-full after:left-1/2 after:-translate-x-1/2 after:rotate-270" data-v-6cdbc58a>添加书签<svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-800 absolute transform top-full left-1/2 -translate-x-1/2 rotate-270 -mt-6px" data-v-6cdbc58a><path d="M1.191 10.457a1.778 1.778 0 0 1 0-2.914L5.725 4.37A5.334 5.334 0 0 0 8 0v18c0-1.74-.85-3.372-2.275-4.37L1.19 10.457z" fill="currentColor"></path></svg></div></div><!--[--><!--]--></div><!--]--></div><!--[--><!----><!--]--><!--[--><!--[--><section id="r-authorSay" class="bg-on-image-s-black-4 rounded-8px py-12px px-32px py-24px mx-64px mb-64px &lt;sm:mx-20px &lt;sm:mb-48px &lt;sm:px-12px"><span class="inline-flex text-secondary-blue-500 text-c12 items-center h-24px mr-auto" target="_blank"><!---->独孤欢 · 作家说</span><div class="text-bo4 text-s-gray-900 mt-4px"><p class="trans">推荐一本好朋友的仙侠新书，《争龙记》，文笔很牛，有点像将夜，喜欢的朋友可以去看看哦。</p><p class="trans">简介：</p><p class="trans">我的朋友是个奇妙的人。</p><p class="trans">他会写书，让我知道世间有郭靖，李寻欢这样的大英雄。</p><p class="trans">他会做菜，自创番茄炒鸡蛋，连镇上的大厨都为之折服。</p><p class="trans">他天生逸才，是我们这么多年来唯一一个考入京城的学子。</p><p class="trans">我远远地看着他，从未想过，此生还可与他并肩。</p><p class="trans">直到我听闻他的死讯。</p><p class="trans">……</p><p class="trans">七星耀世，九子争龙。</p><p class="trans">且看少年为友出山，横行九州！</p></div><div class="mt-12px pt-12px flex items-center justify-between font-medium text-s3 text-s-gray-900 border-t border-outline-black-8 sm:mt-16px sm:pt-16px">上起点中文网支持我，看最新更新 <a class="font-medium flex-shrink-0 flex items-center justify-center regular round tertiary-r" href data-v-5656d8e4><!--[-->下载App<!--]--></a></div></section><!----><!--]--><!--]--><!--[--><!----><div class="chapter-end-qrcode" data-v-6c740737><div class="chapter-end-show-con auto-tr" data-eid="qd_H_read_chapterenddownload" data-l2="chzhdl" data-bid="1039378361" data-cid="788648004" data-v-6c740737><div class="chapter-end-show download" data-v-6c740737><i class="qd-icon y-icon--00319 icon-showcode" style="font-size:px;color:;" data-v-6c740737><!----><!----><!----><!----></i> 扫一扫，手机接着读</div><div class="chapter-end-hover auto-tr" data-eid="qd_H_mall_scanningreadload" data-bid="1039378361" data-cid="788648004" data-l7="chzhdl" style="display:none;" data-v-6c740737 data-v-6c740737><div class="qrcode-wrapper" data-v-6c740737 data-v-f3921d4b><canvas width="136" height="136" data-v-f3921d4b></canvas><i class="logo" data-v-f3921d4b></i></div><div class="infos" data-v-6c740737><i class="icon-scan" data-v-6c740737></i><p class="title" data-v-6c740737><span class="red" data-v-6c740737>扫一扫</span> · 手机接着看</p><p class="txt" data-v-6c740737>公交、地铁随心阅读，新用户还可享14天限免</p></div></div></div></div><!--]--><div class="mx-64px pb-64px mt-auto"><div class="nav-btn-group"><a href="//www.qidian.com/chapter/1039378361/788628765/" class="nav-btn relative after:content-DEFAULT after:absolute after:right-0 after:w-1px after:bg-outline-black-8 after:top-12px after:bottom-12px"><!--[-->上一章<!--]--></a><a target="_blank" href="//www.qidian.com/book/1039378361/catalog/" class="nav-btn relative after:content-DEFAULT after:absolute after:right-0 after:w-1px after:bg-outline-black-8 after:top-12px after:bottom-12px">目录</a><a href="//www.qidian.com/chapter/1039378361/788732381/" class="nav-btn"><!--[-->下一章<!--]--></a></div></div><!--[--><div id="page-ops" class="page-ops" data-l1="3" data-v-6c740737><a href="https://game.qidian.com/CpGameHome/Ad/directLogin/name/zol/way/1?qd_game_key=zol900x60.jpg&amp;qd_dd_p1=140963" target="_blank" data-eid="qd_R125" data-qd_dd_p1="1"><img src="https://gameapp-1252317822.file.myqcloud.com/yuewen/game/images/3acbf50d5fbc49f9bd407a9ae5a9b00c.jpg" style="width:var(--width);"><span class="op-tag"></span></a></div><!--]--><section id="r-recommends" class="container border-t border-outline-black-8 py-32px text-s-gray-900 flex items-start &lt;sm:whitespace-nowrap &lt;sm:min-w-0 &lt;sm:overflow-x-auto &lt;sm:px-20px sm:px-64px" style="display:none;" data-v-a1f732c8><span class="mt-6px text-s3 font-medium sm:text-s1 flex-shrink-0 inline-block" data-v-a1f732c8>推荐</span><div class="ml-12px -mr-8px sm:ml-24px sm:flex sm:flex-wrap sm:-mt-8px" data-v-a1f732c8><!--[--><a href="//www.qidian.com/book/1038362645/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>长生从肝蛊方开始</a><a href="//www.qidian.com/book/1018389463/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>云仙君</a><a href="//www.qidian.com/book/1036972810/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>还说你不是仙人</a><a href="//www.qidian.com/book/1038636840/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>家族修仙：通天长生</a><a href="//www.qidian.com/book/1012680288/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>新白蛇问仙</a><a href="//www.qidian.com/book/1038835393/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>我以女儿身独断万古</a><a href="//www.qidian.com/book/1029859506/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>纵目</a><a href="//www.qidian.com/book/1015716168/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>巫在回归</a><a href="//www.qidian.com/book/1034864691/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>从野狐开始求道</a><a href="//www.qidian.com/book/1037599115/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>我把储物袋升级成了鸿蒙宇宙</a><a href="//www.qidian.com/book/1035345554/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>大随圣人：从天牢自救开始</a><a href="//www.qidian.com/book/1014243481/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>问道红尘</a><a href="//www.qidian.com/book/1037287593/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>道爷我飘了</a><a href="//www.qidian.com/book/1034784944/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>修仙从祖先显灵开始</a><a href="//www.qidian.com/book/1027193133/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>从杀猪到杀神</a><a href="//www.qidian.com/book/1035465229/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>我在凡人的修仙日记</a><a href="//www.qidian.com/book/1035992113/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>黑神话：长安</a><a href="//www.qidian.com/book/1028632528/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>成为冥铺刻碑人之后</a><a href="//www.qidian.com/book/1035433366/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>凡人，我穿越的有点早</a><a href="//www.qidian.com/book/1027072038/" class="text-bo4 inline-block border border-outline-black-8 rounded-18px py-6px px-16px mr-8px hover-4 active-10 sm:mt-8px" data-v-a1f732c8>天命编纂师</a><!--]--></div></section><!--]--><!--]--><div class="absolute bottom-70vh"><!--[--><!--]--></div></div><!--]--><!----></div></div><!----><!----><!--[--><!----><!----><!--]--></div><!----><!--]--><!--]--></div>
+        <script type="module" src="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/entries/entry-server-routing.6f0184af.js" defer></script>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/entries/src_pages_chapter_index.page.bb22bec3.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-c024e56a.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-c24561d7.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-c1130e8c.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-933d9793.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-1b428a4d.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-2e0cfd24.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-68280149.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/entries/renderer_default.page.client.775b38b0.js" as="script" type="text/javascript" crossorigin>
+        <link rel="modulepreload" href="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/chunks/chunk-ceacb271.js" as="script" type="text/javascript" crossorigin>
+        <script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/src/pages/chapter/index","pageProps":{"pageData":{"bookInfo":{"bookId":1039378361,"bookName":"神佛竟是我自己","sbookid":0,"authorId":430984054,"authorName":"独孤欢","cAuthorId":"22072591609552901","chanId":22,"chanName":"仙侠","chanUrl":"//www.qidian.com/xianxia","chanAlias":"xianxia","auditStatus":19,"checkLevel":15,"subCateId":20101,"subCateName":"古典仙侠","unitCategoryId":20014,"unitSubCategoryId":20101,"isVip":0,"bookType":1,"form":0,"chargetype":1,"totalprice":0,"fineLayout":0,"isPreCollection":-1,"bookStore":{"member":false,"app":false,"story":false},"bookStatus":"连载中","actionStatus":"连载中","signStatus":"签约作品","joinTime":"2024.03.10","collect":0,"updChapterId":788822779,"updChapterName":"上架感言＋献祭推书","updTime":1712830230,"updChapterUrl":"//read.qidian.com/chapter/KO1iOGN_9xlqqtWmhQLkJA2/lmkWoj2YFxv4p8iEw--PPw2/","cbid":"28969020603016204","editorNickname":"","bookLabels":[],"bookTag":{"tagName":""},"updInfo":[],"interact":{"recTicketEnable":1,"monthTicketEnable":1,"donateEnable":1},"joinTimes":1710033453,"isSign":1,"noRewardMonthTic":1,"bookAllAuth":0},"isPublication":0,"salesMode":1,"chapterInfo":{"actualWords":2282,"authorRecommend":[{"cbid":"29236627103617904","reason":"七星耀世，九子争龙，且看少年为友出山，横行九州！"}],"authorSay":"    推荐一本好朋友的仙侠新书，《争龙记》，文笔很牛，有点像将夜，喜欢的朋友可以去看看哦。\n　　简介：\n　　我的朋友是个奇妙的人。\n　　他会写书，让我知道世间有郭靖，李寻欢这样的大英雄。\n　　他会做菜，自创番茄炒鸡蛋，连镇上的大厨都为之折服。\n　　他天生逸才，是我们这么多年来唯一一个考入京城的学子。\n　　我远远地看着他，从未想过，此生还可与他并肩。\n　　直到我听闻他的死讯。\n　　……\n　　七星耀世，九子争龙。\n　　且看少年为友出山，横行九州！","cbid":"28969020603016204","ccid":"78547276787675032","chapterId":788648004,"chapterName":"第六十五章 纸人抬棺","chapterOrder":65000,"cvid":"77775512252430249","extra":{"nextCcid":"78565042651463517","nextName":"第六十六章 真假张九阳","nextVipStatus":0,"preCcid":"78544775237658558","prevName":"第六十四章 鸡冠血，红灯笼","prevVipStatus":0,"volumeBody":true,"volumeName":"正文卷","nextUrl":"//read.qidian.com/chapter/KO1iOGN_9xlqqtWmhQLkJA2/OxWOtfAnZf1Ms5iq0oQwLQ2/","preUrl":"//read.qidian.com/chapter/KO1iOGN_9xlqqtWmhQLkJA2/fbqga-OrpJ-aGfXRMrUjdw2/"},"fineLayout":0,"freeStatus":0,"modifyTime":1712808311,"multiModal":0,"next":788732381,"nextCcid":"78565042651463517","prev":788628765,"prevCcid":"78544775237658558","seq":65,"updateTime":"2024.04.11 12:00","uuid":66,"vipStatus":0,"volumeId":114936643,"wordsCount":2282,"isFirst":0,"content":"\u003cp>　　这一幕实在是太诡异了，即便是常年和邪祟打交道的岳翎等人都不禁眸光一凝，从未遇见如此情况。\u003cp>　　“看这样子，他们好像是在重复死亡当天的场景。”\u003cp>　　张九阳看着这对爷孙又一次被红线切割成碎肉，而后又再次出现，心中突然冒出了这么一个想法。\u003cp>　　这种感觉，就好像他前世打过的某些游戏，爷孙俩是npc，而红线便是一个bug，遇到这个bug无法过去，便只能不断重启。\u003cp>　　岳翎反应很快，手中刀光一闪，龙雀刀已如雷霆般出鞘，斩断了那些红线。\u003cp>　　张九阳甚至都没有看清刀身，她便已收刀入鞘。\u003cp>　　这一次，没有红线的阻拦，爷孙两人成功走进房中，笑道：“等下多吃一点，你们来我们这里收购药材，给的价格公道，大家都很感激呢。”\u003cp>　　说罢他去厨房端来了一些饭菜。\u003cp>　　当看清饭菜的样子，张九阳顿时生出一股反胃的感觉。\u003cp>　　只见老人端上来的，竟然是一盘盘早已腐烂腥臭的饭菜，特别是一些肉菜，上面爬满了蠕动的蛆虫。\u003cp>　　“你们快吃呀。”\u003cp>　　老人十分热情。\u003cp>　　岳翎摇头道：“多谢好意，我们不饿，请问你有没有在村子里见到一個人，是个瞎子，拄着一根竹杖，喜欢吹口哨。”\u003cp>　　老人愣了一下，而后答道：“你们说的是林瞎子吧，他前几天出去了，听说要明早才回来。”\u003cp>　　“这林瞎子可是个有本事的人，前些天山神老爷发怒，好多人都梦到了，还是林瞎子帮忙解决得呢。”\u003cp>　　林瞎子！\u003cp>　　张九阳等人对视一眼，神情有些变化。\u003cp>　　如果他们是在重复自己死亡当天的场景，那就意味着，陈家村的人认识林瞎子，甚至林瞎子还在这里住过一段时间！\u003cp>　　听这语气，似乎对林瞎子很感激。\u003cp>　　殊不知，所谓的山神托梦，可能不是发怒，而是求救或者预警……\u003cp>　　但遗憾的是，陈家村的村民们就这样错过了最后的生机。\u003cp>　　“你们要见林瞎子的话，就只能等明天了，现在天色不早了，我给你们收拾下屋子，就先住我这里吧。”\u003cp>　　老人很朴实热情，他望着张九阳等人，道：“不过现在只剩下一间屋子了……要不伱们分出两人在柴房凑合一晚？”\u003cp>　　“我们四人住一起就好了。”\u003cp>　　岳翎直接否决了他的建议，斩钉截铁道。\u003cp>　　在这个诡异的村子中，分开无疑是最愚蠢的选择。\u003cp>　　“那好吧。”\u003cp>　　顿了顿，老人似是想到了什么，好心提醒道：“你们晚上关好门，千万别出去，最近村子里有人横死了，按规矩，是要巡棺夜游的，若是撞到了，总不吉利。”\u003cp>　　……\u003cp>　　入夜。\u003cp>　　四人挤在一间屋子中，凝神戒备。\u003cp>　　外面的风很大，吹得窗户簌簌作响，隐约可见灯笼的红光，将夜色映衬得更加诡异和神秘。\u003cp>　　按理来说，他们下午才刚刚睡过，而且身处险境，绝不会瞌睡才对，但不知怎的，睡意竟再次如潮水般袭来。\u003cp>　　罗平和老高的眼皮已经开始打架，张九阳也在不断打哈欠，唯有岳翎依旧精神。\u003cp>　　“都别睡，打起精神！”\u003cp>　　她试图唤醒几人，但张九阳还是在朦朦胧胧中睡了过去，失去意识前，他仿佛听到了长刀出鞘的声音。\u003cp>　　……\u003cp>　　当张九阳再次醒来时，发现房间中竟然空无一人，岳翎、老高和罗平他们都消失不见了。\u003cp>　　好在阴偶中的阿梨还在。\u003cp>　　“九哥，我看到他们身上亮起红光，然后就消失不见了……”\u003cp>　　张九阳顿时意识到，林瞎子是想将他们各个击破，之所以让他留在这里，怕是有什么目的。\u003cp>　　必须要赶紧找到大家！\u003cp>　　他当即便背起箱子，提剑出门，那对爷孙还在酣睡，张九阳没有打扰，而是来到了街上。\u003cp>　　夜色深沉，不见明月。\u003cp>　　“阿梨，能占卜到岳翎他们在哪吗？”\u003cp>　　阿梨提着的双刀，在加入百年槐木心后，这两口粉色的菜刀便成为了通灵的器物，可以辅助她增强占卜预测的能力。\u003cp>　　“有啦，在东边，不过前面好像有厉鬼拦路……”\u003cp>　　张九阳没有畏惧，仗剑东行，穿过一条街道后，果然看到前方有几道身影，似是在抬着什么东西。\u003cp>　　走近一看，他们抬的竟然是一口棺材！\u003cp>　　棺材诡异，但抬棺的人更加诡异，当张九阳看清他们的脸时，即便已经看多了鬼物，却仍旧忍不住涌上寒意，头皮发麻。\u003cp>　　只见那些抬棺的人皮肤白到渗人，五官有些粗糙，甚至可以说十分不协调，就好像画上去的一样。\u003cp>　　不，就是画上去的！\u003cp>　　“九哥，是纸人……纸人在抬棺材……”\u003cp>　　阿梨小声道，但声音还是引起了那些纸人的注意，他们齐刷刷地转过脸，那双用朱砂点就的眼睛静静地望着张九阳。\u003cp>　　月黑风高夜，纸人抬阴棺。\u003cp>　　这诡异的一幕任谁看了都要脊背发凉，特别是点了眼睛的纸人，非常犯忌讳。\u003cp>　　纸人画眼不点睛，你若不记阎王请。\u003cp>　　这是扎纸匠一行流传千年的规矩，据说是因为纸人点睛后就会留恋阳间，而且会吸引孤魂野鬼附身，产生种种诡异。\u003cp>　　因此不管你出多少钱，一般扎纸匠都不会，也不敢为纸人点睛。\u003cp>　　但现在这些纸人却都被点上了眼睛，而且还仿佛有生命般在抬着一口棺材。\u003cp>　　“回去。”\u003cp>　　“回去。”\u003cp>　　从纸人的口中，竟发出了一种幽冷的声音，如寒夜中的冷风，直往人骨头缝里钻。\u003cp>　　他们在阻拦张九阳继续向东。\u003cp>　　敌人不让做的事情，恰恰就是最应该做的！\u003cp>　　张九阳眼中凶光一闪，道：“几个破纸人，装你妈呢！”\u003cp>　　随着这声破口大骂，他心中的恐惧也如潮水般散去，主动提剑上前，眸光锐利，呼吸若百川归海，龙潜于渊，右手按在了剑柄上。\u003cp>　　拔剑术，青龙出海！\u003cp>　　沧啷一声剑鸣，只见暗夜中赤芒如电光瞬闪，斩鬼剑好似一条腾空而起的赤龙，出沧海，入青冥，飞云探爪，直冲霄汉！\u003cp>　　四颗纸人的头颅飞起，而后燃烧起青色的火焰，发出阵阵哀嚎，最后变为了一地灰烬。\u003cp>　　斩鬼剑，专破邪祟，对这种阴物鬼物有极大的克制。\u003cp>　　收剑入鞘，张九阳看向那口落在地上的棺材。\u003cp>　　似是感觉到了他的目光，棺材突然晃动了两下，里面隐隐发出某种野兽般的嘶吼声。\u003cp>　　咚咚！咚咚！\u003cp>　　棺材板上的钉子不断颤动，越来越松，到最后竟被弹飞出去。\u003cp>　　一双血肉模糊的手突然从中探出，手臂自动伸长，抓住了张九阳的手腕，将其一把抓进了棺材中。\u003cp>　　棺材板自动合上，仿佛在捕捉猎物。\u003cp>　　但事实证明，狩猎要量力而为。\u003cp>　　“天圆地方，人遁九章。青龙相助，白虎相帮。先杀恶鬼，再除凶秧，何魔不伏，何邪敢当，急急如律令！”\u003cp>　　随着咒声响起，棺材顿时剧烈颤抖起来，里面隐隐响起厉鬼般的哀嚎。\u003cp>　　……","riskInfo":{"banId":0,"banMessage":"","sessionKey":"","captchaAId":"","captchaURL":"","phoneNumber":"","gt":"","challenge":"","offline":0,"newCaptcha":0,"captchaType":0},"riskbe":{"be":0,"message":""},"authorWords":{"content":"推荐一本好朋友的仙侠新书，《争龙记》，文笔很牛，有点像将夜，喜欢的朋友可以去看看哦。\r\n　　简介：\r\n　　我的朋友是个奇妙的人。\r\n　　他会写书，让我知道世间有郭靖，李寻欢这样的大英雄。\r\n　　他会做菜，自创番茄炒鸡蛋，连镇上的大厨都为之折服。\r\n　　他天生逸才，是我们这么多年来唯一一个考入京城的学子。\r\n　　我远远地看着他，从未想过，此生还可与他并肩。\r\n　　直到我听闻他的死讯。\r\n　　……\r\n　　七星耀世，九子争龙。\r\n　　且看少年为友出山，横行九州！","avatar":"https://ccportrait.yuewen.com/apimg/349573/p_22072591609552901/100","time":"2024-04-11 12:00"},"updateTimestamp":1712808000,"isBuy":0,"limitFree":0,"eFW":0,"cES":0,"guidMark":"","fEnS":0},"bottomOps":{"hasAd":0},"bgOpsInfo":{"hasAd":0},"iconOps":{"hasAd":0},"redDotOps":{"isRed":0},"bgOpsInfoCps":null,"pageOps":{"abTest":"","adCategoryName":"广告","channelStatus":"0","title":"战Online","type":"1","adImgUrl":"https://gameapp-1252317822.file.myqcloud.com/yuewen/game/images/3acbf50d5fbc49f9bd407a9ae5a9b00c.jpg","colorType":"0","adType":"1","adJumpUrl":"https://game.qidian.com/CpGameHome/Ad/directLogin/name/zol/way/1?qd_game_key=zol900x60.jpg&qd_dd_p1=140963","isAdv":"1","blackList":"","startTime":"1712800800","whiteList":"","id":"140963","endTime":"1712886900","hasAd":1},"checkLevel":15,"riskInfo":{"banId":0,"banMessage":"","sessionKey":"","captchaAId":"","captchaURL":"","phoneNumber":"","gt":"","challenge":"","offline":0,"newCaptcha":0,"captchaType":0},"settings":{"t":0,"ft":0,"fs":3,"rt":0,"w":1},"isLogin":0,"hongBaoStatus":0,"bookActReward":{"hitU":0,"subscribeC":0,"isGotR":0,"isGotF":0},"innerBookRecom":[{"recomName":"长生从肝蛊方开始","bookId":1038362645},{"recomName":"云仙君","bookId":1018389463},{"recomName":"还说你不是仙人","bookId":1036972810},{"recomName":"家族修仙：通天长生","bookId":1038636840},{"recomName":"新白蛇问仙","bookId":1012680288},{"recomName":"我以女儿身独断万古","bookId":1038835393},{"recomName":"纵目","bookId":1029859506},{"recomName":"巫在回归","bookId":1015716168},{"recomName":"从野狐开始求道","bookId":1034864691},{"recomName":"我把储物袋升级成了鸿蒙宇宙","bookId":1037599115},{"recomName":"大随圣人：从天牢自救开始","bookId":1035345554},{"recomName":"问道红尘","bookId":1014243481},{"recomName":"道爷我飘了","bookId":1037287593},{"recomName":"修仙从祖先显灵开始","bookId":1034784944},{"recomName":"从杀猪到杀神","bookId":1027193133},{"recomName":"我在凡人的修仙日记","bookId":1035465229},{"recomName":"黑神话：长安","bookId":1035992113},{"recomName":"成为冥铺刻碑人之后","bookId":1028632528},{"recomName":"凡人，我穿越的有点早","bookId":1035433366},{"recomName":"天命编纂师","bookId":1027072038}],"serverTime":1712844231,"readerTheme":"beige"},"configData":{"brand":{"name":{"data":"起点中文网"}},"logo":{"imgUrl":{"data":"//bossaudioandcomic-1252317822.file.myqcloud.com/yux-reader/4e88200231b843958767d6b95e8ab494.svg"},"dropdown":{"data":[]}},"nav":{"dropdown":{"data":[{"title":"账户设置","url":"https://my.qidian.com/setting/"},{"title":"账务中心","url":"https://my.qidian.com/account/"}]}},"app":{"visible":{"data":true},"title":{"data":"手机阅读"},"description":{"data":"手机扫描阅读，还可体验多音色听书"}},"breadcrumbs":{"visible":{"data":true}},"subtitle":{"visible":{"data":true}},"recommends":{"visible":{"data":false}},"titlePage":{"visible":{"data":true}},"authorSay":{"visible":{"data":true},"downloadVisible":{"data":true}},"endRecommends":{"visible":{"data":true}},"guide":{"visible":{"data":true}},"navigator":{"prevChapterVisible":{"data":true},"chapterListVisible":{"data":true}},"settings":{"pageWidth":{"data":true},"pageMode":{"data":true},"reviews":{"data":true}}}},"pageTrackReportExt":{"pid":"qd_P_read","cid":788648004,"bid":1039378361,"bookstatus":0,"rt":"0"},"routeParams":{"bookId":"1039378361","chapterId":"788648004"},"urlPathname":"/chapter/1039378361/788648004/","INITIAL_STATE":"!undefined","urlOriginal":"/chapter/1039378361/788648004/","hostname":"www.qidian.com","errorMsg":"!undefined","redirectUrl":"!undefined"}}</script>
+      </body>
+      <script type="text/javascript" src="https://imgservices-1252317822.image.myqcloud.com/statics/qidianCommon/ieLowVersion_2023051501.js"></script>
+      <script nomodule crossorigin id="vite-legacy-polyfill" src="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/polyfills.d5aedd21-legacy.js"></script>
+      <script nomodule crossorigin id="vite-legacy-entry" data-src="https://qdfepccdn.qidian.com/www.qidian.com/read/assets/entries/entry-server-routing.c6d111b4-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+    </html>

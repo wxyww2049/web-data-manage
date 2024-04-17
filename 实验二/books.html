@@ -1,0 +1,4291 @@
+<!DOCTYPE html>
+<html data-theme="default">
+  <script type="text/javascript" src="/C2WF946J0/probev3.js" r="m"></script>
+  <head>
+    <script async src="https://turing.captcha.qcloud.com/TCaptcha.js"></script>
+    <script>
+      try {
+        var name = "x-waf-captcha-referer",
+          reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)"),
+          wafReferer = document.cookie.match(reg);
+        wafReferer &&
+          wafReferer[2] &&
+          (Object.defineProperty(document, "referrer", {
+            value: decodeURIComponent(wafReferer[2]),
+          }),
+          (document.cookie =
+            name + "=;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT"));
+      } catch (e) {
+        console.log(e);
+      }
+    </script>
+    <script>
+      var name = "seo-jump-referrer";
+      try {
+        var reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)"),
+          seoReferer = document.cookie.match(reg);
+        seoReferer &&
+          seoReferer[2] &&
+          (Object.defineProperty(document, "referrer", {
+            value: decodeURIComponent(seoReferer[2]),
+          }),
+          (document.cookie =
+            name +
+            "=;domain=.qidian.com;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT"));
+      } catch (a) {
+        console.log(a);
+      }
+      if (
+        window.outerWidth <= 1024 &&
+        navigator.userAgent.match(
+          /(Android|iPhone|SymbianOS|Windows Phone|iPad|iPod|HarmonyOS)/i
+        ) &&
+        !navigator.userAgent.match(/spider/i)
+      ) {
+        var url = getMUrl();
+        url &&
+          (location.search
+            ? /source=m_jump/.test(location.search)
+              ? (url += location.search.replace(
+                  "source=m_jump",
+                  "source=pc_jump"
+                ))
+              : /source=pc_jump/.test(location.search)
+              ? (url += location.search)
+              : (url += location.search + "&source=pc_jump")
+            : (url += "?source=pc_jump"),
+          setCookie(name, document.referrer, ".qidian.com", "/", 6e4),
+          console.log(url),
+          (window.location.href = url));
+      }
+      function setCookie(a, t, o, e, c) {
+        c && (c = new Date(+new Date() + c));
+        var i =
+          a +
+          "=" +
+          escape(t) +
+          (c ? "; expires=" + c.toGMTString() : "") +
+          (e ? "; path=" + e : "") +
+          (o ? "; domain=" + o : "");
+        return i.length < 4096 && (document.cookie = i), this;
+      }
+      function getMUrl() {
+        var a = "",
+          t = "https://" + a + "m.qidian.com/",
+          o = "",
+          e = document.URL;
+        "/" === location.pathname && (o = "https://" + a + "m.qidian.com/"),
+          "/xuanhuan/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid21/"),
+          "/qihuan/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid1/"),
+          "/wuxia/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid2/"),
+          "/xianxia/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid22/"),
+          "/dushi/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid4/"),
+          "/xianshi/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid15/"),
+          "/junshi/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid6/"),
+          "/lishi/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid5/"),
+          "/youxi/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid7/"),
+          "/tiyu/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid8/"),
+          "/kehuan/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid9/"),
+          "/zhutianwuxian/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid20109/"),
+          "/lingyi/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid10/"),
+          "/2cy/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid12/"),
+          "/duanpian/" === location.pathname &&
+            (o = "https://" + a + "m.qidian.com/category/catid20076/");
+        var c = location.pathname.match(/\/soushu\/(\S+|)/i);
+        if (
+          (c && (o = t + "soushu/" + c[1]),
+          (c = e.match(/\/book\/(strongrec|sanjiang)/i)) &&
+            (o = t + c[1] + "/"),
+          (c = e.match(/\/(mm\/|)(free|finish)/i)))
+        ) {
+          var i = "mm" === c[1] ? "/female" : "";
+          o = t + c[2] + i + "/";
+        }
+        if (
+          (c = e.match(
+            /\/(mm\/|)all\/((chanId(\d+)|)(-subCateId(\d+)|)(-(\S+)|)\/|)/i
+          ))
+        ) {
+          var i = "mm/" === c[1] ? "female" : "male";
+          c[6]
+            ? (o =
+                t +
+                "category/catid" +
+                c[4] +
+                "/subcatid" +
+                c[6] +
+                "-" +
+                i +
+                "/")
+            : c[4] &&
+              -1 ==
+                [
+                  "13100",
+                  "14300",
+                  "13700",
+                  "14100",
+                  "14400",
+                  "14500",
+                  "19100",
+                ].indexOf(c[4])
+            ? ((i =
+                [
+                  "80",
+                  "81",
+                  "82",
+                  "83",
+                  "84",
+                  "85",
+                  "86",
+                  "87",
+                  "88",
+                  "30083",
+                  "30120",
+                ].indexOf(c[4]) > -1
+                  ? "/female"
+                  : ""),
+              (o = t + "category/catid" + c[4] + i + "/"))
+            : (o =
+                t + "category" + (i = "mm/" === c[1] ? "/female" : "") + "/");
+        }
+        (c = e.match(
+          /\/rank(\/mm|)(\/(yuepiao|readindex|hotsales|newfans|collect|recom|newauthor)|)/i
+        )) &&
+          (o = t + "rank" + (i = "/mm" === c[1] ? "/female" : "") + c[2] + "/");
+        return (
+          (c = e.match(/\/dashen/i)) && (o = t + "dashen/"),
+          (c = e.match(/\/honor\/(\d+)/)) &&
+            (o = t + "book/" + c[1] + "/badge"),
+          (c = e.match(/\/info\/(\d+)/)) &&
+            ((o = t + "book/" + c[1] + ".html"),
+            e.match(/#Catalog/) && (o = t + "book/" + c[1] + "/catalog/")),
+          (c = e.match(/\/bookrecommend\/([A-Za-z0-9]+)/)) &&
+            (o = t + "bookrecommend/" + c[1] + "/"),
+          (c = e.match(/\/recommendbooklist(\/p(\d+)|)/)) &&
+            (o = t + "recommendbooklist" + c[1] + "/"),
+          (c = e.match(/\/book\/(\d+)/)) &&
+            ((o = t + "book/" + c[1] + "/"),
+            e.match(/#Catalog/) && (o = t + "book/" + c[1] + "/catalog/")),
+          (c = e.match(/\/book\/(\d+)\/catalog/)) &&
+            (o = t + "book/" + c[1] + "/catalog/"),
+          (c = e.match(/\/booklist/)) &&
+            (o = "https://" + a + "m.qidian.com" + location.pathname),
+          (c = e.match(/\/booklist\/detail\/(\d+)\/(\d+)/)) &&
+            (o = "https://" + a + "m.qidian.com/booklist/detail/" + c[1] + "/"),
+          (c = e.match(/\/chapter/)) && (o = t + "chapter///"),
+          (c = e.match(/\/lastpage\/(\d+)/)) &&
+            (o = t + "lastpage/" + c[1] + "/"),
+          (c = e.match(/\/gm/)) &&
+            (o = "https://" + a + "m.qidian.com" + location.pathname),
+          (c = e.match(/\/ask/)) &&
+            (o = "https://" + a + "m.qidian.com" + location.pathname),
+          o
+        );
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <title>免费小说大全_小说免费在线阅读-起点中文网</title>
+    <meta name="keywords" content="小说" />
+    <meta
+      name="description"
+      content="免费小说大全,起点中文网为书友提供,免费在线阅读服务,列表中的免费小说均按照人气进行排序,更多免费小说尽在起点中文网。"
+    />
+    <meta name="robots" content="all" />
+    <meta name="googlebot" content="all" />
+    <meta name="baiduspider" content="all" />
+    <meta
+      http-equiv="mobile-agent"
+      content="format=wml; url=https://m.qidian.com"
+    />
+    <meta
+      http-equiv="mobile-agent"
+      content="format=xhtml; url=https://m.qidian.com"
+    />
+    <meta
+      http-equiv="mobile-agent"
+      content="format=html5; url=http://m.qidian.com"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <script>
+      document.domain = "qidian.com";
+    </script>
+    <script>
+      function setCookie(e, o, n, t, i) {
+        i && (i = new Date(+new Date() + i));
+        var a =
+          e +
+          "=" +
+          escape(o) +
+          (i ? "; expires=" + i.toGMTString() : "") +
+          (t ? "; path=" + t : "") +
+          (n ? "; domain=" + n : "");
+        a.length < 4096 && (document.cookie = a);
+      }
+      function getCookie(e) {
+        var o,
+          n = new RegExp("(^| )" + e + "=([^;]*)(;|$)");
+        return (o = document.cookie.match(n)) ? o[2] : null;
+      }
+      function createSender(e) {
+        var o = new Image();
+        (o.onload = o.onerror =
+          function () {
+            o = null;
+          }),
+          (o.src = e);
+      }
+      1 == getCookie("tf") && setCookie("tf", 1, "qidian.com", "/", 0);
+    </script>
+    <link
+      data-ignore="true"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="//qdfepccdn.qidian.com/www.qidian.com/favicon/qd_icon.ico"
+    />
+    <link
+      data-ignore="true"
+      rel="Bookmark"
+      type="image/x-icon"
+      href="//qdfepccdn.qidian.com/www.qidian.com/favicon/qd_icon.ico"
+    />
+    <meta name="servertime" content="1712913882" />
+    <script src="https://imgservices-1252317822.image.myqcloud.com/coco/s09222022/4f2a5dd7.p6bvj2.js"></script>
+    <script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      !(function () {
+        var a = document.createElement("script");
+        (a.src = "//www.googletagmanager.com/gtag/js?id=UA-199934072-2"),
+          (a.async = 1);
+        var e = document.getElementsByTagName("script")[0];
+        e.parentNode.insertBefore(a, e);
+      })(),
+        (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "UA-199934072-2"),
+        gtag("config", "G-PFYW0QLV3P");
+    </script>
+    <script>
+      !(function (e, t, n, p, y, c, o) {
+        (e.QDAnalyticsObject = y),
+          (e.yep =
+            e.yep ||
+            function () {
+              (e.yep.q = e.yep.q || []).push(arguments);
+            }),
+          (e.yep.l = 1 * new Date()),
+          (c = t.createElement(n)),
+          (o = t.getElementsByTagName(n)[0]),
+          (c.async = 1),
+          (c.src =
+            "https://noah2-1252317822.file.myqcloud.com/npm/@noah-common/yep@0.0.46/dist/yep.js"),
+          o.parentNode.insertBefore(c, o);
+      })(window, document, "script", 0, "yep"),
+        yep("set", { appid: 10038, rate: 0.02 });
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      !(function () {
+        var e = document.createElement("script");
+        window.location.hostname;
+        (e.src = "https://hm.baidu.com/hm.js?f00f67093ce2f38f215010b699629083"),
+          (e.async = 1);
+        var t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e, t);
+      })();
+    </script>
+    <script
+      data-ignore="true"
+      src="//qdfepccdn.qidian.com/www.qidian.com/fock/116594983210.js"
+    ></script>
+    <script
+      data-ignore="true"
+      src="//qdfepccdn.qidian.com/www.qidian.com/fock/l0ir4.js"
+    ></script>
+    <script
+      data-ignore="true"
+      src="//qdfepccdn.qidian.com/www.qidian.com/fock/e1669345466848.js"
+    ></script>
+    <script
+      defer="defer"
+      src="//qdfepccdn.qidian.com/www.qidian.com/js/manifest.54ac3.bundle.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer="defer"
+      src="//qdfepccdn.qidian.com/www.qidian.com/js/vendors.ff5d0.bundle.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer="defer"
+      src="//qdfepccdn.qidian.com/www.qidian.com/js/views/www.qidian.com/free/index.6e12b.bundle.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="//qdfepccdn.qidian.com/www.qidian.com/css/views/www.qidian.com/free/index.84e07eee.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top-nav" data-l1="1">
+        <div class="box-center cf">
+          <div class="login-box fr" id="login-box">
+            <div class="sign-in hidden">
+              <span>你好，</span
+              ><a
+                class="black"
+                id="user-name"
+                href="//my.qidian.com/"
+                target="_blank"
+                data-eid="qd_A08"
+              ></a
+              ><em>|</em
+              ><a
+                class="black"
+                id="msg-btn"
+                href="//my.qidian.com/message/sys/"
+                target="_blank"
+                data-eid="qd_A09"
+                >消息<cite id="msg-box">(<i></i>)</cite></a
+              ><em>|</em
+              ><a id="exit-btn" href="javascript:" data-eid="qd_A10">退出</a>
+            </div>
+            <div class="sign-out">
+              <a
+                id="login-btn"
+                class="black"
+                href="javascript:"
+                data-eid="qd_A06"
+                >登录</a
+              ><em>|</em
+              ><a
+                id="reg-btn"
+                href="//passport.qidian.com/reg.html?appid=10&areaid=1&target=iframe&ticket=1&auto=1&autotime=30&returnUrl=https%3A%2F%2Fwww.qidian.com"
+                rel="nofollow"
+                target="_blank"
+                data-eid="qd_A07"
+                >注册</a
+              >
+            </div>
+          </div>
+          <div class="nav-link fl">
+            <a class="act" href="//www.qidian.com/" data-eid="qd_A01"
+              >起点中文网</a
+            >
+            <a
+              class="third-remove"
+              href="//www.qdmm.com/"
+              rel="nofollow"
+              target="_blank"
+              data-eid="qd_A02"
+              >起点女生网</a
+            ><em class="third-remove">|</em>
+            <a href="javascript:" id="switchEl" data-eid="qd_A182">繁体版</a>
+          </div>
+        </div>
+      </div>
+      <div class="top-op-box" id="j-topOpBox"></div>
+      <div class="logo-wrap box-center" data-l1="2">
+        <div class="box-center cf">
+          <div class="book-shelf fr">
+            <a
+              href="//my.qidian.com/bookcase/"
+              target="_blank"
+              data-eid="qd_A14"
+              ><em class="iconfont shelf">&#xe60c;</em><i>我的书架</i></a
+            >
+          </div>
+          <div class="logo fl">
+            <a href="//www.qidian.com/" data-eid="qd_A11"></a>
+          </div>
+          <div class="search-wrap fl">
+            <form id="header2FormUrl" action="//www.qidian.com/so/">
+              <p>
+                <input
+                  class="search-box"
+                  id="s-box"
+                  name="kw"
+                  placeholder="刺客凶猛"
+                />
+              </p>
+              <input
+                class="submit-input"
+                type="submit"
+                id="searchSubmit"
+                data-eid="qd_A13"
+              />
+              <a onclick="return!1" href="//www.qidian.com/soushu/"
+                ><label id="search-btn" class="search-btn"
+                  ><em class="iconfont" data-eid="qd_A13">&#xe60d;</em></label
+                ></a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        (document.getElementById("header2FormUrl").onsubmit = function (e) {
+          e.preventDefault();
+          var t =
+            document.getElementById("s-box").value ||
+            document.getElementById("s-box").placeholder;
+          window.open(
+            document.getElementById("header2FormUrl").action + t + ".html"
+          );
+        }),
+          (document.getElementById("search-btn").onclick = function () {
+            var e =
+              document.getElementById("s-box").value ||
+              document.getElementById("s-box").placeholder;
+            window.open(
+              document.getElementById("header2FormUrl").action + e + ".html"
+            );
+          });
+      </script>
+      <div class="main-nav-wrap" data-l1="3">
+        <div class="main-nav box-center cf" id="type-hover">
+          <div
+            class="classify-list fl so-awesome"
+            id="classify-list"
+            data-l1="3"
+          >
+            <dl class="cf">
+              <dd class="left">
+                <a
+                  href="/xuanhuan/"
+                  title="玄幻小说"
+                  target="_blank"
+                  data-eid="qd_A71"
+                  ><cite
+                    ><em class="iconfont">&#xe642;</em>
+                    <span class="info"><i>玄幻</i><b>721722</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd>
+                <a
+                  href="/qihuan/"
+                  title="奇幻小说"
+                  target="_blank"
+                  data-eid="qd_A72"
+                  ><cite
+                    ><em class="iconfont">&#xe62f;</em>
+                    <span class="info"><i>奇幻 </i><b>159241</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="even left">
+                <a
+                  href="/wuxia/"
+                  title="武侠小说"
+                  target="_blank"
+                  data-eid="qd_A73"
+                  ><cite
+                    ><em class="iconfont">&#xe632;</em>
+                    <span class="info"><i>武侠</i><b>45378</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="even">
+                <a
+                  href="/xianxia/"
+                  title="仙侠小说"
+                  target="_blank"
+                  data-eid="qd_A74"
+                  ><cite
+                    ><em class="iconfont">&#xe610;</em>
+                    <span class="info"><i>仙侠</i><b>236460</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="left">
+                <a
+                  href="/dushi/"
+                  title="都市小说"
+                  target="_blank"
+                  data-eid="qd_A75"
+                  ><cite
+                    ><em class="iconfont">&#xe62c;</em>
+                    <span class="info"><i>都市</i><b>374244</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd>
+                <a
+                  href="/xianshi/"
+                  title="现实小说"
+                  target="_blank"
+                  data-eid="qd_A76"
+                  ><cite
+                    ><em class="iconfont">&#xe614;</em>
+                    <span class="info"><i>现实</i><b>43492</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="even left">
+                <a
+                  href="/junshi/"
+                  title="军事小说"
+                  target="_blank"
+                  data-eid="qd_A77"
+                  ><cite
+                    ><em class="iconfont">&#xe602;</em>
+                    <span class="info"><i>军事</i><b>20623</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="even">
+                <a
+                  href="/lishi/"
+                  title="历史小说"
+                  target="_blank"
+                  data-eid="qd_A78"
+                  ><cite
+                    ><em class="iconfont">&#xe62d;</em>
+                    <span class="info"><i>历史</i><b>77225</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="left">
+                <a
+                  href="/youxi/"
+                  title="游戏小说"
+                  target="_blank"
+                  data-eid="qd_A79"
+                  ><cite
+                    ><em class="iconfont">&#xe634;</em>
+                    <span class="info"><i>游戏</i><b>108311</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd>
+                <a
+                  href="/tiyu/"
+                  title="体育小说"
+                  target="_blank"
+                  data-eid="qd_A80"
+                  ><cite
+                    ><em class="iconfont tiyu">&#xe631;</em>
+                    <span class="info"><i>体育</i><b>9109</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="even left">
+                <a
+                  href="/kehuan/"
+                  title="科幻小说"
+                  target="_blank"
+                  data-eid="qd_A81"
+                  ><cite
+                    ><em class="iconfont">&#xe603;</em>
+                    <span class="info"><i>科幻</i><b>157333</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="even">
+                <a
+                  href="/zhutianwuxian/"
+                  title="诸天无限小说"
+                  target="_blank"
+                  data-eid="qd_A81"
+                  ><cite
+                    ><em class="iconfont">&#xe901;</em>
+                    <span class="info"><i>诸天无限</i><b>52280</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd class="left">
+                <a
+                  href="/lingyi/"
+                  title="悬疑小说"
+                  target="_blank"
+                  data-eid="qd_A82"
+                  ><cite
+                    ><em class="iconfont lingyi">&#xe641;</em>
+                    <span class="info"><i>悬疑</i><b>66996</b></span></cite
+                  ></a
+                >
+              </dd>
+              <dd>
+                <a href="/2cy/" title="轻小说" target="_blank" data-eid="qd_A84"
+                  ><cite
+                    ><em class="iconfont erciyuan">&#xe617;</em>
+                    <span class="info"><i>轻小说</i><b>113490</b></span></cite
+                  ></a
+                >
+              </dd>
+            </dl>
+          </div>
+          <ul>
+            <li class="first">
+              <b><strong></strong></b
+              ><span
+                ><em> <i></i> <i></i> <i></i> </em>作品分类</span
+              >
+            </li>
+            <li class="nav-li">
+              <a href="//www.qidian.com/all/" data-eid="qd_A15">全部作品</a>
+            </li>
+            <li class="nav-li">
+              <a href="//www.qidian.com/rank/" data-eid="qd_A16">排行</a>
+            </li>
+            <li class="nav-li">
+              <a href="//www.qidian.com/finish/" data-eid="qd_A17">完本</a>
+            </li>
+            <li class="nav-li">
+              <a href="//www.qidian.com/free/" data-eid="qd_A18" class="act"
+                >免费</a
+              >
+            </li>
+            <li class="nav-li">
+              <a
+                class="third-remove"
+                href="https://write.qq.com/?siteid=1"
+                target="_blank"
+                data-eid="qd_A19"
+                >作家专区</a
+              >
+            </li>
+            <li class="nav-li">
+              <a
+                href="//www.qidian.com/soushu/"
+                target="_blank"
+                data-eid="qd_A13"
+                >搜索</a
+              >
+            </li>
+            <li class="nav-li">
+              <a href="//www.qdmm.com/" target="_blank" data-eid="qd_A83"
+                >女生网</a
+              >
+            </li>
+            <li class="nav-li">
+              <a
+                class="third-remove"
+                href="https://www.yuewen.com/app.html#appqd"
+                target="_blank"
+                data-eid="qd_A20"
+                ><b class="iconfont client">&#xe604;</b>客户端</a
+              >
+            </li>
+            <li class="game web" id="game-web">
+              <a
+                class="web-game"
+                href="https://game.qidian.com?qd_game_key=qdzw_homepage_Topbar"
+                rel="nofollow"
+                target="_blank"
+                data-eid="qd_A21"
+                ><b class="iconfont">&#xe60b;</b>页游</a
+              >
+              <div class="game-dropdown hidden" id="web-dropdown">
+                <cite></cite>
+                <div class="web-game-list">
+                  <dl class="lately" id="lately">
+                    <dt>最近玩过</dt>
+                    <dd data-rid="1">
+                      <a
+                        class="name"
+                        href="javascript:"
+                        target="_blank"
+                        data-eid="qd_A29"
+                      ></a
+                      ><strong></strong
+                      ><a
+                        class="link"
+                        href="javascript:"
+                        target="_blank"
+                        data-eid="qd_A29"
+                        >GO<i>&gt;</i></a
+                      >
+                    </dd>
+                    <dd data-rid="2">
+                      <a
+                        class="name"
+                        href="javascript:"
+                        target="_blank"
+                        data-eid="qd_A30"
+                      ></a
+                      ><strong></strong
+                      ><a
+                        class="link"
+                        href="javascript:"
+                        target="_blank"
+                        data-eid="qd_A30"
+                        >GO<i>&gt;</i></a
+                      >
+                    </dd>
+                  </dl>
+                  <dl class="web-list" id="log-web-list">
+                    <dt>今日开服</dt>
+                    <dd class="act" data-rid="1">
+                      <h3>
+                        <span></span> <i>04-12</i
+                        ><a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/cqbz?qd_game_key=1-991001"
+                          data-eid="qd_A31"
+                          target="_blank"
+                          >传奇霸主</a
+                        ><strong>894区</strong>
+                      </h3>
+                      <p>
+                        <a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/cqbz?qd_game_key=1-991001"
+                          data-eid="qd_A31"
+                          target="_blank"
+                          ><img
+                            src="//gameimg.qidian.com/v1/webgame/game2/cqbz/cqbz192x46.jpg" /><i
+                            class="op-tag"
+                          ></i
+                        ></a>
+                      </p>
+                    </dd>
+                    <dd data-rid="2">
+                      <h3>
+                        <span></span> <i>04-12</i
+                        ><a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/wzzx22?qd_game_key=1-991001"
+                          data-eid="qd_A32"
+                          target="_blank"
+                          >王者之心2</a
+                        ><strong>547区</strong>
+                      </h3>
+                      <p>
+                        <a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/wzzx22?qd_game_key=1-991001"
+                          data-eid="qd_A32"
+                          target="_blank"
+                          ><img
+                            src="//gameimg.qidian.com/v1/webgame/game2/wzzx22/wzzx22192x46.jpg" /><i
+                            class="op-tag"
+                          ></i
+                        ></a>
+                      </p>
+                    </dd>
+                    <dd data-rid="3">
+                      <h3>
+                        <span></span> <i>04-12</i
+                        ><a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/bzsc2?qd_game_key=1-991001"
+                          data-eid="qd_A33"
+                          target="_blank"
+                          >起点百战沙城</a
+                        ><strong>943区</strong>
+                      </h3>
+                      <p>
+                        <a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/bzsc2?qd_game_key=1-991001"
+                          data-eid="qd_A33"
+                          target="_blank"
+                          ><img
+                            src="//gameimg.qidian.com/v1/webgame/game2/bzsc2/bzsc2192x46.jpg" /><i
+                            class="op-tag"
+                          ></i
+                        ></a>
+                      </p>
+                    </dd>
+                    <dd data-rid="4">
+                      <h3>
+                        <span></span> <i>04-12</i
+                        ><a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/cqss2?qd_game_key=1-991001"
+                          data-eid="qd_A34"
+                          target="_blank"
+                          >传奇盛世2</a
+                        ><strong>316区</strong>
+                      </h3>
+                      <p>
+                        <a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/cqss2?qd_game_key=1-991001"
+                          data-eid="qd_A34"
+                          target="_blank"
+                          ><img
+                            src="//gameimg.qidian.com/v1/webgame/game2/cqss2/cqss2192x46.jpg" /><i
+                            class="op-tag"
+                          ></i
+                        ></a>
+                      </p>
+                    </dd>
+                    <dd data-rid="5">
+                      <h3>
+                        <span></span> <i>04-12</i
+                        ><a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/fmz?qd_game_key=1-991001"
+                          data-eid="qd_A35"
+                          target="_blank"
+                          >伏魔者</a
+                        ><strong>15区</strong>
+                      </h3>
+                      <p>
+                        <a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/fmz?qd_game_key=1-991001"
+                          data-eid="qd_A35"
+                          target="_blank"
+                          ><img
+                            src="//gameimg.qidian.com/v1/webgame/game2/fmz/fmz192x46.jpg" /><i
+                            class="op-tag"
+                          ></i
+                        ></a>
+                      </p>
+                    </dd>
+                    <dd data-rid="6">
+                      <h3>
+                        <span></span> <i>04-12</i
+                        ><a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/fmzg?qd_game_key=1-991001"
+                          data-eid="qd_A36"
+                          target="_blank"
+                          >伏魔战歌</a
+                        ><strong>29区</strong>
+                      </h3>
+                      <p>
+                        <a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/fmzg?qd_game_key=1-991001"
+                          data-eid="qd_A36"
+                          target="_blank"
+                          ><img
+                            src="//gameimg.qidian.com/v1/webgame/game2/fmzg/fmzg192x46.jpg" /><i
+                            class="op-tag"
+                          ></i
+                        ></a>
+                      </p>
+                    </dd>
+                    <dd data-rid="7">
+                      <h3>
+                        <span></span> <i>04-12</i
+                        ><a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/ltznlh?qd_game_key=1-991001"
+                          data-eid="qd_A37"
+                          target="_blank"
+                          >雷霆之怒龙皇版</a
+                        ><strong>163区</strong>
+                      </h3>
+                      <p>
+                        <a
+                          href="https://game.qidian.com/CpGameHome/ServerList/list/name/ltznlh?qd_game_key=1-991001"
+                          data-eid="qd_A37"
+                          target="_blank"
+                          ><img
+                            src="//gameimg.qidian.com/v1/webgame/game2/ltznlh/ltznlh192x46.jpg" /><i
+                            class="op-tag"
+                          ></i
+                        ></a>
+                      </p>
+                    </dd>
+                  </dl>
+                  <div class="bottom">
+                    <p>
+                      <a
+                        href="https://game.qidian.com/Home/SyGame/syTopList?qd_game_key=pch5&amp;qd_dd_p1=124"
+                        data-eid="qd_A38"
+                        target="_blank"
+                        ><img
+                          src="//bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/f293b1cd7eb1f676af36d22c2ca6a191.gif" /><span
+                          class="op-tag"
+                        ></span
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div style="display: none">
+        <span>
+          <a href="//www.qidian.com/">首页</a>
+          <em class="iconfont">&#xe621;</em>
+          <h1>免费小说大全</h1>
+        </span>
+      </div>
+      <div class="free-container box-center">
+        <div class="free-type-tab mb30 cf" id="free-type-tab">
+          <ul>
+            <li type="1" class="lang">
+              <a href="//www.qidian.com/free/">限时免费</a>
+            </li>
+            <li type="2" class="lang act" data-eid="qd_E01">
+              <a href="//www.qidian.com/free/all/">免费作品</a>
+            </li>
+          </ul>
+        </div>
+        <div id="free-channel-wrap">
+          <div class="free-work">
+            <div class="all-pro-wrap box-center cf">
+              <div class="range-sidebar fl" data-l1="4">
+                <div class="site" data-l2="1">
+                  <a class="site-item act" data-eid="qd_B84" data-index="2"
+                    >男生</a
+                  >
+                  <a class="site-item" data-eid="qd_B15" data-index="1">女生</a>
+                </div>
+                <div class="select-list sl-item" data-item="1">
+                  <div class="work-filter type-filter" data-l2="3">
+                    <h3>分类</h3>
+                    <ul class="row-1" type="category">
+                      <li data-id="-1" class="act arrow">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B17"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="80" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId80/"
+                          data-eid="qd_B18"
+                          >古代言情<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="81" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId81/"
+                          data-eid="qd_B19"
+                          >仙侠奇缘<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="82" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId82/"
+                          data-eid="qd_B20"
+                          >现代言情<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul class="row-2" type="category">
+                      <li data-id="83" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId83/"
+                          data-eid="qd_B22"
+                          >浪漫青春<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="84" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId84/"
+                          data-eid="qd_B23"
+                          >玄幻言情<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="85" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId85/"
+                          data-eid="qd_B24"
+                          >悬疑推理<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="30083" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId30083/"
+                          data-eid="qd_B32"
+                          >短篇<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul class="row-3" type="category">
+                      <li data-id="86" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId86/"
+                          data-eid="qd_B27"
+                          >科幻空间<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="88" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId88/"
+                          data-eid="qd_B28"
+                          >游戏竞技<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="87" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId87/"
+                          data-eid="qd_B29"
+                          >轻小说<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul class="row-4" type="category">
+                      <li data-id="30120" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId30120/"
+                          data-eid="qd_B32"
+                          >现实生活<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter action-filter" data-l2="4">
+                    <h3>状态</h3>
+                    <ul type="action">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B31"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="0" class="">
+                        <a
+                          href="//www.qidian.com/free/all/action0/"
+                          data-eid="qd_B32"
+                          >连载</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/action1/"
+                          data-eid="qd_B33"
+                          >完本</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter" data-l2="6">
+                    <h3>字数</h3>
+                    <ul type="size">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B37"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size1/"
+                          data-eid="qd_B38"
+                          >20万字以下</a
+                        >
+                      </li>
+                      <li data-id="2" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size2/"
+                          data-eid="qd_B39"
+                          >20-30万字</a
+                        >
+                      </li>
+                      <li data-id="3" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size3/"
+                          data-eid="qd_B40"
+                          >30-50万字</a
+                        >
+                      </li>
+                      <li data-id="4" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size4/"
+                          data-eid="qd_B40"
+                          >50-100万字</a
+                        >
+                      </li>
+                      <li data-id="5" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size5/"
+                          data-eid="qd_B41"
+                          >100-200万字</a
+                        >
+                      </li>
+                      <li data-id="6" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size6/"
+                          data-eid="qd_B42"
+                          >200万字以上</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter" data-l2="7">
+                    <h3>品质</h3>
+                    <ul type="sign">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B43"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/sign1/"
+                          data-eid="qd_B44"
+                          >签约作品</a
+                        >
+                      </li>
+                      <li data-id="2" class="">
+                        <a
+                          href="//www.qidian.com/free/all/sign2/"
+                          data-eid="qd_B45"
+                          >精品小说</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter" data-l2="9">
+                    <h3>更新时间</h3>
+                    <ul type="update">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B71"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update1/"
+                          data-eid="qd_B72"
+                          >三日内</a
+                        >
+                      </li>
+                      <li data-id="2" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update2/"
+                          data-eid="qd_B73"
+                          >七日内</a
+                        >
+                      </li>
+                      <li data-id="3" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update3/"
+                          data-eid="qd_B74"
+                          >半月内</a
+                        >
+                      </li>
+                      <li data-id="4" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update4/"
+                          data-eid="qd_B75"
+                          >一月内</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter tag" data-l2="8">
+                    <h3>标签</h3>
+                    <ul type="tag">
+                      <li data-eid="qd_B46" class="act">
+                        <a href="//www.qidian.com/free/all/">全部</a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="豪门">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%B1%AA%E9%97%A8/"
+                          >豪门</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="孤儿">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AD%A4%E5%84%BF/"
+                          >孤儿</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="盗贼">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%9B%97%E8%B4%BC/"
+                          >盗贼</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="特工">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%89%B9%E5%B7%A5/"
+                          >特工</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="黑客">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%BB%91%E5%AE%A2/"
+                          >黑客</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="明星">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%98%8E%E6%98%9F/"
+                          >明星</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="特种兵">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%89%B9%E7%A7%8D%E5%85%B5/"
+                          >特种兵</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="杀手">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%9D%80%E6%89%8B/"
+                          >杀手</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="老师">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%80%81%E5%B8%88/"
+                          >老师</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="学生">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AD%A6%E7%94%9F/"
+                          >学生</a
+                        >
+                      </li>
+                      <li class="more" id="unfold">
+                        <a href="javascript:" data-eid="qd_B48"
+                          >展开<span><i></i></span
+                        ></a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="胖子" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%83%96%E5%AD%90/"
+                          >胖子</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="宠物" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AE%A0%E7%89%A9/"
+                          >宠物</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="蜀山" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%9C%80%E5%B1%B1/"
+                          >蜀山</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="魔王附体" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%AD%94%E7%8E%8B%E9%99%84%E4%BD%93/"
+                          >魔王附体</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="LOL" class="hidden">
+                        <a href="//www.qidian.com/free/all/tagLOL/">LOL</a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="废材流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%BA%9F%E6%9D%90%E6%B5%81/"
+                          >废材流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="护短" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%8A%A4%E7%9F%AD/"
+                          >护短</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="卡片" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8D%A1%E7%89%87/"
+                          >卡片</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="手游" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%89%8B%E6%B8%B8/"
+                          >手游</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="法师" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%B3%95%E5%B8%88/"
+                          >法师</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="医生" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8C%BB%E7%94%9F/"
+                          >医生</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="感情" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%84%9F%E6%83%85/"
+                          >感情</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="鉴宝" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%89%B4%E5%AE%9D/"
+                          >鉴宝</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="亡灵" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%BA%A1%E7%81%B5/"
+                          >亡灵</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="职场" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%81%8C%E5%9C%BA/"
+                          >职场</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="吸血鬼" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%90%B8%E8%A1%80%E9%AC%BC/"
+                          >吸血鬼</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="龙" class="hidden">
+                        <a href="//www.qidian.com/free/all/tag%E9%BE%99/">龙</a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="西游" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%A5%BF%E6%B8%B8/"
+                          >西游</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="鬼怪" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%AC%BC%E6%80%AA/"
+                          >鬼怪</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="阵法" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%98%B5%E6%B3%95/"
+                          >阵法</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="魔兽" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%AD%94%E5%85%BD/"
+                          >魔兽</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="勇猛" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8B%87%E7%8C%9B/"
+                          >勇猛</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="玄学" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%8E%84%E5%AD%A6/"
+                          >玄学</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="群穿" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%BE%A4%E7%A9%BF/"
+                          >群穿</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="丹药" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%B8%B9%E8%8D%AF/"
+                          >丹药</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="练功流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%BB%83%E5%8A%9F%E6%B5%81/"
+                          >练功流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="召唤流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8F%AC%E5%94%A4%E6%B5%81/"
+                          >召唤流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="恶搞" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%81%B6%E6%90%9E/"
+                          >恶搞</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="爆笑" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%88%86%E7%AC%91/"
+                          >爆笑</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="轻松" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%BD%BB%E6%9D%BE/"
+                          >轻松</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="冷酷" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%86%B7%E9%85%B7/"
+                          >冷酷</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="腹黑" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%85%B9%E9%BB%91/"
+                          >腹黑</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="阳光" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%98%B3%E5%85%89/"
+                          >阳光</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="狡猾" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%8B%A1%E7%8C%BE/"
+                          >狡猾</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="机智" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%9C%BA%E6%99%BA/"
+                          >机智</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="猥琐" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%8C%A5%E7%90%90/"
+                          >猥琐</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="嚣张" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%9A%A3%E5%BC%A0/"
+                          >嚣张</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="淡定" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%B7%A1%E5%AE%9A/"
+                          >淡定</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="僵尸" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%83%B5%E5%B0%B8/"
+                          >僵尸</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="丧尸" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%B8%A7%E5%B0%B8/"
+                          >丧尸</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="盗墓" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%9B%97%E5%A2%93/"
+                          >盗墓</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="随身流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%9A%8F%E8%BA%AB%E6%B5%81/"
+                          >随身流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="软饭流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%BD%AF%E9%A5%AD%E6%B5%81/"
+                          >软饭流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="无敌文" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%97%A0%E6%95%8C%E6%96%87/"
+                          >无敌文</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="异兽流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%BC%82%E5%85%BD%E6%B5%81/"
+                          >异兽流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="系统流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%B3%BB%E7%BB%9F%E6%B5%81/"
+                          >系统流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="洪荒流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%B4%AA%E8%8D%92%E6%B5%81/"
+                          >洪荒流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="学院流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AD%A6%E9%99%A2%E6%B5%81/"
+                          >学院流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="位面" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%BD%8D%E9%9D%A2/"
+                          >位面</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="铁血" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%93%81%E8%A1%80/"
+                          >铁血</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="励志" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8A%B1%E5%BF%97/"
+                          >励志</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="坚毅" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%9D%9A%E6%AF%85/"
+                          >坚毅</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="变身" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8F%98%E8%BA%AB/"
+                          >变身</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="强者回归" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%BC%BA%E8%80%85%E5%9B%9E%E5%BD%92/"
+                          >强者回归</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="赚钱" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%B5%9A%E9%92%B1/"
+                          >赚钱</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="争霸流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%BA%89%E9%9C%B8%E6%B5%81/"
+                          >争霸流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="种田文" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%A7%8D%E7%94%B0%E6%96%87/"
+                          >种田文</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="宅男" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AE%85%E7%94%B7/"
+                          >宅男</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="无限流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%97%A0%E9%99%90%E6%B5%81/"
+                          >无限流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="技术流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%8A%80%E6%9C%AF%E6%B5%81/"
+                          >技术流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="凡人流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%87%A1%E4%BA%BA%E6%B5%81/"
+                          >凡人流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="热血" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%83%AD%E8%A1%80/"
+                          >热血</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="重生" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%87%8D%E7%94%9F/"
+                          >重生</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="穿越" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%A9%BF%E8%B6%8A/"
+                          >穿越</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="select-list sl-item list-act" data-item="2">
+                  <div class="work-filter type-filter" data-l2="3">
+                    <h3>分类</h3>
+                    <ul class="row-1" type="category">
+                      <li data-id="-1" class="act arrow">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B17"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="21" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId21/"
+                          data-eid="qd_B18"
+                          >玄幻<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId1/"
+                          data-eid="qd_B19"
+                          >奇幻<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="2" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId2/"
+                          data-eid="qd_B20"
+                          >武侠<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="22" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId22/"
+                          data-eid="qd_B21"
+                          >仙侠<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul class="row-2" type="category">
+                      <li data-id="4" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId4/"
+                          data-eid="qd_B22"
+                          >都市<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="15" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId15/"
+                          data-eid="qd_B23"
+                          >现实<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="6" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId6/"
+                          data-eid="qd_B24"
+                          >军事<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="5" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId5/"
+                          data-eid="qd_B25"
+                          >历史<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="7" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId7/"
+                          data-eid="qd_B26"
+                          >游戏<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul class="row-3" type="category">
+                      <li data-id="8" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId8/"
+                          data-eid="qd_B27"
+                          >体育<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="9" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId9/"
+                          data-eid="qd_B28"
+                          >科幻<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="20109" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId20109/"
+                          data-eid="qd_B28"
+                          >诸天无限<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="10" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId10/"
+                          data-eid="qd_B29"
+                          >悬疑<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul class="row-3" type="category">
+                      <li data-id="12" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId12/"
+                          data-eid="qd_B30"
+                          >轻小说<cite><i></i></cite
+                        ></a>
+                      </li>
+                      <li data-id="20076" class="">
+                        <a
+                          href="//www.qidian.com/free/all/chanId20076/"
+                          data-eid="qd_B70"
+                          >短篇<cite><i></i></cite
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter action-filter" data-l2="4">
+                    <h3>状态</h3>
+                    <ul type="action">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B31"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="0" class="">
+                        <a
+                          href="//www.qidian.com/free/all/action0/"
+                          data-eid="qd_B32"
+                          >连载</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/action1/"
+                          data-eid="qd_B33"
+                          >完本</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter" data-l2="6">
+                    <h3>字数</h3>
+                    <ul type="size">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B37"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size1/"
+                          data-eid="qd_B38"
+                          >30万字以下</a
+                        >
+                      </li>
+                      <li data-id="2" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size2/"
+                          data-eid="qd_B39"
+                          >30-50万字</a
+                        >
+                      </li>
+                      <li data-id="3" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size3/"
+                          data-eid="qd_B40"
+                          >50-100万字</a
+                        >
+                      </li>
+                      <li data-id="4" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size4/"
+                          data-eid="qd_B41"
+                          >100-200万字</a
+                        >
+                      </li>
+                      <li data-id="5" class="">
+                        <a
+                          href="//www.qidian.com/free/all/size5/"
+                          data-eid="qd_B42"
+                          >200万字以上</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter" data-l2="7">
+                    <h3>品质</h3>
+                    <ul type="sign">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B43"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/sign1/"
+                          data-eid="qd_B44"
+                          >签约作品</a
+                        >
+                      </li>
+                      <li data-id="2" class="">
+                        <a
+                          href="//www.qidian.com/free/all/sign2/"
+                          data-eid="qd_B45"
+                          >精品小说</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter" data-l2="9">
+                    <h3>更新时间</h3>
+                    <ul type="update">
+                      <li data-id="-1" class="act">
+                        <a href="//www.qidian.com/free/all/" data-eid="qd_B71"
+                          >全部</a
+                        >
+                      </li>
+                      <li data-id="1" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update1/"
+                          data-eid="qd_B72"
+                          >三日内</a
+                        >
+                      </li>
+                      <li data-id="2" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update2/"
+                          data-eid="qd_B73"
+                          >七日内</a
+                        >
+                      </li>
+                      <li data-id="3" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update3/"
+                          data-eid="qd_B74"
+                          >半月内</a
+                        >
+                      </li>
+                      <li data-id="4" class="">
+                        <a
+                          href="//www.qidian.com/free/all/update4/"
+                          data-eid="qd_B75"
+                          >一月内</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="work-filter tag" data-l2="8">
+                    <h3>标签</h3>
+                    <ul type="tag">
+                      <li data-eid="qd_B46" class="act">
+                        <a href="//www.qidian.com/free/all/">全部</a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="豪门">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%B1%AA%E9%97%A8/"
+                          >豪门</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="孤儿">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AD%A4%E5%84%BF/"
+                          >孤儿</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="盗贼">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%9B%97%E8%B4%BC/"
+                          >盗贼</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="特工">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%89%B9%E5%B7%A5/"
+                          >特工</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="黑客">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%BB%91%E5%AE%A2/"
+                          >黑客</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="明星">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%98%8E%E6%98%9F/"
+                          >明星</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="特种兵">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%89%B9%E7%A7%8D%E5%85%B5/"
+                          >特种兵</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="杀手">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%9D%80%E6%89%8B/"
+                          >杀手</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="老师">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%80%81%E5%B8%88/"
+                          >老师</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="学生">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AD%A6%E7%94%9F/"
+                          >学生</a
+                        >
+                      </li>
+                      <li class="more" id="unfold">
+                        <a href="javascript:" data-eid="qd_B48"
+                          >展开<span><i></i></span
+                        ></a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="胖子" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%83%96%E5%AD%90/"
+                          >胖子</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="宠物" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AE%A0%E7%89%A9/"
+                          >宠物</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="蜀山" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%9C%80%E5%B1%B1/"
+                          >蜀山</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="魔王附体" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%AD%94%E7%8E%8B%E9%99%84%E4%BD%93/"
+                          >魔王附体</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="LOL" class="hidden">
+                        <a href="//www.qidian.com/free/all/tagLOL/">LOL</a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="废材流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%BA%9F%E6%9D%90%E6%B5%81/"
+                          >废材流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="护短" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%8A%A4%E7%9F%AD/"
+                          >护短</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="卡片" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8D%A1%E7%89%87/"
+                          >卡片</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="手游" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%89%8B%E6%B8%B8/"
+                          >手游</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="法师" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%B3%95%E5%B8%88/"
+                          >法师</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="医生" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8C%BB%E7%94%9F/"
+                          >医生</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="感情" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%84%9F%E6%83%85/"
+                          >感情</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="鉴宝" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%89%B4%E5%AE%9D/"
+                          >鉴宝</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="亡灵" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%BA%A1%E7%81%B5/"
+                          >亡灵</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="职场" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%81%8C%E5%9C%BA/"
+                          >职场</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="吸血鬼" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%90%B8%E8%A1%80%E9%AC%BC/"
+                          >吸血鬼</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="龙" class="hidden">
+                        <a href="//www.qidian.com/free/all/tag%E9%BE%99/">龙</a>
+                      </li>
+                      <li data-eid="qd_B47" data-tid="西游" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%A5%BF%E6%B8%B8/"
+                          >西游</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="鬼怪" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%AC%BC%E6%80%AA/"
+                          >鬼怪</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="阵法" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%98%B5%E6%B3%95/"
+                          >阵法</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="魔兽" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%AD%94%E5%85%BD/"
+                          >魔兽</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="勇猛" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8B%87%E7%8C%9B/"
+                          >勇猛</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="玄学" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%8E%84%E5%AD%A6/"
+                          >玄学</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="群穿" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%BE%A4%E7%A9%BF/"
+                          >群穿</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="丹药" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%B8%B9%E8%8D%AF/"
+                          >丹药</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="练功流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%BB%83%E5%8A%9F%E6%B5%81/"
+                          >练功流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="召唤流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8F%AC%E5%94%A4%E6%B5%81/"
+                          >召唤流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="恶搞" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%81%B6%E6%90%9E/"
+                          >恶搞</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="爆笑" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%88%86%E7%AC%91/"
+                          >爆笑</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="轻松" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%BD%BB%E6%9D%BE/"
+                          >轻松</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="冷酷" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%86%B7%E9%85%B7/"
+                          >冷酷</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="腹黑" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%85%B9%E9%BB%91/"
+                          >腹黑</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="阳光" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%98%B3%E5%85%89/"
+                          >阳光</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="狡猾" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%8B%A1%E7%8C%BE/"
+                          >狡猾</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="机智" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%9C%BA%E6%99%BA/"
+                          >机智</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="猥琐" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%8C%A5%E7%90%90/"
+                          >猥琐</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="嚣张" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%9A%A3%E5%BC%A0/"
+                          >嚣张</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="淡定" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%B7%A1%E5%AE%9A/"
+                          >淡定</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="僵尸" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%83%B5%E5%B0%B8/"
+                          >僵尸</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="丧尸" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%B8%A7%E5%B0%B8/"
+                          >丧尸</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="盗墓" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%9B%97%E5%A2%93/"
+                          >盗墓</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="随身流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%9A%8F%E8%BA%AB%E6%B5%81/"
+                          >随身流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="软饭流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%BD%AF%E9%A5%AD%E6%B5%81/"
+                          >软饭流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="无敌文" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%97%A0%E6%95%8C%E6%96%87/"
+                          >无敌文</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="异兽流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%BC%82%E5%85%BD%E6%B5%81/"
+                          >异兽流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="系统流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%B3%BB%E7%BB%9F%E6%B5%81/"
+                          >系统流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="洪荒流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%B4%AA%E8%8D%92%E6%B5%81/"
+                          >洪荒流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="学院流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AD%A6%E9%99%A2%E6%B5%81/"
+                          >学院流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="位面" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%BD%8D%E9%9D%A2/"
+                          >位面</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="铁血" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%93%81%E8%A1%80/"
+                          >铁血</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="励志" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8A%B1%E5%BF%97/"
+                          >励志</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="坚毅" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%9D%9A%E6%AF%85/"
+                          >坚毅</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="变身" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%8F%98%E8%BA%AB/"
+                          >变身</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="强者回归" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%BC%BA%E8%80%85%E5%9B%9E%E5%BD%92/"
+                          >强者回归</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="赚钱" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E8%B5%9A%E9%92%B1/"
+                          >赚钱</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="争霸流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E4%BA%89%E9%9C%B8%E6%B5%81/"
+                          >争霸流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="种田文" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%A7%8D%E7%94%B0%E6%96%87/"
+                          >种田文</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="宅男" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%AE%85%E7%94%B7/"
+                          >宅男</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="无限流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%97%A0%E9%99%90%E6%B5%81/"
+                          >无限流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="技术流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E6%8A%80%E6%9C%AF%E6%B5%81/"
+                          >技术流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="凡人流" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E5%87%A1%E4%BA%BA%E6%B5%81/"
+                          >凡人流</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="热血" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%83%AD%E8%A1%80/"
+                          >热血</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="重生" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E9%87%8D%E7%94%9F/"
+                          >重生</a
+                        >
+                      </li>
+                      <li data-eid="qd_B47" data-tid="穿越" class="hidden">
+                        <a
+                          href="//www.qidian.com/free/all/tag%E7%A9%BF%E8%B6%8A/"
+                          >穿越</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-content-wrap fl">
+                <div class="tool-bar cf">
+                  <div class="view-mode" id="view-mode">
+                    <a
+                      id="img-text"
+                      class="iconfont act"
+                      href="javascript:;"
+                      data-eid="qd_B54"
+                      >&#xe618;</a
+                    ><em>|</em>
+                    <a
+                      id="only-text"
+                      class="iconfont"
+                      href="javascript:;"
+                      data-eid="qd_B55"
+                      >&#xe61a;</a
+                    >
+                  </div>
+                  <div class="select-wrap">
+                    <a
+                      data-id=""
+                      class="act"
+                      href="//www.qidian.com/free/all/"
+                      data-eid="qd_B62"
+                      >人气排序<cite class="iconfont">&#xe625;</cite></a
+                    ><a
+                      data-id="11"
+                      href="//www.qidian.com/free/all/orderId11/"
+                      data-eid="qd_B80"
+                      >总收藏</a
+                    ><a
+                      data-id="3"
+                      href="//www.qidian.com/free/all/orderId3/"
+                      data-eid="qd_B52"
+                      >总字数</a
+                    >
+                    <div id="recomm" class="lbf-combobox">
+                      <a
+                        href="javascript:"
+                        class="lbf-button lbf-combobox-label"
+                        hidefocus="true"
+                        ><span class="lbf-combobox-caption">推荐票</span
+                        ><span class="lbf-combobox-icon">&nbsp;</span></a
+                      >
+                    </div>
+                    <div class="sort-count count-info" id="sort-count">
+                      <div class="count-text">
+                        共<span>1097614</span>本相关作品
+                      </div>
+                      <div class="yiwen" id="yiwen">
+                        <div class="iconfont">&#xe620;</div>
+                      </div>
+                      <i>|</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="all-book-list">
+                  <div class="book-img-text" id="book-img-text">
+                    <ul class="all-img-list cf">
+                      <li data-rid="1">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039391177/"
+                            data-bid="1039391177"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039391177/150.webp"
+                              alt="吞噬星空2起源大陆在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039391177/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039391177"
+                              title="吞噬星空2起源大陆最新章节免费在线阅读"
+                              >吞噬星空2起源大陆</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/4362096/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >我吃西红柿</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/kehuan/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >科幻</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="9"
+                              data-subtypeid="25"
+                              href="//www.qidian.com/all/chanId9-subCateId25/"
+                              data-eid="qd_B61"
+                              >未来世界</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            罗峰带着界兽摩罗撒闯过轮回，来到了起源大陆……
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100073;&#100081;&#100080;&#100079;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039391177/788903389/"
+                                title="第11章第一次闭关修行"
+                                >第11章第一次闭关修行</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="2">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039449163/"
+                            data-bid="1039449163"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039449163/150.webp"
+                              alt="山海提灯在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039449163/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039449163"
+                              title="山海提灯最新章节免费在线阅读"
+                              >山海提灯</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/4362895/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >跃千愁</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/xianxia/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >仙侠</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="22"
+                              data-subtypeid="44"
+                              href="//www.qidian.com/all/chanId22-subCateId44/"
+                              data-eid="qd_B61"
+                              >幻想修仙</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            女人握着少年的手，手把手教他写出了“师”，于是少年有了姓。山海提灯，与皓月争辉！
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100077;&#100081;&#100078;&#100074;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039449163/788876302/"
+                                title="第三十九章劝归"
+                                >第三十九章劝归</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="3">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1038367936/"
+                            data-bid="1038367936"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1038367936/150.webp"
+                              alt="从婴儿开始入道在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1038367936/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1038367936"
+                              title="从婴儿开始入道最新章节免费在线阅读"
+                              >从婴儿开始入道</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/4362672/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >古羲</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/xuanhuan/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >玄幻</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="21"
+                              data-subtypeid="8"
+                              href="//www.qidian.com/all/chanId21-subCateId8/"
+                              data-eid="qd_B61"
+                              >东方玄幻</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            乱世求生，盛世求名。饱经风霜的大禹朝仍处于盛世年间。西北有少年徒步九千里，孤身斩大妖，争一世功名。龙湖，有不世宗师赶赴人间，开宗立派，百世留名。帝都有圣人传道万千，教徒遍布各州，流芳千古。而在青州城内
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100079;&#100081;&#100077;&#100078;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1038367936/788854756/"
+                                title="第55章祁州斩妖"
+                                >第55章祁州斩妖</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="4">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039477282/"
+                            data-bid="1039477282"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039477282/150.webp"
+                              alt="第一次魔法世界大战在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039477282/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039477282"
+                              title="第一次魔法世界大战最新章节免费在线阅读"
+                              >第一次魔法世界大战</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/421/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >流浪的蛤蟆</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/qihuan/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >奇幻</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="1"
+                              data-subtypeid="62"
+                              href="//www.qidian.com/all/chanId1-subCateId62/"
+                              data-eid="qd_B61"
+                              >剑与魔法</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            夏洛特·梅克伦穿越到了法尔斯帝国，只想做个异大陆的公务员，他也不是战斗人员……但谁想到，文职人员也要上战场啊！
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100073;&#100081;&#100080;&#100082;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039477282/788978190/"
+                                title="求一张努力赶稿的月票，晚上还有一更"
+                                >求一张努力赶稿的月票，晚上还有一更</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="5">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039574101/"
+                            data-bid="1039574101"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039574101/150.webp"
+                              alt="从妖女报恩开始在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039574101/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039574101"
+                              title="从妖女报恩开始最新章节免费在线阅读"
+                              >从妖女报恩开始</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/407092729/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >云中殿</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/xianxia/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >仙侠</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="22"
+                              data-subtypeid="44"
+                              href="//www.qidian.com/all/chanId22-subCateId44/"
+                              data-eid="qd_B61"
+                              >幻想修仙</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            第一世。我是个小牧童，少年夭折。后来。一条牧羊犬走出茫茫大荒，血色妖刀在手，杀得各大仙门血流成河！……第二世。我是个小铁匠，葬身妖腹。后来。堕落仙凰降临，身上笼罩的不灭神火，将万里妖国，化为一片焦土！
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100075;&#100081;&#100071;&#100074;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039574101/788505382/"
+                                title="第44章从此灵云山，再无大妖！"
+                                >第44章从此灵云山，再无大妖！</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="6">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039142740/"
+                            data-bid="1039142740"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039142740/150.webp"
+                              alt="魅力点满，继承游戏资产在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039142740/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039142740"
+                              title="魅力点满，继承游戏资产最新章节免费在线阅读"
+                              >魅力点满，继承游戏资产</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/3066414/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >纵伐</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/dushi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >都市</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="4"
+                              data-subtypeid="12"
+                              href="//www.qidian.com/all/chanId4-subCateId12/"
+                              data-eid="qd_B61"
+                              >都市生活</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            单身发胖，无车无房，25岁的唐宋，看不到人生的希望。遭遇职场霸凌后，玩了三年的男神养成系游戏突然降临现实世界，一同出现的还有他在游戏里的巨额资产、精英人才。这是个男神养成的故事。
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100078;&#100075;&#100081;&#100075;&#100074;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039142740/788889440/"
+                                title="第九十章钱乐乐"
+                                >第九十章钱乐乐</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="7">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039427973/"
+                            data-bid="1039427973"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039427973/150.webp"
+                              alt="剑出衡山在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039427973/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039427973"
+                              title="剑出衡山最新章节免费在线阅读"
+                              >剑出衡山</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/429969532/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >一片苏叶</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/zhutianwuxian/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >诸天无限</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="20109"
+                              data-subtypeid="20111"
+                              href="//www.qidian.com/all/chanId20109-subCateId20111/"
+                              data-eid="qd_B61"
+                              >诸天</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            作为衡山派一员，赵荣整顿职场的心思愈发强烈。正所谓江湖路滑，人心复杂。咱衡山派论艺术，那是大咖云集，又是潇湘夜雨，又是研究广陵散，声音很大。但论起战力，谁人DPS查得起？就连一秒躺尸的魔教长老上官云都
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100079;&#100081;&#100076;&#100078;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039427973/788489789/"
+                                title="第六十七章：聚散终有时"
+                                >第六十七章：聚散终有时</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="8">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039615610/"
+                            data-bid="1039615610"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039615610/150.webp"
+                              alt="重回1978在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039615610/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039615610"
+                              title="重回1978最新章节免费在线阅读"
+                              >重回1978</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/404523249/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >一勺往事</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/dushi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >都市</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="4"
+                              data-subtypeid="12"
+                              href="//www.qidian.com/all/chanId4-subCateId12/"
+                              data-eid="qd_B61"
+                              >都市生活</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            最初，他叫虎三，后来，有人叫他三哥，之后，更多人叫他谢老板，最后，所有人叫他谢先生。在人们称呼他的无数头衔中，有万元户，有农民企业家，有慈善家，有制片人，有村长。破浪三十载，当《时代周刊》在把他放上封
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100075;&#100081;&#100071;&#100076;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039615610/788900898/"
+                                title="第34章：比对方还不是人"
+                                >第34章：比对方还不是人</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="9">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1038539287/"
+                            data-bid="1038539287"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1038539287/150.webp"
+                              alt="为了隐居，我骗室友去恋爱在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1038539287/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1038539287"
+                              title="为了隐居，我骗室友去恋爱最新章节免费在线阅读"
+                              >为了隐居，我骗室友去恋爱</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/6577406/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >中秋月明</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/dushi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >都市</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="4"
+                              data-subtypeid="130"
+                              href="//www.qidian.com/all/chanId4-subCateId130/"
+                              data-eid="qd_B61"
+                              >青春校园</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            相依为命的父子俩。帅老爸终于被富婆看中富婆说：给你一千万，让你老爸跟我结婚秭小伟目瞪口呆:不是那啥，可以吗，这钱拿得太容易，心里不踏实！要不您还是上点需求吧。
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100079;&#100081;&#100071;&#100073;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1038539287/788587740/"
+                                title="第62章幸福指数直线上升"
+                                >第62章幸福指数直线上升</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="10">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039293776/"
+                            data-bid="1039293776"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039293776/150.webp"
+                              alt="一品寒门在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039293776/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039293776"
+                              title="一品寒门最新章节免费在线阅读"
+                              >一品寒门</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/9357947/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >科创板</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/lishi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >历史</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="5"
+                              data-subtypeid="222"
+                              href="//www.qidian.com/all/chanId5-subCateId222/"
+                              data-eid="qd_B61"
+                              >两晋隋唐</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            衣冠南渡，五胡乱华。主角是主持经济发展的主任，意外穿越到了东晋，成为了人命不如狗的寒门庶族。东晋政治制度是世家门阀，清谈、服五石散，妥妥的天龙人，主角上辈子再是领导，作为寒门庶族的一员，这辈子只能给门
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100082;&#100081;&#100079;&#100080;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039293776/788958486/"
+                                title="第九十章一千亩田地"
+                                >第九十章一千亩田地</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="11">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039538288/"
+                            data-bid="1039538288"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039538288/150.webp"
+                              alt="佣兵我为王在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039538288/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039538288"
+                              title="佣兵我为王最新章节免费在线阅读"
+                              >佣兵我为王</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/6625504/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >严七官</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/dushi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >都市</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="4"
+                              data-subtypeid="12"
+                              href="//www.qidian.com/all/chanId4-subCateId12/"
+                              data-eid="qd_B61"
+                              >都市生活</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            如果你不在餐桌旁坐着，那么就一定在餐桌上的菜单里躺着。如果你一无所有，那么你的命就是你唯一的资本。一心想要赚点小钱养活弟妹的宋和平冒险前往战区捞金，却因为一场意想不到的袭击将他卷入了战争，成为了一名雇
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100078;&#100081;&#100078;&#100078;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039538288/788933800/"
+                                title="第50章搂草打兔子"
+                                >第50章搂草打兔子</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="12">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039484923/"
+                            data-bid="1039484923"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039484923/150.webp"
+                              alt="人在洪武，朝九晚五在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039484923/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039484923"
+                              title="人在洪武，朝九晚五最新章节免费在线阅读"
+                              >人在洪武，朝九晚五</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/432357542/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >与东流</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/lishi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >历史</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="5"
+                              data-subtypeid="224"
+                              href="//www.qidian.com/all/chanId5-subCateId224/"
+                              data-eid="qd_B61"
+                              >两宋元明</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            季秋穿越回元末乱世，不但成为朱元璋义子，还觉醒了【摸鱼系统】！只要工作期间摸鱼，就能积累摸鱼点兑换各种神级奖励！属性，寿命，杂交水稻良种，战列舰制造图纸...看着琳琅满目的兑换商店，季秋心中暗下决定！
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100071;&#100081;&#100071;&#100074;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039484923/788978208/"
+                                title="第六十章伐无道，诛暴元！【求追读！求各种票！】"
+                                >第六十章伐无道，诛暴元！【求追读！求各种票！】</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="13">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039633624/"
+                            data-bid="1039633624"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039633624/150.webp"
+                              alt="我不是你想的网文学长在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039633624/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039633624"
+                              title="我不是你想的网文学长最新章节免费在线阅读"
+                              >我不是你想的网文学长</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/433094389/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >山色无有中</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/2cy/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >轻小说</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="12"
+                              data-subtypeid="66"
+                              href="//www.qidian.com/all/chanId12-subCateId66/"
+                              data-eid="qd_B61"
+                              >恋爱日常</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            “为什么不写甜甜的恋爱啊？”夏夜坐在沙发上双手一摊：“恋爱文我有三不写，第一，给单身狗看的恋爱文看的我不写，因为我善，单身狗看了之后要是被虐的死去活来，然后自己跑去谈恋爱，受恋爱之苦可不行，因此我不写
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100073;&#100081;&#100075;&#100082;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039633624/788959024/"
+                                title="第十五章白世"
+                                >第十五章白世</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="14">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039529449/"
+                            data-bid="1039529449"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039529449/150.webp"
+                              alt="仙帝来了，也得给我当两天骡子在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039529449/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039529449"
+                              title="仙帝来了，也得给我当两天骡子最新章节免费在线阅读"
+                              >仙帝来了，也得给我当两天骡子</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/4363022/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >胡鳕</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/xuanhuan/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >玄幻</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="21"
+                              data-subtypeid="8"
+                              href="//www.qidian.com/all/chanId21-subCateId8/"
+                              data-eid="qd_B61"
+                              >东方玄幻</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            “任何你名义下的下属，在其修炼过程中所取得的经验值、心得感悟和掌握的功法等，你都能以一定比例共享……”当宁晨获得这个系统，整个修仙界也从此变得不一样了。……本书又名《只要你们够努力，我修炼就没有瓶颈》
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100076;&#100081;&#100077;&#100071;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039529449/788034958/"
+                                title="第五十三章对于普通人来说太难，对于我来说就刚刚好"
+                                >第五十三章对于普通人来说太难，对于我来说就刚刚好</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="15">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039354043/"
+                            data-bid="1039354043"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039354043/150.webp"
+                              alt="从西游开始的诸天副本在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039354043/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039354043"
+                              title="从西游开始的诸天副本最新章节免费在线阅读"
+                              >从西游开始的诸天副本</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/407130930/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >百岁成仙</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/zhutianwuxian/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >诸天无限</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="20109"
+                              data-subtypeid="20111"
+                              href="//www.qidian.com/all/chanId20109-subCateId20111/"
+                              data-eid="qd_B61"
+                              >诸天</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            一个名为诸天副本的世界降临蓝星。甲：“东方不败太强了，五岳联盟都打不过！”乙：“东方不败算什么？百岁老道张三丰才是永远的神！”丙：“都别争了，你们是没看到黄药师出手！”丁：“萧峰一出，谁与争锋！”“…
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100079;&#100081;&#100076;&#100071;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039354043/788890877/"
+                                title="第七十章师门商讨，规矩与否（求追读月票推荐票！）"
+                                >第七十章师门商讨，规矩与否（求追读月票推荐票！）</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="16">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039804333/"
+                            data-bid="1039804333"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039804333/150.webp"
+                              alt="请天下赴死在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039804333/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039804333"
+                              title="请天下赴死最新章节免费在线阅读"
+                              >请天下赴死</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/4935246/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >阎ZK</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/xuanhuan/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >玄幻</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="21"
+                              data-subtypeid="8"
+                              href="//www.qidian.com/all/chanId21-subCateId8/"
+                              data-eid="qd_B61"
+                              >东方玄幻</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            天下已纷乱三百余年。中原歌舞不绝，异族厉兵秣马，江湖剑仙纵横，名将镇压十方。距离天下大乱还有五年，年少的药师李观一雨夜杀人。终于睁开眼睛，看到这人间乱世。马蹄之下累累白骨，名将，美人，江湖，神兵，百姓
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100078;&#100081;&#100082;&#100077;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039804333/788935685/"
+                                title="第10章赤龙痕！"
+                                >第10章赤龙痕！</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="17">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039292765/"
+                            data-bid="1039292765"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039292765/150.webp"
+                              alt="某美漫的副职业大师在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039292765/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039292765"
+                              title="某美漫的副职业大师最新章节免费在线阅读"
+                              >某美漫的副职业大师</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/3571135/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >位面劫匪</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/zhutianwuxian/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >诸天无限</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="20109"
+                              data-subtypeid="20110"
+                              href="//www.qidian.com/all/chanId20109-subCateId20110/"
+                              data-eid="qd_B61"
+                              >无限</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            好消息：穿越了坏消息：是美漫好消息：有金手指坏消息：是魔兽世界副职业系统好消息：全副职业坏消息：得重头开始练看着手里逐渐成型的自爆绵羊，再看看工程学列表最顶端灰色的飞天魔像和它的几个进阶版，李维不由得
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100080;&#100081;&#100074;&#100082;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039292765/788837387/"
+                                title="第八十一章作死的神盾局"
+                                >第八十一章作死的神盾局</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="18">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039339009/"
+                            data-bid="1039339009"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039339009/150.webp"
+                              alt="LOL：当你将一切做到极致在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039339009/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039339009"
+                              title="LOL：当你将一切做到极致最新章节免费在线阅读"
+                              >LOL：当你将一切做到极致</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/4235840/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >Iced子夜</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/youxi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >游戏</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="7"
+                              data-subtypeid="7"
+                              href="//www.qidian.com/all/chanId7-subCateId7/"
+                              data-eid="qd_B61"
+                              >电子竞技</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            他曾是S3的韩一雯！S4的韩一索！S5的韩一剑！RNG替补两年半，项文龙因为玩不了工具人上单四保一，得罪枣子哥后被一脚踹出，偶然却绑定了“至臻系统”！从黑粉身上获得惊艳值，兑换【英雄冥想卡】，只要能打
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100078;&#100077;&#100081;&#100078;&#100076;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039339009/788828068/"
+                                title="第五十八章后仰跳投！定点爆破！一桶定乾坤！（二合一求追读）"
+                                >第五十八章后仰跳投！定点爆破！一桶定乾坤！（二合一求追读）</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="19">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1037436585/"
+                            data-bid="1037436585"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1037436585/150.webp"
+                              alt="结婚后，才来恋爱攻略系统在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1037436585/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1037436585"
+                              title="结婚后，才来恋爱攻略系统最新章节免费在线阅读"
+                              >结婚后，才来恋爱攻略系统</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/430243182/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >是云铃哒</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/2cy/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >轻小说</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="12"
+                              data-subtypeid="66"
+                              href="//www.qidian.com/all/chanId12-subCateId66/"
+                              data-eid="qd_B61"
+                              >恋爱日常</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            宫泽都结婚了，恋爱攻略系统才来，他看着迟到了五年的恋爱系统发布着五年前的任务，露出了微笑。【给隔壁班的星乃同学写一封情书，并激情的告白。（奖励：基础属性点+1）】曾经的星乃同学已然成为了他的妻子，于是
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100073;&#100081;&#100082;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1037436585/788883171/"
+                                title="第62章我们都是纯爱！（求追读！）"
+                                >第62章我们都是纯爱！（求追读！）</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li data-rid="20">
+                        <div class="book-img-box">
+                          <a
+                            href="//www.qidian.com/book/1039375055/"
+                            data-bid="1039375055"
+                            data-eid="qd_B57"
+                            target="_blank"
+                            ><img
+                              src="//bookcover.yuewen.com/qdbimg/349573/1039375055/150.webp"
+                              alt="不放纵能叫神豪吗？在线阅读"
+                          /></a>
+                        </div>
+                        <div class="book-mid-info">
+                          <h2>
+                            <a
+                              href="//www.qidian.com/book/1039375055/"
+                              target="_blank"
+                              data-eid="qd_B58"
+                              data-bid="1039375055"
+                              title="不放纵能叫神豪吗？最新章节免费在线阅读"
+                              >不放纵能叫神豪吗？</a
+                            >
+                          </h2>
+                          <p class="author">
+                            <img
+                              src="//qdfepccdn.qidian.com/www.qidian.com/images/user.bcb60..png"
+                            /><a
+                              class="name"
+                              href="//my.qidian.com/author/432731243/"
+                              data-eid="qd_B59"
+                              target="_blank"
+                              >懒羊洋的羊</a
+                            ><em>|</em
+                            ><a
+                              href="//www.qidian.com/dushi/"
+                              target="_blank"
+                              data-eid="qd_B60"
+                              >都市</a
+                            ><i>&#183;</i
+                            ><a
+                              class="go-sub-type"
+                              data-typeid="4"
+                              data-subtypeid="12"
+                              href="//www.qidian.com/all/chanId4-subCateId12/"
+                              data-eid="qd_B61"
+                              >都市生活</a
+                            ><em>|</em><span>连载</span>
+                          </p>
+                          <p class="intro">
+                            人终会被年少时不可得之物而困其一生，可假如你年少有为开宾利，生活那就像玩游戏.........活在信息大爆炸的时代，凡人的苦难像是被放在了聚光灯下，成了仅供娱乐的猴戏展现在所有人的面前......然而
+                          </p>
+                          <p class="update">
+                            <span
+                              ><style>
+                                @font-face {
+                                  font-family: qenzihTp;
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.eot?")
+                                    format("eot");
+                                  src: url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.woff")
+                                      format("woff"),
+                                    url("https://qidian.gtimg.com/qd_anti_spider/qenzihTp.ttf")
+                                      format("truetype");
+                                }
+                                .qenzihTp {
+                                  font-family: "qenzihTp" !important;
+                                  display: initial !important;
+                                  color: inherit !important;
+                                  vertical-align: initial !important;
+                                }</style
+                              ><span class="qenzihTp"
+                                >&#100077;&#100079;&#100081;&#100079;&#100076;</span
+                              >万字 <em>|</em>
+                              <a
+                                href="//www.qidian.com/chapter/1039375055/788833271/"
+                                title="第72章娇憨少女桃淼淼"
+                                >第72章娇憨少女桃淼淼</a
+                              >
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="page-box cf">
+                  <div
+                    class="pagination fr"
+                    data-eid="qd_C44"
+                    id="page-container"
+                    data-pagemax="5"
+                    data-page="1"
+                  >
+                    <div class="lbf-pagination">
+                      <ul class="lbf-pagination-item-list">
+                        <li class="lbf-pagination-item">
+                          <a
+                            href="javascript:;"
+                            class="lbf-pagination-prev lbf-pagination-disabled"
+                            >&lt;</a
+                          >
+                        </li>
+
+                        <li class="lbf-pagination-item">
+                          <a
+                            data-page="1"
+                            href="//www.qidian.com/free/all/"
+                            class="lbf-pagination-page lbf-pagination-current"
+                            >1</a
+                          >
+                        </li>
+
+                        <li class="lbf-pagination-item">
+                          <a
+                            data-page="2"
+                            href="//www.qidian.com/free/all/page2/"
+                            class="lbf-pagination-page"
+                            >2</a
+                          >
+                        </li>
+
+                        <li class="lbf-pagination-item">
+                          <a
+                            data-page="3"
+                            href="//www.qidian.com/free/all/page3/"
+                            class="lbf-pagination-page"
+                            >3</a
+                          >
+                        </li>
+
+                        <li class="lbf-pagination-item">
+                          <a
+                            data-page="4"
+                            href="//www.qidian.com/free/all/page4/"
+                            class="lbf-pagination-page"
+                            >4</a
+                          >
+                        </li>
+
+                        <li class="lbf-pagination-item">
+                          <a
+                            data-page="5"
+                            href="//www.qidian.com/free/all/page5/"
+                            class="lbf-pagination-page"
+                            >5</a
+                          >
+                        </li>
+
+                        <li class="lbf-pagination-item">
+                          <a
+                            href="//www.qidian.com/free/all/page2/"
+                            class="lbf-pagination-next"
+                            >&gt;</a
+                          >
+                        </li>
+                      </ul>
+                      <script>
+                        function setParam(param, paramVal, url, customHost) {
+                          customHost = customHost.replace(/\/*$/, "");
+                          if (!url) {
+                            url = "javascript:;";
+                            return url;
+                          }
+                          url = url.replace(/\?[\s\S]+?(?=(#|$))/, "");
+                          var theAnchor = null;
+                          var newAdditionalURL = "";
+                          var baseURL = "";
+                          if (url === customHost) {
+                            baseURL = customHost;
+                          }
+                          var additionalURL = url.replace(customHost + "/", "");
+                          var temp = "";
+                          if (additionalURL) {
+                            var tmpAnchor = additionalURL.split("#");
+                            var TheParams = tmpAnchor[0];
+                            theAnchor = tmpAnchor[1];
+                            if (theAnchor) {
+                              additionalURL = TheParams;
+                            }
+                            additionalURL = additionalURL.replace(
+                              /((^\/*)|(\/*$))/g,
+                              ""
+                            );
+                            var queryTempArray = additionalURL.split("-");
+                            for (o = 0; o < queryTempArray.length; o++) {
+                              if (queryTempArray[o].indexOf(param) === -1) {
+                                newAdditionalURL += temp + queryTempArray[o];
+                                if (customHost.indexOf("/rank") > 0) {
+                                  temp = queryTempArray[o].match(/(month|year)/)
+                                    ? "-"
+                                    : "/";
+                                } else {
+                                  temp = "-";
+                                }
+                              }
+                            }
+                          } else {
+                            var tmpAnchor = baseURL.split("#");
+                            var TheParams = tmpAnchor[0];
+                            theAnchor = tmpAnchor[1];
+                            if (TheParams) {
+                              baseURL = TheParams;
+                            }
+                          }
+                          if (theAnchor) {
+                            paramVal += "#" + theAnchor;
+                          }
+                          if (paramVal == 1) {
+                            var rowsTxt = temp;
+                          } else {
+                            var rowsTxt = (
+                              temp +
+                              param +
+                              paramVal +
+                              "/"
+                            ).replace(/[-/]?pagek\/*(?=[^0])/, "/");
+                          }
+                          return (
+                            customHost +
+                            "/" +
+                            newAdditionalURL +
+                            rowsTxt
+                          ).replace(/\/*$/, "/");
+                        }
+                        function PAGINATION_goInput() {
+                          location.href = setParam(
+                            "page",
+                            document.getElementById("PAGINATION-INPUT").value,
+                            "//www.qidian.com/free/all/",
+                            "//www.qidian.com/free/all/"
+                          );
+                        }
+                      </script>
+
+                      <div class="lbf-pagination-jump">
+                        <input
+                          id="PAGINATION-INPUT"
+                          type="text"
+                          class="lbf-pagination-input"
+                          value="1"
+                        /><a
+                          href="javascript:;"
+                          id="PAGINATION-BUTTON"
+                          onclick="PAGINATION_goInput()"
+                          class="lbf-pagination-go"
+                          >GO</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="box-center cf">
+          <div class="footer-menu dib-wrap">
+            <a href="//www.qidian.com/about/intro" target="_blank">关于起点</a>
+            <a href="//www.qidian.com/about/contact" target="_blank"
+              >联系我们</a
+            >
+            <a href="//join.yuewen.com" rel="nofollow" target="_blank"
+              >加入我们</a
+            >
+            <a href="//www.qidian.com/help" target="_blank">帮助与客服</a>
+            <a href="//jubao.yuewen.com" rel="nofollow" target="_blank"
+              >举报中心</a
+            >
+            <a href="//security.tencent.com/" rel="nofollow" target="_blank"
+              >漏洞提交</a
+            >
+          </div>
+          <div class="copy-right">
+            <p>
+              <span
+                >Copyright &copy; 2002-2024 www.qidian.com All Rights Reserved
+                版权所有 上海玄霆娱乐信息科技有限公司</span
+              >
+            </p>
+            <p>
+              <a
+                target="_blank"
+                href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502001275"
+                ><img
+                  src="https://imgservices-1252317822.image.myqcloud.com/image/20191223/o5lajshfcw.png"
+                /><span>沪公网安备 31011502001275号</span></a
+              ><span
+                >增值电信业务经营许可证：沪B2-20080046 互联网ICP备案号：</span
+              ><a href="http://beian.miit.gov.cn" target="_blank"
+                >沪B2-20080046-1</a
+              ><span>&nbsp;出版经营许可证：新出发沪批字第 U3718 号</span>
+            </p>
+            <p>
+              <span
+                >网络文化经营许可证：沪网文〔2021〕0374-020号
+                网络出版服务许可证：（署）网出证（沪）字第055号&nbsp;</span
+              ><a
+                target="_blank"
+                href="https://imgservices-1252317822.image.myqcloud.com/coco/s04012024/d698734f.nem0bq.png"
+                >营业执照</a
+              >&nbsp;&nbsp;<a
+                target="_blank"
+                href="https://imgservices-1252317822.image.myqcloud.com/coco/s11062023/655b2b94.f2jl6x.png"
+                ><span
+                  >互联网宗教信息服务许可证 编号：沪（2022）0000022</span
+                ></a
+              >
+            </p>
+            <p>
+              请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！举报电话：010-59357051
+            </p>
+            <p>
+              本站所收录的作品、社区话题、用户评论、用户上传内容或图片等均属用户个人行为。如前述内容侵害您的权益，欢迎举报投诉，一经核实，立即删除，本站不承担任何责任
+            </p>
+            <p>
+              联系方式 总机 021-61870500
+              地址：中国（上海）自由贸易试验区环科路999弄1号706室
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var g_data = {};
+      (g_data.adBanner = {
+        adTop: {
+          title: "传奇霸主",
+          adImgUrl:
+            "https://img2.qidian.com/upload/gamesy/2022/07/13/20220713154317t8suy89qnm.jpg",
+          adCategoryName: "广告",
+          colorType: 0,
+          type: 1,
+          isAdv: 1,
+          adJumpUrl:
+            "https://game.qidian.com/CpGameHome/Ad/directLogin/name/cqbz/way/1?qd_game_key=cqbz1200x60.jpg&qd_dd_p1=140982",
+          hasAd: 1,
+        },
+      }),
+        g_data.adBanner.adTop && (g_data.adBanner.adTop.eid = "qd_B82"),
+        (g_data.envType = "pro"),
+        (g_data.isZht = false),
+        (g_data.pageId = "qd_P_free");
+      var params = {
+        typeId: "-1",
+        subTypeId: "-1",
+        actionId: "-1",
+        vipId: "&#34;hidden&#34;",
+        sizeId: "-1",
+        signId: "-1",
+        tagName: "-1",
+        orderId: "&#34;&#34;",
+        newIn3Month: "-1",
+        showId: "1",
+        updateId: "-1",
+      };
+      (g_data.params = params),
+        (g_data.url = "//www.qidian.com/free/all/"),
+        (g_data.domain = "//www.qidian.com/free/"),
+        (g_data.domainSearch = "www.qidian.com/soushu"),
+        (g_data.domainPreFix = "");
+    </script>
+  </body>
+</html>
