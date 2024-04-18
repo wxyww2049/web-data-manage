@@ -1,4 +1,5 @@
-const baseurl = "http://localhost:5000";
+// const baseurl = "http://211.87.224.231:9088";
+const baseurl = "http://localhost:9088";
 export const COUNT_COMPANY = `${baseurl}/count_company`;
 export const COUNT_POSITION = `${baseurl}/count_position`;
 export const COUNT_PROCESS = `${baseurl}/count_type`;
